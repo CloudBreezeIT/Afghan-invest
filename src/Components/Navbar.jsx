@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showInput, setShowInput] = useState(true);
+  const [showlang , setShowLang ] = useState(true)
 
   const handleShowInput = () => {
     setShowInput(!showInput);
+    setShowLang(!showlang)
   };
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 flex items-center" >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,11 +32,14 @@ const Navbar = () => {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Item 1</a></li>
-            <li><a>Item 3</a></li>
+           <li><Link className='text-[17px] font-semibold'>HOME</Link></li>    
+          <li><Link className='text-[17px] font-semibold'>ABOUT US</Link></li>
+          <li><Link className='text-[17px] font-semibold'>PRODUCTS</Link></li>
+          <li><Link className='text-[17px] font-semibold'>GALLERY</Link></li>
+          <li><Link className='text-[17px] font-semibold'>CONTACT US</Link></li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Afghan Invest</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -47,7 +52,7 @@ const Navbar = () => {
         <hr className='mb-20 bg-white'/>
       </div>
       <div className="navbar-end me-10 flex gap-7 items-center">
-        <a className="text-red-800">ENGLISH</a>
+       {showlang && <a className="text-red-800">ENGLISH</a>} 
         <FiSearch className={`${showInput ? 'block' :"hidden"} cursor-pointer`} size={25} onClick={handleShowInput}/>
         <input 
           type="text" 

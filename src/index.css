@@ -9,6 +9,7 @@ body {
 }
 
 .banner {
+  position: relative;
   @apply w-full h-[80vh] overflow-hidden;
 }
 
@@ -42,6 +43,14 @@ body {
   background-blend-mode: multiply; /* Blend mode to darken the background */
   color: white; 
 }
+.banner-text-3 {
+  background-image: url('../public/assets/images/Home/PH-004.JPG');
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: multiply; /* Blend mode to darken the background */
+  color: white; 
+}
 
 .banner-caption {
   width: 100%;
@@ -51,4 +60,282 @@ body {
  justify-content: center;
  align-items: start;
  padding-left: 10%;
+}
+.glow-on-hover {
+  width: 160px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: yellow;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, black , white,black,white);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+/* .glow-on-hover:hover:before {
+  opacity: 1;
+} */
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #EAB308;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.np {
+    padding: 0px;
+}
+
+
+.featuredPropBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: outside none none;
+    padding: 0;
+}
+
+.featuredPropBox ul li {
+    background-color: #eeeeee;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 250px;
+    margin: 5px;
+    width: 32%;
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 2%;
+}
+
+.featuredPropBox ul li:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(22, 22, 22, 0.6);
+    transition: all 0.3s;
+    border-radius: 2%;
+}
+
+.featuredPropBox ul li:nth-child(1) {
+    background-image: url('https://i.ibb.co/ZmtmLGK/a.jpg');
+}
+
+.featuredPropBox ul li:nth-child(2) {
+    background-image: url('https://i.ibb.co/pzGysVS/b.jpg');
+}
+
+.featuredPropBox ul li:nth-child(3) {
+    background-image: url('https://i.ibb.co/QMrtWT1/c.jpg');
+}
+.featuredPropBox ul li:nth-child(4) {
+  background-image: url('https://i.ibb.co/DL5pvY6/bg-1-2.jpg');
+}
+
+.featuredPropBox ul li:nth-child(5) {
+  background-image: url('https://i.ibb.co/FWV1BJG/bg-1.jpg');
+}
+.featuredPropBox ul li:nth-child(6) {
+  background-image: url('https://i.ibb.co/ZXmWmSZ/14.jpg');
+}
+
+
+
+
+.featuredPropBox ul li .fplogo {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    z-index: 1;
+    transition: all 0.3s;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.featuredPropBox ul li .fplogo img {
+    width: 100%;
+}
+
+.featuredPropBox ul li .fptext {
+    display: none;
+    font-size: 16px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease 0s;
+    width: 65%;
+    z-index: 1;
+}
+
+.featuredPropBox ul li .fptext p {
+    color: #fff;
+    margin: 0px;
+}
+
+.featuredPropBox ul li:hover {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.2) inset;
+}
+
+.featuredPropBox ul li:hover:after {
+    background-color: rgba(22, 22, 22, 0.3);
+}
+
+.featuredPropBox ul li:hover .fplogo {
+    display: none;
+}
+
+.featuredPropBox ul li:hover .fptext {
+    display: block;
+}
+
+.card-button{
+  font-size: 27px;
+  font-weight: 600;
+  border: 5px solid #EAB308;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.card {
+  width: 290px;
+  height: 294px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .content {
+  border-radius: 5px;
+  background: white;
+  width: 286px;
+  height: 290px;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: " ";
+  display: block;
+  background: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  filter: blur(50px);
+}
+
+.card:hover .content::before {
+  opacity: 1;
+}
+
+.card::before {
+  opacity: 0;
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 200px; 
+  height: 380px; 
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #EAB308,
+    #EAB308,
+    transparent
+  );
+  transition: opacity 500ms;
+  animation: rotation_9018 5s infinite linear;
+  animation-play-state: paused;
+}
+
+.card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.card::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 290px;
+  height: 354px;
+  backdrop-filter: blur(50px);
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
