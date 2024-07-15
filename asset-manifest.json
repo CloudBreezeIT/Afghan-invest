@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Afghan-invest/static/css/main.0ca28072.css",
-    "main.js": "/Afghan-invest/static/js/main.e760ac08.js",
+    "main.js": "/Afghan-invest/static/js/main.c02bf7fa.js",
     "static/js/453.ff0fe232.chunk.js": "/Afghan-invest/static/js/453.ff0fe232.chunk.js",
     "static/media/PH-004.JPG": "/Afghan-invest/static/media/PH-004.6a7c59de45decaa51559.JPG",
     "static/media/PH-003.jpg": "/Afghan-invest/static/media/PH-003.7d1c844b4e16bf8d0156.jpg",
@@ -13,11 +13,11 @@
     "static/media/slick.woff": "/Afghan-invest/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Afghan-invest/index.html",
     "main.0ca28072.css.map": "/Afghan-invest/static/css/main.0ca28072.css.map",
-    "main.e760ac08.js.map": "/Afghan-invest/static/js/main.e760ac08.js.map",
+    "main.c02bf7fa.js.map": "/Afghan-invest/static/js/main.c02bf7fa.js.map",
     "453.ff0fe232.chunk.js.map": "/Afghan-invest/static/js/453.ff0fe232.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ca28072.css",
-    "static/js/main.e760ac08.js"
+    "static/js/main.c02bf7fa.js"
   ]
 }
