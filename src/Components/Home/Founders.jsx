@@ -11,13 +11,15 @@ export default function Founders() {
             MEET THE VISIONARIES BEHIND AFGHAN INVEST
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 ">
-          <div className="w-full rounded-xl bg-gray-50 shadow-lg ">
-            <img
-              className="w-full h-[300px] bg-cover bg-no-repeat rounded-t-xl"
-              src="/assets/images/founders/Abdul Matin Qalandari.jpg"
-              alt=""
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8 ">
+          <div className="w-full rounded-xl bg-gray-50 shadow-lg group">
+            <div className=" overflow-hidden rounded-t-xl">
+              <img
+                className="w-full h-[300px] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                src="/assets/images/founders/Abdul Matin Qalandari.jpg"
+                alt=""
+              />
+            </div>
             <div className="p-8 flex flex-col gap-4">
               <h2 className="font-bold text-2xl ">
                 Chairman of Board of Directors at Afghanistan Chamber of
@@ -35,12 +37,14 @@ export default function Founders() {
               </div>
             </div>
           </div>
-          <div className="w-full rounded-xl bg-gray-50 shadow-lg ">
-            <img
-              className="w-full h-[300px] bg-cover bg-no-repeat rounded-t-xl"
-              src="/assets/images/founders/Esmatullah Wardak.jpg"
-              alt=""
-            />
+          <div className="w-full rounded-xl bg-gray-50 shadow-lg group ">
+            <div className=" overflow-hidden rounded-t-xl">
+              <img
+                className="w-full h-[300px] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                src="/assets/images/founders/Esmatullah Wardak.jpg"
+                alt=""
+              />
+            </div>
             <div className="p-8 flex flex-col gap-4">
               <h2 className="font-bold text-2xl ">
                 Chairman of Ghazni Province’s Chamber of Commerce and Investment
@@ -58,12 +62,14 @@ export default function Founders() {
               </div>
             </div>
           </div>
-          <div className="w-full rounded-xl bg-gray-50 shadow-lg ">
-            <img
-              className="w-full h-[300px] bg-cover bg-no-repeat rounded-t-xl"
-              src="/assets/images/founders/Shirbaz Kaminzada.jpg"
-              alt=""
-            />
+          <div className="w-full rounded-xl bg-gray-50 shadow-lg group">
+            <div className="w-full h-[300px] overflow-hidden rounded-t-xl">
+              <img
+                className=" bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                src="/assets/images/founders/Shirbaz Kaminzada.jpg"
+                alt=""
+              />
+            </div>
             <div className="p-8 flex flex-col gap-4">
               <h2 className="font-bold text-2xl ">
                 Chairman of Afghanistan Chamber of Commerce and Investment and
