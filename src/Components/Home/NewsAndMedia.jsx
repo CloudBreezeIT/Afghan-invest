@@ -12,7 +12,7 @@ export default function NewsAndMedia() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 px-4">
           <div
-            className="rounded-xl w-full h-[500px] p-8"
+            className="rounded-xl w-full h-[500px]  bg-black bg-opacity-95"
             style={{
               backgroundImage:
                 "url(" + "/assets/images/news&media/img3.avif" + ")",
@@ -22,9 +22,9 @@ export default function NewsAndMedia() {
               opacity: 0.9,
             }}
           >
-            <div className="w-[80%] text-start flex flex-col gap-5">
+            <div className="w-[80%] text-start flex flex-col gap-5 bg-black bg-opacity-90 p-8">
               <span className="text-white opacity-80 text-xl"> Vacancies</span>
-              <h2 className="lg:text-2xl text-white font-bold tracking-wide">
+              <h2 className="lg:text-2xl text-white font-semibold tracking-wide ">
                 Explore exciting career opportunities with Afghan Invest. We are
                 always on the lookout for talented and passionate individuals to
                 join our dynamic team. Check out our latest job openings and
@@ -38,7 +38,7 @@ export default function NewsAndMedia() {
             </div>
           </div>
           <div
-            className="rounded-xl w-full h-[500px] p-8"
+            className="rounded-xl w-full h-[500px]"
             style={{
               backgroundImage:
                 "url(" + "/assets/images/news&media/img2.avif" + ")",
@@ -48,12 +48,12 @@ export default function NewsAndMedia() {
               opacity: 0.9,
             }}
           >
-            <div className="w-[80%] text-start flex flex-col gap-5">
+            <div className="w-[80%] text-start flex flex-col gap-5 bg-black bg-opacity-90 p-8">
               <span className="text-white opacity-80 text-xl">
                 {" "}
                 Social Media
               </span>
-              <h2 className="lg:text-2xl text-white font-bold tracking-wide">
+              <h2 className="lg:text-2xl text-white font-semibold tracking-wide">
                 Stay connected with Afghan Invest through our social media
                 channels. Follow us for the latest updates, project highlights,
                 and behind-the-scenes glimpses of our work.
@@ -66,7 +66,7 @@ export default function NewsAndMedia() {
             </div>
           </div>{" "}
           <div
-            className="rounded-xl w-full h-[500px] p-8"
+            className="rounded-xl w-full h-[500px]"
             style={{
               backgroundImage:
                 "url(" + "/assets/images/news&media/img2.avif" + ")",
@@ -76,12 +76,12 @@ export default function NewsAndMedia() {
               opacity: 0.9,
             }}
           >
-            <div className="w-[80%] text-start flex flex-col gap-5">
+            <div className="w-[80%] text-start flex flex-col gap-5 bg-black bg-opacity-90 p-8">
               <span className="text-white opacity-80 text-xl">
                 {" "}
                 News & Press releases
               </span>
-              <h2 className="lg:text-2xl text-white font-bold tracking-wide">
+              <h2 className="lg:text-2xl text-white font-semibold tracking-wide">
                 Get the latest news and updates from Afghan Invest. Stay
                 informed about our recent projects, company announcements, and
                 industry insights.
