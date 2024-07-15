@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../Components/Home/Banner";
 import Service from "../Components/Home/Service";
 import NewsAndMedia from "../Components/Home/NewsAndMedia";
+import Founders from "../Components/Home/Founders";
 
 const Home = () => {
   return (
@@ -80,6 +81,7 @@ const Home = () => {
 
       <Service />
       <NewsAndMedia />
+      <Founders />
     </>
   );
 };
