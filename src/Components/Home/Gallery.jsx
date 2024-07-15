@@ -1,23 +1,31 @@
 import { useState } from 'react';
 import { FiShare2 } from "react-icons/fi";
-
+import e1 from '../../../src/images/gallery/e1.jpg'
+import e2 from '../../../src/images/gallery/e2.jpeg'
+import e3 from '../../../src/images/gallery/e3.jpeg'
+import c1 from '../../../src/images/gallery/c1.jpeg'
+import c2 from '../../../src/images/gallery/c2.jpeg'
+import c3 from '../../../src/images/gallery/c3.jpeg'
+import m1 from '../../../src/images/gallery/m1.jpeg'
+import m2 from '../../../src/images/gallery/m2.jpeg'
+import m3 from '../../../src/images/gallery/m3.jpg'
 const Gallery = () => {
     const energy = [
-        { "path": "/assets/images/Home/e1.jpg", "desc": "Energy is Power" },
-        { "path": "/assets/images/Home/e2.jpeg", "desc": "Renewable sources" },
-        { "path": "/assets/images/Home/e3.jpeg", "desc": "Clean and green" },
+        { "path": e1, "desc": "Energy is Power" },
+        { "path": e2, "desc": "Renewable sources" },
+        { "path": e3, "desc": "Clean and green" },
     ];
 
     const construction = [
-        { "path": "/assets/images/Home/c1.jpeg", "desc": "Building the future" },
-        { "path": "/assets/images/Home/c2.jpeg", "desc": "Strong foundations" },
-        { "path": "/assets/images/Home/c3.jpeg", "desc": "Innovative designs" },
+        { "path": c1, "desc": "Building the future" },
+        { "path": c2, "desc": "Strong foundations" },
+        { "path": c3, "desc": "Innovative designs" },
     ];
 
     const mining = [
-        { "path": "/assets/images/Home/m1.jpeg", "desc": "Resource extraction" },
-        { "path": "/assets/images/Home/m2.jpeg", "desc": "Efficient methods" },
-        { "path": "/assets/images/Home/m3.jpg", "desc": "Sustainable mining" },
+        { "path": m1, "desc": "Resource extraction" },
+        { "path": m2, "desc": "Efficient methods" },
+        { "path": m3, "desc": "Sustainable mining" },
     ];
 
     const [images, setImages] = useState(energy);

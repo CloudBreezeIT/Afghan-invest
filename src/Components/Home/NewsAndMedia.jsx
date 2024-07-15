@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import img1 from '../../../src/images/news&media/image1.avif'
+import img2 from '../../../src/images/news&media/img2.avif'
+import img3 from '../../../src/images/news&media/img3.avif'
+import img4 from '../../../src/images/news&media/img4.avif'
 export default function NewsAndMedia() {
   return (
     <>
@@ -15,7 +18,7 @@ export default function NewsAndMedia() {
           <div
             className="rounded-xl w-full h-[500px]  bg-black bg-opacity-95"
             style={{
-              backgroundImage: "url(/assets/images/news&media/img3.avif)",
+              backgroundImage: `url(${img2})`,
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -40,8 +43,7 @@ export default function NewsAndMedia() {
           <div
             className="rounded-xl w-full h-[500px]"
             style={{
-              backgroundImage:
-                "url(/assets/images/news&media/img2.avif)",
+              backgroundImage:`url(${img2})`,
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -68,8 +70,7 @@ export default function NewsAndMedia() {
           <div
             className="rounded-xl w-full h-[500px]"
             style={{
-              backgroundImage:
-                "url(/assets/images/news&media/img2.avif)",
+              backgroundImage:`url(${img2})`,
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",

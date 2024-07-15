@@ -1,7 +1,9 @@
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-
+import f1 from "../../../src/images/founders/Abdul Matin Qalandari.jpg"
+import f2 from "../../../src/images/founders/Esmatullah Wardak.jpg"
+import f3 from "../../../src/images/founders/a.jpg"
 export default function Founders() {
   return (
     <>
@@ -18,7 +20,7 @@ export default function Founders() {
             <div className="overflow-hidden rounded-t-xl">
               <img
                 className="w-full h-[auto] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
-                src="/assets/images/founders/Abdul Matin Qalandari.jpg"
+                src={f1}
                 alt=""
               />
             </div>
@@ -46,7 +48,7 @@ export default function Founders() {
             <div className="overflow-hidden rounded-t-xl">
               <img
                 className="w-full h-[auto] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
-                src="/assets/images/founders/Esmatullah Wardak.jpg"
+                src={f2}
                 alt=""
               />
             </div>
@@ -74,7 +76,7 @@ export default function Founders() {
             <div className="overflow-hidden rounded-t-xl">
               <img
                 className="w-full h-[auto] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
-                src="/assets/images/founders/Shirbaz Kaminzada.jpg"
+                src={f3}
                 alt=""
               />
             </div>
