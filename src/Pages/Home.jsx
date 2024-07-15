@@ -5,7 +5,8 @@ import NewsAndMedia from "../Components/Home/NewsAndMedia";
 import Founders from "../Components/Home/Founders";
 import Address from "../Components/Home/Address";
 import Footer from "../Components/Footer";
-import Gallery from "../Components/Gallery";
+import Gallery from "../Components/Home/Gallery"
+import About from "../Components/Home/About";
 
 const Home = () => {
   return (
@@ -17,7 +18,6 @@ const Home = () => {
       <Founders />
       <Gallery />
       <Address />
-      <Footer />
     </>
   );
 };

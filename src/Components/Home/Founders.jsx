@@ -1,5 +1,6 @@
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 export default function Founders() {
   return (
@@ -12,16 +13,17 @@ export default function Founders() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8 ">
+          {/* Founder 1 */}
           <div className="w-full rounded-xl bg-gray-50 shadow-lg group">
-            <div className=" overflow-hidden rounded-t-xl">
+            <div className="overflow-hidden rounded-t-xl">
               <img
-                className="w-full h-[300px] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                className="w-full h-[auto] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
                 src="/assets/images/founders/Abdul Matin Qalandari.jpg"
                 alt=""
               />
             </div>
-            <div className="p-8 flex flex-col gap-4">
-              <h2 className="font-bold text-2xl ">
+            <div className="p-8 flex flex-col gap-4" style={{ minHeight: "500px" }}>
+              <h2 className="font-semibold text-2xl">
                 Chairman of Board of Directors at Afghanistan Chamber of
                 Industry and Mines and Chairman & Founder of Baheer Group of
                 Companies
@@ -33,20 +35,23 @@ export default function Founders() {
                 </span>
               </div>
               <div className="flex justify-end">
-                <GoArrowRight className="w-10 h-10" />
+                <Link to="/about">
+                  <GoArrowRight className="w-10 h-10" />
+                </Link>
               </div>
             </div>
           </div>
-          <div className="w-full rounded-xl bg-gray-50 shadow-lg group ">
-            <div className=" overflow-hidden rounded-t-xl">
+          {/* Founder 2 */}
+          <div className="w-full rounded-xl bg-gray-50 shadow-lg group">
+            <div className="overflow-hidden rounded-t-xl">
               <img
-                className="w-full h-[300px] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                className="w-full h-[auto] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
                 src="/assets/images/founders/Esmatullah Wardak.jpg"
                 alt=""
               />
             </div>
-            <div className="p-8 flex flex-col gap-4">
-              <h2 className="font-bold text-2xl ">
+            <div className="p-8 flex flex-col gap-4" style={{ minHeight: "500px" }}>
+              <h2 className="font-semibold text-2xl">
                 Chairman of Ghazni Province’s Chamber of Commerce and Investment
                 and Founder and chairman of Green Energy Plus (Battery
                 Manufacturing Company)
@@ -58,20 +63,23 @@ export default function Founders() {
                 </span>
               </div>
               <div className="flex justify-end">
-                <GoArrowRight className="w-10 h-10" />
+                <Link to="/about">
+                  <GoArrowRight className="w-10 h-10" />
+                </Link>
               </div>
             </div>
           </div>
+          {/* Founder 3 */}
           <div className="w-full rounded-xl bg-gray-50 shadow-lg group">
-            <div className="w-full h-[300px] overflow-hidden rounded-t-xl">
+            <div className="overflow-hidden rounded-t-xl">
               <img
-                className=" bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                className="w-full h-[auto] bg-cover bg-no-repeat rounded-t-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110"
                 src="/assets/images/founders/Shirbaz Kaminzada.jpg"
                 alt=""
               />
             </div>
-            <div className="p-8 flex flex-col gap-4">
-              <h2 className="font-bold text-2xl ">
+            <div className="p-8 flex flex-col gap-4" style={{ minHeight: "500px" }}>
+              <h2 className="font-semibold text-2xl">
                 Chairman of Afghanistan Chamber of Commerce and Investment and
                 Chairman and Founder of Kabul Folad Steel Company
               </h2>
@@ -82,7 +90,9 @@ export default function Founders() {
                 </span>
               </div>
               <div className="flex justify-end">
-                <GoArrowRight className="w-10 h-10" />
+                <Link to="/about">
+                  <GoArrowRight className="w-10 h-10" />
+                </Link>
               </div>
             </div>
           </div>
