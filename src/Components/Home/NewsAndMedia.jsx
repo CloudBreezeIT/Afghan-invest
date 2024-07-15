@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 export default function NewsAndMedia() {
   return (
     <>
-      <div className="py-5">
+      <div className="py-5 px-5">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-black mb-4">News & Media</h2>
           <p className="text-xl text-black mb-12">
             Realtime Update on latest Job Opportunities, News and Social Media
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8 ">
           <div
             className="rounded-xl w-full h-[500px]  bg-black bg-opacity-95"
             style={{
