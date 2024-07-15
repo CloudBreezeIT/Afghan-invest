@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NewsAndMedia() {
   return (
@@ -14,8 +15,7 @@ export default function NewsAndMedia() {
           <div
             className="rounded-xl w-full h-[500px]  bg-black bg-opacity-95"
             style={{
-              backgroundImage:
-                "url(" + "/assets/images/news&media/img3.avif" + ")",
+              backgroundImage: "url(/assets/images/news&media/img3.avif)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -31,9 +31,9 @@ export default function NewsAndMedia() {
                 take the first step towards a rewarding career with us.
               </h2>
               <div>
-                <button className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-white hover:text-black">
+                <Link to='/about' className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-white hover:text-black duration-500">
                   Read more
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function NewsAndMedia() {
             className="rounded-xl w-full h-[500px]"
             style={{
               backgroundImage:
-                "url(" + "/assets/images/news&media/img2.avif" + ")",
+                "url(/assets/images/news&media/img2.avif)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -59,9 +59,9 @@ export default function NewsAndMedia() {
                 and behind-the-scenes glimpses of our work.
               </h2>
               <div>
-                <button className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-white hover:text-black">
+                <Link to='/about' className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-white hover:text-black duration-500">
                   Read more
-                </button>
+                </Link>
               </div>
             </div>
           </div>{" "}
@@ -69,7 +69,7 @@ export default function NewsAndMedia() {
             className="rounded-xl w-full h-[500px]"
             style={{
               backgroundImage:
-                "url(" + "/assets/images/news&media/img2.avif" + ")",
+                "url(/assets/images/news&media/img2.avif)",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -87,9 +87,9 @@ export default function NewsAndMedia() {
                 industry insights.
               </h2>
               <div>
-                <button className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-white hover:text-black">
+                <Link to='/about' className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-white hover:text-black duration-500">
                   Read more
-                </button>
+                </Link>
               </div>
             </div>
           </div>

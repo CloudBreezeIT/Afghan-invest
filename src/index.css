@@ -128,7 +128,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-a:hover {
+Link:hover {
     text-decoration: none;
 }
 
@@ -158,6 +158,22 @@ a:hover {
     transition: all 0.3s;
     cursor: pointer;
     border-radius: 2%;
+}
+@media (max-width:767px) {
+  .featuredPropBox ul li {
+    background-color: #eeeeee;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 250px;
+    margin: 5px;
+    width: 52%;
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 2%;
+}   
 }
 
 .featuredPropBox ul li:after {
