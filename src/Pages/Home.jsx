@@ -1,9 +1,9 @@
-import React from 'react';
-import Banner from '../Components/Home/Banner';
-import Service from '../Components/Home/Service';
+import React from "react";
+import Banner from "../Components/Home/Banner";
+import Service from "../Components/Home/Service";
+import NewsAndMedia from "../Components/Home/NewsAndMedia";
 
 const Home = () => {
- 
   return (
     <>
       <Banner />
@@ -17,43 +17,60 @@ const Home = () => {
             <div class="grid col-span-1">
               <div class="featuredPropBox grid col-span-1">
                 <ul>
-                  <li> <a href="#">
-                    <div class="fplogo">Who We Are?</div>
-                    <div class="fptext">
-                      <p className='card-button'>Read More</p>
-                    </div>
-                  </a> </li>
-                  <li> <a href="#">
-                    <div class="fplogo">Our Goals!</div>
-                    <div class="fptext">
-                      <p className='card-button'>Read More</p>
-                    </div>
-                  </a> </li>
-                  <li> <a href="#">
-                    <div class="fplogo">Our Vision!</div>
-                    <div class="fptext">
-                      <p className='card-button'>Read More</p>
-                    </div>
-                  </a> </li>
-                  <li> <a href="#">
-                    <div class="fplogo">Our Mission!</div>
-                    <div class="fptext">
-                      <p className='card-button'>Read More</p>
-                    </div>
-                  </a> </li>
-                  <li> <a href="#">
-                    <div class="fplogo">AIC by F&F!</div>
-                    <div class="fptext">
-                      <p className='card-button'>Read More</p>
-                    </div>
-                  </a> </li>
-                  <li> <a href="#">
-                    <div class="fplogo">AIC Inauguration!</div>
-                    <div class="fptext">
-                      <p className='card-button'>Read More</p>
-                    </div>
-                  </a> </li>
-
+                  <li>
+                    {" "}
+                    <a href="#">
+                      <div class="fplogo">Who We Are?</div>
+                      <div class="fptext">
+                        <p className="card-button">Read More</p>
+                      </div>
+                    </a>{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <a href="#">
+                      <div class="fplogo">Our Goals!</div>
+                      <div class="fptext">
+                        <p className="card-button">Read More</p>
+                      </div>
+                    </a>{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <a href="#">
+                      <div class="fplogo">Our Vision!</div>
+                      <div class="fptext">
+                        <p className="card-button">Read More</p>
+                      </div>
+                    </a>{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <a href="#">
+                      <div class="fplogo">Our Mission!</div>
+                      <div class="fptext">
+                        <p className="card-button">Read More</p>
+                      </div>
+                    </a>{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <a href="#">
+                      <div class="fplogo">AIC by F&F!</div>
+                      <div class="fptext">
+                        <p className="card-button">Read More</p>
+                      </div>
+                    </a>{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <a href="#">
+                      <div class="fplogo">AIC Inauguration!</div>
+                      <div class="fptext">
+                        <p className="card-button">Read More</p>
+                      </div>
+                    </a>{" "}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -62,6 +79,7 @@ const Home = () => {
       </div>
 
       <Service />
+      <NewsAndMedia />
     </>
   );
 };
