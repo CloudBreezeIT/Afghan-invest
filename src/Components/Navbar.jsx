@@ -55,7 +55,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end me-10 flex gap-7 items-center">
-        {showlang && <a className="text-red-800">ENGLISH</a>} 
+         
+        {showlang && <a href='/' className="text-red-800">ENGLISH</a>}
         <FiSearch className={`${showInput ? 'block' :"hidden"} cursor-pointer`} size={25} onClick={handleShowInput}/>
         <input 
           type="text" 
