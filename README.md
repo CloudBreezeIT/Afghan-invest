@@ -1,5 +1,5 @@
 ## Deployed Version Of Afghan Invest Frontend
-See here https://cloudbreezeit.github.io/Afghan-invest/
+See here https://afghaninvest.co/
 
 ## Recommended Project Flow
 
