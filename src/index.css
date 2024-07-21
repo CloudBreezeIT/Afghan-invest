@@ -71,7 +71,7 @@ body {
   border: none;
   outline: none;
   color: #fff;
-  background: yellow;
+  background: #723C42;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -114,7 +114,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #EAB308;
+  background: #723C42;
   left: 0;
   top: 0;
   border-radius: 10px;
