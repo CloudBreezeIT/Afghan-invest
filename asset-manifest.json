@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Afghan-invest/static/css/main.0ca28072.css",
-    "main.js": "/Afghan-invest/static/js/main.ebe2ac8c.js",
+    "main.css": "/Afghan-invest/static/css/main.95434697.css",
+    "main.js": "/Afghan-invest/static/js/main.528c46a9.js",
     "static/js/453.ff0fe232.chunk.js": "/Afghan-invest/static/js/453.ff0fe232.chunk.js",
     "static/media/PH-004.JPG": "/Afghan-invest/static/media/PH-004.6a7c59de45decaa51559.JPG",
     "static/media/a.jpg": "/Afghan-invest/static/media/a.c99e6206a802792190a7.jpg",
@@ -13,6 +13,7 @@
     "static/media/PH-002.jpeg": "/Afghan-invest/static/media/PH-002.ec6927dbbf6b17b4d534.jpeg",
     "static/media/m3.jpg": "/Afghan-invest/static/media/m3.247286e0c310ca2b830b.jpg",
     "static/media/e1.jpg": "/Afghan-invest/static/media/e1.e1866e3d009f944101d5.jpg",
+    "static/media/afghanInvest.png": "/Afghan-invest/static/media/afghanInvest.bc5b19b7e3cdfacc85d2.png",
     "static/media/img4.avif": "/Afghan-invest/static/media/img4.651fa00b7e9c278067ff.avif",
     "static/media/img3.avif": "/Afghan-invest/static/media/img3.eb133f87cd33b4f71cdf.avif",
     "static/media/e3.jpeg": "/Afghan-invest/static/media/e3.a501817faa71608c4556.jpeg",
@@ -27,12 +28,12 @@
     "static/media/slick.ttf": "/Afghan-invest/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Afghan-invest/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Afghan-invest/index.html",
-    "main.0ca28072.css.map": "/Afghan-invest/static/css/main.0ca28072.css.map",
-    "main.ebe2ac8c.js.map": "/Afghan-invest/static/js/main.ebe2ac8c.js.map",
+    "main.95434697.css.map": "/Afghan-invest/static/css/main.95434697.css.map",
+    "main.528c46a9.js.map": "/Afghan-invest/static/js/main.528c46a9.js.map",
     "453.ff0fe232.chunk.js.map": "/Afghan-invest/static/js/453.ff0fe232.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ca28072.css",
-    "static/js/main.ebe2ac8c.js"
+    "static/css/main.95434697.css",
+    "static/js/main.528c46a9.js"
   ]
 }
