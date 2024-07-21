@@ -29,6 +29,10 @@ jobs:
     - name: 🔍 Debug DNS resolution with Google's DNS
       run: |
         nslookup ${{ secrets.GIT_CPANEL_REACT_SERVER }} 8.8.8.8
+    
+    - name: 🔍 Test connectivity with curl
+      run: |
+        curl -v ftp://${{ secrets.GIT_CPANEL_REACT_SERVER }} --user "${{ secrets.GIT_CPANEL_REACT_USER }}:${{ secrets.GIT_CPANEL_REACT_PWD }}"
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
