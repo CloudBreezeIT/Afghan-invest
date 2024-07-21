@@ -29,7 +29,7 @@ jobs:
     - name: 🔍 Debug DNS resolution with Google's DNS
       run: |
         nslookup ${{ secrets.GIT_CPANEL_REACT_SERVER }} 8.8.8.8
-    
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
