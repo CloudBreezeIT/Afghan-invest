@@ -33,7 +33,7 @@ export default function Founders() {
               <div className="flex justify-between">
                 <span className="font-bold">Founder :</span>
                 <span className="font-semibold opacity-75">
-                  Mr. Shirbaz Kaminzada
+                  Mr. Abdul Matin Qalandari
                 </span>
               </div>
               <div className="flex justify-end">
@@ -61,7 +61,7 @@ export default function Founders() {
               <div className="flex justify-between">
                 <span className="font-bold">Founder :</span>
                 <span className="font-semibold opacity-75">
-                  Mr. Abdul Matin Qalandari
+                  Mr. Esmatullah Wardak
                 </span>
               </div>
               <div className="flex justify-end">
@@ -88,7 +88,7 @@ export default function Founders() {
               <div className="flex justify-between">
                 <span className="font-bold">Founder :</span>
                 <span className="font-semibold opacity-75">
-                  Mr. Esmatullah Wardak
+                  Mr. Shirbaz Kaminzada
                 </span>
               </div>
               <div className="flex justify-end">
