@@ -22,6 +22,10 @@ jobs:
         npm install
         npm run build
     
+    - name: 🔍 Debug DNS resolution
+      run: |
+        nslookup ${{ secrets.GIT_CPANEL_REACT_SERVER }}
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
