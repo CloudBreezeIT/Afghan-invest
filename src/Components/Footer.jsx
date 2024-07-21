@@ -30,7 +30,7 @@ const Footer = () => {
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-xl mx-3 hover:text-yellow-500"><FiLinkedin /></a>
             </div>
             <div className="text-center mt-6">
-                <p className="text-md">&copy; 2024 Afghan. All rights reserved.</p>
+                <p className="text-md">&copy; 2024 Afghan Invest. All rights reserved. Developed by <Link to="/">Aria Delta Consulting Group</Link></p>
             </div>
         </footer>
     );
