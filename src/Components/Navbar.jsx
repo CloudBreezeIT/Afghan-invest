@@ -41,7 +41,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl flex items-center">
-          <img src={logo} alt="Afghan Invest Logo" className="h-8 w-auto mr-2" /> {/* Adjust h-8 for height and w-auto for auto width */}
+          <img src={logo} alt="Afghan Invest Logo" className="h-10 w-auto mr-2" /> {/* Adjust h-8 for height and w-auto for auto width */}
           Afghan Invest
         </Link>
       </div>
