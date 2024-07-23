@@ -19,13 +19,24 @@ const Address = () => {
         ></iframe>
       </div>
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-3 mx-10 mt-10 mb-20">
+      <div className="grid lg:grid-cols-4 grid-cols-1 gap-3 mx-10 mt-10 mb-20">
         <div className="border-2 border-yellow-600 hover:shadow-2xl">
           <h1 className="bg-yellow-600 text-2xl font-semibold text-white p-2 hover:bg-black duration-1000">
             Kabul Office
           </h1>
           <p className="text-md mt-2 p-2">
-            Location: Gozar Street, Third District, Mazar, Afghanistan.
+            Location: Aside Shar-Shah Soori Masque,Bazar Kart-e-Char,Kabul,
+            Afghanistan.
+          </p>
+          <p className="text-md mt-2 p-2">Phone: +93781767637</p>
+          <p className="text-md mt-2 p-2">Email: Info@afghaninvest.co</p>
+        </div>
+        <div className="border-2 border-yellow-600 hover:shadow-2xl">
+          <h1 className="bg-yellow-600 text-2xl font-semibold text-white p-2 hover:bg-black duration-1000">
+            Mazar Office
+          </h1>
+          <p className="text-md mt-2 p-2">
+            Location: Gozar Street,Third District,Mazar, Afghanistan.
           </p>
           <p className="text-md mt-2 p-2">Phone: +93798582175</p>
           <p className="text-md mt-2 p-2">Email: Info@afghaninvest.co</p>
