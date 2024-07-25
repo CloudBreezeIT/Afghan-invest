@@ -64,7 +64,7 @@ const Navbar = () => {
           <button 
             onClick={() => setShowDropdown(!showDropdown)} 
             className="btn btn-ghost">
-            {i18n.language === 'en' ? 'ENGLISH' : 'پښتو'}
+            {i18n.language === 'en' ? 'ENGLISH' : 'فارسی'}
           </button>
           {showDropdown && (
             <div className="absolute top-full right-0 bg-white shadow-lg rounded mt-1 z-10">
@@ -74,20 +74,20 @@ const Navbar = () => {
                 English
               </button>
               <button 
-                onClick={() => changeLanguage('ps')} 
+                onClick={() => changeLanguage('per')} 
                 className="block px-4 py-2 w-full text-left hover:bg-gray-200">
-                پښتو
+                فارسی
               </button>
             </div>
           )}
         </div>
-        <FiSearch className={`${showInput ? 'block' :"hidden"} cursor-pointer`} size={25} onClick={() => setShowInput(!showInput)}/>
+        {/* <FiSearch className={`${showInput ? 'block' :"hidden"} cursor-pointer`} size={25} onClick={() => setShowInput(!showInput)}/>
         <input 
           type="text" 
           placeholder='Type Here ...'
           className={`transition-all duration-300 ease-in-out border-black border-2 px-3 rounded-3xl ${showInput ? 'w-0 opacity-0' : 'block w-44 opacity-100'} focus-within::border-red-700`} 
           style={{ height: '2.5rem' }}
-        />
+        /> */}
       </div>
     </div>
   );

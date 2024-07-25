@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 
 // Import translation JSON files
 import enTranslations from './locales/en/en.json';
-import psTranslations from './locales/ps/ps.json';
+import perTranslations from './locales/per/per.json';
 
 i18n
   .use(initReactI18next) // Passes i18n down to react-i18next
@@ -12,8 +12,8 @@ i18n
       en: {
         translation: enTranslations, // Use imported English translations
       },
-      ps: {
-        translation: psTranslations, // Use imported Pashto translations
+      per: {
+        translation: perTranslations, // Use imported Pashto translations
       },
     },
     lng: 'en', // Default language
