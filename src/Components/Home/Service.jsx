@@ -24,9 +24,9 @@ const Service = () => {
 
             <div className="card mx-10 hover:shadow-2xl" id="card ">
                 <div class="content text-black">
-                    <SlEnergy size={50} className='text-[#723C42]' />
+                    <SlEnergy size={50} className='text-usetheme' />
                     <p className='text-black text-center text-md mt-10'> <span className='font-semibold text-2xl'>Energy Sector</span> (Transmission Line & Substations)</p>
-                    <Link to='/about' className='bg-[#723C42] text-white px-6 py-2 rounded-xl hover:bg-black hover:text-white mt-5 duration-500'>Read More</Link>
+                    <Link to='/about' className='bg-usetheme text-white px-6 py-2 rounded-xl hover:bg-black hover:text-white mt-5 duration-500'>Read More</Link>
                 </div>
             </div>
 
