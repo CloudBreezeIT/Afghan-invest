@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div className="about-section py-16 bg-white text-center">
-        <h2 className="text-4xl font-bold text-black mb-4">About Us</h2>
+        <h2 className="text-4xl font-bold text-black mb-4">{t('home-about.main-heading')}</h2>
         <p className="text-xl text-black mb-12">
-          Find Whatever you need to know about Afghan Invest
+        {t('home-about.sub-heading')}
         </p>
         <div class="container">
           <div class="row">
