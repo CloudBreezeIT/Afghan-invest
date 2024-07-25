@@ -3,13 +3,17 @@ import { FiSearch } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import logo from '../../src/images/logo/afghanInvest.png';
 
+import { useTranslation } from 'react-i18next';
+
 const Navbar = () => {
   const [showInput, setShowInput] = useState(true);
-  const [showlang , setShowLang ] = useState(true);
+  const [showDropdown, setShowDropdown] = useState(false);
 
-  const handleShowInput = () => {
-    setShowInput(!showInput);
-    setShowLang(!showlang);
+  const { i18n, t } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setShowDropdown(false); // Hide dropdown after selection
   };
 
   return (
@@ -33,31 +37,51 @@ const Navbar = () => {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><Link to='/' className='text-[17px] font-semibold'>HOME</Link></li>    
-            <li><Link to='/about' className='text-[17px] font-semibold'>ABOUT US</Link></li>
-            <li><Link className='text-[17px] font-semibold'>PRODUCTS</Link></li>
-            <li><Link className='text-[17px] font-semibold'>GALLERY</Link></li>
-            <li><Link className='text-[17px] font-semibold'>CONTACT US</Link></li>
+            <li><Link to='/' className='text-[17px] font-semibold'>{t('header.first-menu')}</Link></li>    
+            <li><Link to='/about' className='text-[17px] font-semibold'>{t('header.second-menu')}</Link></li>
+            <li><Link className='text-[17px] font-semibold'>{t('header.third-menu')}</Link></li>
+            <li><Link className='text-[17px] font-semibold'>{t('header.fourth-menu')}</Link></li>
+            <li><Link className='text-[17px] font-semibold'>{t('header.fifth-menu')}</Link></li>
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl flex items-center">
-          <img src={logo} alt="Afghan Invest Logo" className="h-10 w-auto mr-2" /> {/* Adjust h-8 for height and w-auto for auto width */}
+          <img src={logo} alt="Afghan Invest Logo" className="h-10 w-auto mr-2" />
           Afghan Invest
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-2">
-          <li><Link to='/' className='text-[17px] font-semibold'>HOME</Link></li>    
-          <li><Link to='/about'className='text-[17px] font-semibold'>ABOUT US</Link></li>
-          <li><Link className='text-[17px] font-semibold'>PRODUCTS</Link></li>
-          <li><Link className='text-[17px] font-semibold'>GALLERY</Link></li>
-          <li><Link className='text-[17px] font-semibold'>CONTACT US</Link></li>
+          <li><Link to='/' className='text-[17px] font-semibold'>{t('header.first-menu')}</Link></li>    
+          <li><Link to='/about'className='text-[17px] font-semibold'>{t('header.second-menu')}</Link></li>
+          <li><Link className='text-[17px] font-semibold'>{t('header.third-menu')}</Link></li>
+          <li><Link className='text-[17px] font-semibold'>{t('header.fourth-menu')}</Link></li>
+          <li><Link className='text-[17px] font-semibold'>{t('header.fifth-menu')}</Link></li>
         </ul>
       </div>
       <div className="navbar-end me-10 flex gap-7 items-center">
-         
-        {showlang && <a href='/' className="text-red-800">ENGLISH</a>}
-        <FiSearch className={`${showInput ? 'block' :"hidden"} cursor-pointer`} size={25} onClick={handleShowInput}/>
+        {/* Language Dropdown Always Visible */}
+        <div className="relative">
+          <button 
+            onClick={() => setShowDropdown(!showDropdown)} 
+            className="btn btn-ghost">
+            {i18n.language === 'en' ? 'ENGLISH' : 'پښتو'}
+          </button>
+          {showDropdown && (
+            <div className="absolute top-full right-0 bg-white shadow-lg rounded mt-1 z-10">
+              <button 
+                onClick={() => changeLanguage('en')} 
+                className="block px-4 py-2 w-full text-left hover:bg-gray-200">
+                English
+              </button>
+              <button 
+                onClick={() => changeLanguage('ps')} 
+                className="block px-4 py-2 w-full text-left hover:bg-gray-200">
+                پښتو
+              </button>
+            </div>
+          )}
+        </div>
+        <FiSearch className={`${showInput ? 'block' :"hidden"} cursor-pointer`} size={25} onClick={() => setShowInput(!showInput)}/>
         <input 
           type="text" 
           placeholder='Type Here ...'
