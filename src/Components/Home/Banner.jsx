@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import { useTranslation } from 'react-i18next';
+
 const Banner = () => {
   const settings = {
     dots: true,
@@ -17,46 +19,49 @@ const Banner = () => {
     ltr: true,
   };
 
+  const { t } = useTranslation();
+
+
   return (
     <div className="banner">
       <Slider {...settings}>
         <div className="banner-item banner-text">
           <div className="banner-caption">
-            <h1 className="text-3xl font-bold"><span className='text-yellow-500'>Suitable Development.</span></h1>
-            <p>"DISCOVER THE DRIVING FORCE BEHIND AFGHAN INVEST: OUR VISION, OUR TEAM, OUR COMMITMENT"</p>
-           <button class="glow-on-hover mt-5" type="button">Read More</button>
+            <h1 className="text-4xl font-bold"><span className='text-white'>{t('home-banner.slider-ist.heading')}</span></h1>
+            <p className='mt-5'>{t('home-banner.slider-ist.description')}</p>
+           <button class="glow-on-hover mt-5" type="button">{t('home-banner.redirect-btn')}</button>
 
           </div>
         </div>
         <div className="banner-item banner-text-1">
           <div className="banner-caption">
-            <h1 className="text-3xl font-bold"><span className='text-yellow-500'>Mining Sector</span></h1>
-            <p>“WE BUILD ON NATIONAL PRIDE & OUR EXPERTISE TO PROVIDE RELIABLE AND RESPONSIBLE MINING SERVICES“</p>
-           <button class="glow-on-hover mt-5" type="button">Read More</button>
+            <h1 className="text-4xl font-bold"><span className='text-white'>{t('home-banner.slider-2nd.heading')}</span></h1>
+            <p className='mt-5'>{t('home-banner.slider-2nd.description')}</p>
+           <button class="glow-on-hover mt-5" type="button">{t('home-banner.redirect-btn')}</button>
 
           </div>
         </div>
         <div className="banner-item banner-text-2">
           <div className="banner-caption">
-            <h1 className="text-3xl font-bold"><span className='text-yellow-500'>Energy Sector</span></h1>
-            <p>"POWERING AFGHANISTAN'S FUTURE WITH INNOVATIVE AND SUSTAINABLE ENERGY SOLUTIONS"</p>
-           <button class="glow-on-hover mt-5" type="button">Read More</button>
+            <h1 className="text-4xl font-bold"><span className='text-white'>{t('home-banner.slider-3rd.heading')}</span></h1>
+            <p className='mt-5'>{t('home-banner.slider-3rd.description')}</p>
+           <button class="glow-on-hover mt-5" type="button">{t('home-banner.redirect-btn')}</button>
 
           </div>
         </div>
         <div className="banner-item banner-text-3">
           <div className="banner-caption">
-            <h1 className="text-3xl font-bold"><span className='text-yellow-500'>News & Media</span></h1>
-            <p>"STAY INFORMED: ACCESS THE LATEST UPDATES, JOB OPPORTUNITIES, AND COMPANY INSIGHTS HERE."</p>
-           <button class="glow-on-hover mt-5" type="button">Read More</button>
+            <h1 className="text-4xl font-bold"><span className='text-white'>{t('home-banner.slider-4th.heading')}</span></h1>
+            <p className='mt-5'>{t('home-banner.slider-4th.description')}</p>
+           <button class="glow-on-hover mt-5" type="button">{t('home-banner.redirect-btn')}</button>
 
           </div>
         </div>
         <div className="banner-item banner-text-3">
           <div className="banner-caption">
-            <h1 className="text-3xl font-bold"><span className='text-yellow-500'>Founders</span></h1>
-            <p>"MEET THE VISIONARIES BEHIND AFGHAN INVEST: OUR FOUNDERS, OUR LEGACY, OUR DRIVE"</p>
-           <button class="glow-on-hover mt-5" type="button">Read More</button>
+            <h1 className="text-4xl font-bold"><span className='text-white'>{t('home-banner.slider-5th.heading')}</span></h1>
+            <p className='mt-5'>{t('home-banner.slider-5th.description')}</p>
+           <button class="glow-on-hover mt-5" type="button">{t('home-banner.redirect-btn')}</button>
           </div>
         </div>
       </Slider>

@@ -34,7 +34,7 @@ export default function NewsAndMedia() {
                 take the first step towards a rewarding career with us.
               </h2>
               <div>
-                <Link to='/about' className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-white hover:text-black duration-500">
+                <Link to='/about' className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-usetheme hover:text-white duration-500">
                   Read more
                 </Link>
               </div>
@@ -61,7 +61,7 @@ export default function NewsAndMedia() {
                 and behind-the-scenes glimpses of our work.
               </h2>
               <div>
-                <Link to='/about' className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-white hover:text-black duration-500">
+                <Link to='/about' className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-usetheme hover:text-white duration-500">
                   Read more
                 </Link>
               </div>
@@ -88,7 +88,7 @@ export default function NewsAndMedia() {
                 industry insights.
               </h2>
               <div>
-                <Link to='/about' className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-white hover:text-black duration-500">
+                <Link to='/about' className="border border-gray-400 text-sm px-5 py-3 rounded-md text-white hover:bg-usetheme hover:text-white duration-500">
                   Read more
                 </Link>
               </div>
