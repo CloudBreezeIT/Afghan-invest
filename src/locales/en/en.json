@@ -1,9 +1,13 @@
 {
     "header.first-menu": "Home",
-    "header.second-menu": "About",
-    "header.third-menu": "Product",
-    "header.fourth-menu": "Gallery",
-    "header.fifth-menu": "Contact",
+    "header.second-menu": "About Our Museum",
+    "header.third-menu": "Exhibitions",
+    "header.fourth-menu": "Events",
+    "header.fifth-menu": "Articles",
+    "header.sixth-menu": "Gallery",
+    "header.seventh-menu": "Contact Us",
+
+    
 
     "home-banner.slider-ist.heading":"Suitable Development",
     "home-banner.slider-ist.description":"DISCOVER THE DRIVING FORCE BEHIND AFGHAN INVEST: OUR VISION, OUR TEAM, OUR COMMITMENT",
@@ -19,4 +23,7 @@
 
     "home-about.main-heading": "About Us",
     "home-about.sub-heading": "Find Whatever you need to know about Afghan Invest"
+
+    
+
 }

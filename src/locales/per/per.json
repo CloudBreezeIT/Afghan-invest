@@ -1,9 +1,11 @@
 {
     "header.first-menu": "صفحه نخست",
-    "header.second-menu": "در باره",
-    "header.third-menu": "محصول",
-    "header.fourth-menu": "آلبوم عکس",
-    "header.fifth-menu": "مخاطب",
+    "header.second-menu": "در باره موزیم",
+    "header.third-menu": "نمایشگاه ها",
+    "header.fourth-menu":"رویداد ها ",
+    "header.fifth-menu": "مقالات",
+    "header.sixth-menu": "گالری ",
+    "header.seventh-menu": "تماس با ما ",
 
     "home-banner.slider-ist.heading": "توسعه مناسب",
     "home-banner.slider-ist.description": "نیروی محرکه پشت سر سرمایه گذاری افغانستان را کشف کنید: چشم انداز ما، تیم ما، تعهد ما",

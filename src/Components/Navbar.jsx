@@ -37,11 +37,11 @@ const Navbar = () => {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><Link to='/' className='text-[17px] font-semibold'>{t('header.first-menu')}</Link></li>    
+            <li><Link to='/' className='text-[17px] font-semibold'>{t('header.first-menu')}</Link></li>  
             <li><Link to='/about' className='text-[17px] font-semibold'>{t('header.second-menu')}</Link></li>
-            <li><Link className='text-[17px] font-semibold'>{t('header.third-menu')}</Link></li>
-            <li><Link className='text-[17px] font-semibold'>{t('header.fourth-menu')}</Link></li>
-            <li><Link className='text-[17px] font-semibold'>{t('header.fifth-menu')}</Link></li>
+            <li><Link to='/exhibition' className='text-[17px] font-semibold'>{t('header.third-menu')}</Link></li>
+            <li><Link to='/events' className='text-[17px] font-semibold'>{t('header.fourth-menu')}</Link></li>
+            <li><Link to='/articles' className='text-[17px] font-semibold'>{t('header.fifth-menu')}</Link></li>
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl flex items-center">
@@ -53,9 +53,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 space-x-2">
           <li><Link to='/' className='text-[17px] font-semibold'>{t('header.first-menu')}</Link></li>    
           <li><Link to='/about'className='text-[17px] font-semibold'>{t('header.second-menu')}</Link></li>
-          <li><Link className='text-[17px] font-semibold'>{t('header.third-menu')}</Link></li>
-          <li><Link className='text-[17px] font-semibold'>{t('header.fourth-menu')}</Link></li>
-          <li><Link className='text-[17px] font-semibold'>{t('header.fifth-menu')}</Link></li>
+          <li><Link to='exhibitions' className='text-[17px] font-semibold'>{t('header.third-menu')}</Link></li>
+          <li><Link to='/events' className='text-[17px] font-semibold'>{t('header.fourth-menu')}</Link></li>
+          <li><Link to='/articles' className='text-[17px] font-semibold'>{t('header.fifth-menu')}</Link></li>
         </ul>
       </div>
       <div className="navbar-end me-10 flex gap-7 items-center">
@@ -81,13 +81,13 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        {/* <FiSearch className={`${showInput ? 'block' :"hidden"} cursor-pointer`} size={25} onClick={() => setShowInput(!showInput)}/>
+        <FiSearch className={`${showInput ? 'block' :"hidden"} cursor-pointer`} size={25} onClick={() => setShowInput(!showInput)}/>
         <input 
           type="text" 
-          placeholder='Type Here ...'
+          placeholder='Search Here ...'
           className={`transition-all duration-300 ease-in-out border-black border-2 px-3 rounded-3xl ${showInput ? 'w-0 opacity-0' : 'block w-44 opacity-100'} focus-within::border-red-700`} 
           style={{ height: '2.5rem' }}
-        /> */}
+        />
       </div>
     </div>
   );
