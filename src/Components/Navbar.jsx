@@ -47,15 +47,32 @@ const Navbar = () => {
                 <li className='text-[15px] p-1 font-semibold'><Link>{t('header.second-sub-menu-4')}</Link></li>
               </ul>
             </details>
-            <li><Link to='' className='text-[17px] font-semibold'></Link></li>
-            <li><Link to='/exhibition' className='text-[17px] font-semibold'>{t('header.third-menu')}</Link></li>
+            <details>
+              <summary className='text-[17px] font-semibold cursor-pointer'>{t('header.third-menu')}</summary>
+              <ul>
+              <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-1')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-2')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-3')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-4')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-5')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-6')}</Link></li>
+                </ul>
+            </details>
             <li><Link to='/events' className='text-[17px] font-semibold'>{t('header.fourth-menu')}</Link></li>
             <li><Link to='/articles' className='text-[17px] font-semibold'>{t('header.fifth-menu')}</Link></li>
+            <details>
+              <summary className='text-[17px] font-semibold'>{t('header.sixth-menu')}</summary>
+              <ul>
+              <li className='text-[15px] p-1 font-semibold'><Link>{t('header.sixth-sub-menu-1')}</Link></li>
+              <li className='text-[15px] p-1 font-semibold'><Link>{t('header.sixth-sub-menu-2')}</Link></li>
+              </ul>
+            </details>
+            <li><Link to='/contact-us' className='text-[17px] font-semibold'>{t('header.seventh-menu')}</Link></li>
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl flex items-center">
           <img src={logo} alt="Afghan Invest Logo" className="h-10 w-auto mr-2" />
-          Afghan Invest
+          {t('header.main-heading')}
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -69,11 +86,28 @@ const Navbar = () => {
                 <li className='text-[15px] p-1 font-semibold'><Link>{t('header.second-sub-menu-3')}</Link></li>
                 <li className='text-[15px] p-1 font-semibold'><Link>{t('header.second-sub-menu-4')}</Link></li>
               </ul>
-            </details>  
-          <li><Link to=''className='text-[17px] font-semibold'></Link></li>
-          <li><Link to='exhibitions' className='text-[17px] font-semibold'>{t('header.third-menu')}</Link></li>
+            </details>
+            <details>
+              <summary className='text-[17px] font-semibold cursor-pointer'>{t('header.third-menu')}</summary>
+              <ul>
+              <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-1')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-2')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-3')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-4')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-5')}</Link></li>
+                <li className='text-[15px] p-1 font-semibold'><Link>{t('header.third-sub-menu-6')}</Link></li>
+                </ul>
+            </details>
           <li><Link to='/events' className='text-[17px] font-semibold'>{t('header.fourth-menu')}</Link></li>
           <li><Link to='/articles' className='text-[17px] font-semibold'>{t('header.fifth-menu')}</Link></li>
+          <details>
+              <summary className='text-[17px] font-semibold'>{t('header.sixth-menu')}</summary>
+              <ul>
+              <li className='text-[15px] p-1 font-semibold'><Link>{t('header.sixth-sub-menu-1')}</Link></li>
+              <li className='text-[15px] p-1 font-semibold'><Link>{t('header.sixth-sub-menu-2')}</Link></li>
+              </ul>
+            </details>
+            <li><Link to='/contact-us' className='text-[17px] font-semibold'>{t('header.seventh-menu')}</Link></li>
         </ul>
       </div>
       <div className="navbar-end me-10 flex gap-7 items-center">

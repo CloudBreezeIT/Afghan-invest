@@ -1,5 +1,7 @@
 {
-    "header.first-menu": "صفحه نخست",
+    "header.main-heading": "موزیم ملی افغانستان",
+    
+    "header.first-menu": "ضفحه اصلی ",
     "header.second-menu": "در باره موزیم",
     "header.third-menu": "نمایشگاه ها",
     "header.fourth-menu":"رویداد ها ",
@@ -11,6 +13,22 @@
     "header.second-sub-menu-2": "آمریت ها",
     "header.second-sub-menu-3": "کارمندان تخنیکی",
     "header.second-sub-menu-4": "مقررات و پالیسی ها",
+    
+    
+    "header.third-sub-menu-1": "نمایشگاه دوره اسلامی",
+    "header.third-sub-menu-2": "نمایشگاه دوره برنز",
+    "header.third-sub-menu-3": "نمایشگاه مس عینک",
+    "header.third-sub-menu-4": "آی حانم",
+    "header.third-sub-menu-5": "نمایشگاه هزار شهر",
+    "header.third-sub-menu-6": "نمایشگاه موتر ها",
+    
+    
+    "header.sixth-sub-menu-1": "عکس ها",
+    "header.sixth-sub-menu-2": "ویدیو ها",
+
+
+
+    
 
     "input.search-field":"اینجا جستجو کنید",
 

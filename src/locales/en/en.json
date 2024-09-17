@@ -1,4 +1,6 @@
 {
+    "header.main-heading": "National Museum",
+    
     "header.first-menu": "Home",
     "header.second-menu": "About Our Museum",
     "header.third-menu": "Exhibitions",
@@ -11,6 +13,17 @@
     "header.second-sub-menu-2": "Directorates",
     "header.second-sub-menu-3": "Technical Staff",
     "header.second-sub-menu-4": "Regulations and Policies",
+
+    "header.third-sub-menu-1": "Islamic Era Exhibition",
+    "header.third-sub-menu-2": "Bronze Age Exhibition",
+    "header.third-sub-menu-3": "Aynak Copper Exhibition",
+    "header.third-sub-menu-4": "Ai Khanum",
+    "header.third-sub-menu-5": "Thousand Cities Exhibition",
+    "header.third-sub-menu-6": "Car Exhibition",
+
+
+    "header.sixth-sub-menu-1": "Photos",
+    "header.sixth-sub-menu-2": "Videos",
 
     "input.search-field":"Search Here",
 
