@@ -9,6 +9,14 @@ const Navbar = () => {
   const [showInput, setShowInput] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
 
+  // const [isMuseumOpen, setIsMuseumOpen] = useState(false)
+  // const [isExhibitionOpen, setIsExhibitionOpen] = useState(false)
+  // const [isGalleryOpen, setIsGalleryOpen] = useState(false)
+
+  // const toggleMuseumMenu = () => setIsMuseumOpen(!isMuseumOpen)
+  // const toggleExhibitionMenu = () => setIsExhibitionOpen(!isExhibitionOpen)
+  // const toggleGalleryMenu = () => setIsGalleryOpen(!isGalleryOpen)
+
   const { i18n, t } = useTranslation();
 
   const changeLanguage = (lng) => {
