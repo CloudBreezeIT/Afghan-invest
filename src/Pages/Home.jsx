@@ -6,11 +6,13 @@ import Founders from "../Components/Home/Founders";
 import Address from "../Components/Home/Address";
 import Gallery from "../Components/Home/Gallery"
 import About from "../Components/Home/About";
+import Hero from "../Components/Hero";
 
 const Home = () => {
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
+      <Hero/>
       <About />
       <Service />
       <NewsAndMedia />

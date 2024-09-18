@@ -25,7 +25,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <Slider {...settings}>
-        <div className="banner-item banner-text">
+        <div className="banner-item banner-text" >
           <div className="banner-caption">
             <h1 className="text-4xl font-bold"><span className='text-white'>{t('home-banner.slider-ist.heading')}</span></h1>
             <p className='mt-5'>{t('home-banner.slider-ist.description')}</p>
