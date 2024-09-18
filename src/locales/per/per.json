@@ -21,16 +21,19 @@
     "header.third-sub-menu-4": "آی حانم",
     "header.third-sub-menu-5": "نمایشگاه هزار شهر",
     "header.third-sub-menu-6": "نمایشگاه موتر ها",
-    
+
     
     "header.sixth-sub-menu-1": "عکس ها",
     "header.sixth-sub-menu-2": "ویدیو ها",
 
-
-
-    
-
     "input.search-field":"اینجا جستجو کنید",
+    
+    
+    "hero.main-head":"به موزه ملی افغانستان خوش آمدید",
+    "hero.main-desc":"تاریخ غنی و میراث فرهنگی افغانستان را در موزه ملی کشف کنید. آثار باستانی کهن، هنرهای زیبا و گنجینه‌های جاودان را ببینید که داستان تمدنی پویا و متنوع را روایت می‌کنند",
+    "hero.main-btn":"آغاز بازدید",
+
+
 
     "home-banner.slider-ist.heading": "توسعه مناسب",
     "home-banner.slider-ist.description": "نیروی محرکه پشت سر سرمایه گذاری افغانستان را کشف کنید: چشم انداز ما، تیم ما، تعهد ما",
