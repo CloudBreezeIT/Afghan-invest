@@ -27,9 +27,39 @@
 
     "input.search-field":"Search Here",
 
-    "hero.main-head":"Welcome to the National Museum of Afghanistan",
-    "hero.main-desc":"Discover Afghanistan's rich history and cultural heritage at the National Museum. Explore ancient artifacts, stunning artwork, and timeless treasures that tell the story of a vibrant and diverse civilization.",
-    "hero.main-btn":"Start Tour",
+    "hero.1st-image-title":"Discover Ancient Artifacts",
+    "hero.1st-image-desc":"Explore the rich history and culture preserved in our museum. Each exhibit tells a unique story of the past.",
+    "hero.1st-image-btn":"Learn More",
+
+    "hero.2nd-image-title":"A Journey Through Time",
+    "hero.2nd-image-desc":"From prehistoric relics to modern art, our collection spans centuries of human creativity and ingenuity.",
+    "hero.2nd-image-btn":"Start Your Tour",
+
+    "hero.3rd-image-title":"Curated Collections",
+    "hero.3rd-image-desc":"Our collections are carefully curated to provide insight into the art, science, and history of various cultures.",
+    "hero.3rd-image-btn":"Explore Now",
+
+    "hero.4th-image-title":"Interactive Exhibits",
+    "hero.4th-image-desc":"Get hands-on with our interactive exhibits that bring history to life through immersive experiences.",
+    "hero.4th-image-btn":"Experience Now",
+
+    "hero.5th-image-title":"Family-Friendly Tours",
+    "hero.5th-image-desc":"Join our family-friendly tours designed to engage visitors of all ages with fascinating stories and fun facts.",
+    "hero.5th-image-btn":"Book a Tour",
+
+    "hero.6th-image-title":"Art and Innovation",
+    "hero.6th-image-desc":"Discover the intersection of art and technology with our cutting-edge exhibits on digital and modern art.",
+    "hero.6th-image-btn":"Explore Art",
+
+    "hero.7th-image-title":"Hidden Treasures",
+    "hero.7th-image-desc":"Discover hidden treasures in our special exhibits showcasing rare artifacts from ancient civilizations.",
+    "hero.7th-image-btn":"Uncover Now",
+
+    "hero.8th-image-title":"Explore Modern Wonders",
+    "hero.8th-image-desc":"Witness the wonders of modern-day craftsmanship and innovation with our contemporary art collection.",
+    "hero.8th-image-btn":"View Collection",
+
+
 
     "home-banner.slider-ist.heading":"Suitable Development",
     "home-banner.slider-ist.description":"DISCOVER THE DRIVING FORCE BEHIND AFGHAN INVEST: OUR VISION, OUR TEAM, OUR COMMITMENT",
