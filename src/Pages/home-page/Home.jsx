@@ -9,6 +9,7 @@ import About from "../../Components/home-page-components/About";
 import Hero from "../../Components/home-page-components/Hero";
 import MuseumInfoBar from "../../Components/home-page-components/MuseumInfoBar";
 import AboutMuseum from "../../Components/home-page-components/AboutMuseum";
+import EventSection from "../../Components/home-page-components/EventSection";
 
 const Home = () => {
   return (
@@ -17,12 +18,13 @@ const Home = () => {
       <Hero />
       <MuseumInfoBar/>
       <AboutMuseum/>
+      <EventSection />
       {/* <About /> */}
-      <Service />
-      <NewsAndMedia />
-      <Founders />
-      <Gallery />
-      <Address />
+      {/* <Service /> */}
+      {/* <NewsAndMedia /> */}
+      {/* <Founders /> */}
+      {/* <Gallery /> */}
+      {/* <Address /> */}
     </>
   );
 };
