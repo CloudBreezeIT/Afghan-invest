@@ -122,6 +122,39 @@
     "eventSection-btn":"بیشتر بخوانید",
 
 
+    "directorateSection-msg":"پیام از میز مدیر",
+    "directorateSection-name":"عمران خان مسعودی",
+    "directorateSection-greeting":"سلام از میز مدیریت !!",
+    "directorateSection-desc":"موزه افغانستان، قدیمی‌ترین و بزرگ‌ترین موزه کشور ما است. موزه ملی افغانستان در سال ۱۹۱۹ در دوران سلطنت پادشاه امان‌الله خان به‌روی عموم گشوده شد. این موزه اولین موزه منطقه آسیا و اقیانوسیه است و نقش رهبری در تعیین سبک جنبش موزه‌ای در این قاره داشته است...",
+    "directorateSection-btn":"بیشتر بخوانید",
+
+
+    "visitorInfo-btn":"رزرو بلیط",
+    "visitorInfo-main-title":"اطلاعات بازدیدکنندگان",
+    "visitorInfo-closed":"تعطیل در تمام دوشنبه‌ها",
+    "visitorInfo-open-hour":"ساعت‌های کاری",
+    "visitorInfo-open-time":"سه‌شنبه تا یک‌شنبه: ۱۰ صبح تا ۶ عصر",
+
+    "visitorInfo-entry":"هزینه ورود",
+    "visitorInfo-adults":"برای بزرگسالان: ۳۰ افغانی",
+    "visitorInfo-kids":"برای زیر ۱۸ سال: ۲۰ افغانی",
+    "visitorInfo-foreign":"برای اتباع خارجی: ۵۰ افغانی",
+    "visitorInfo-phone-photography":"عکاسی با دوربین تلفن هوشمند: ۴۰ افغانی",
+    "visitorInfo-camera-photography":"عکاسی با دوربین دیجیتال تک لنزی بازتابی: ۶۰ افغانی",
+
+    "visitorInfo-location-title":"موقعیت",
+    "visitorInfo-location":"دارالامان، کابل، افغانستان",
+
+    "visitorInfo-phone-title":"تلفن",
+    "visitorInfo-phone":"+۹۳ ۲۰ ۲۵۲ ۰۳۲۹",
+
+    "visitorInfo-email-title":"ایمیل",
+    "visitorInfo-email":"nationalmuseum.afg@gmail.com",
+
+    "visitorInfo-inquiry":"برای هرگونه پرسش یا اطلاعات مربوط به موزه، لطفاً با میز اطلاعات تماس بگیرید",
+
+
+
 
     "home-banner.slider-ist.heading": "توسعه مناسب",
     "home-banner.slider-ist.description": "نیروی محرکه پشت سر سرمایه گذاری افغانستان را کشف کنید: چشم انداز ما، تیم ما، تعهد ما",

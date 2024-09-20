@@ -12,6 +12,7 @@ import EventSection from "../../Components/home-page-components/EventSection";
 import MuseumVisits from "../../Components/home-page-components/MuseumVisits";
 import AboutMuseum from "../../Components/home-page-components/AboutMuseum";
 import DirectorateSection from "../../Components/home-page-components/DirectorateSection";
+import VisitorInfo from "../../Components/home-page-components/VisitorInfo";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <AboutMuseum/>
       <EventSection />
       <DirectorateSection/>
+      <VisitorInfo/>
       {/* <About /> */}
       {/* <Service /> */}
       {/* <NewsAndMedia /> */}

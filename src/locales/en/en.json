@@ -116,6 +116,42 @@
 
     "eventSection-btn":"Read More",
 
+    "directorateSection-msg":"Message from Director's Desk",
+    "directorateSection-name":"Omara Khan Massoudi",
+    "directorateSection-greeting":"Greetings From The Director’s Desk !!",
+    "directorateSection-desc":"Afghanistan Museum is the oldest and largest museum in our country. The Afghan National Museum was opened in 1919 during the reign of King Amanullah Khan, the Afghanistan Museum is the first Museum in the Asia-Pacific region and has played the role of a leader in setting the tone for the museum movement in the continent...",
+    "directorateSection-btn":"Read More",
+
+
+    "visitorInfo-btn":"book a ticket",
+    "visitorInfo-main-title":"Visitor's Information",
+    "visitorInfo-closed":"All Mondays Closed",
+    "visitorInfo-open-hour":"Opening Hour",
+    "visitorInfo-open-time":"Tuesday-Sunday: 10AM-6PM",
+    
+    "visitorInfo-entry":"Entry Fee",
+    "visitorInfo-adults":"For Adults: AFN 30/-",
+    "visitorInfo-kids":"For Below 18 Years: AFN 20/",
+    "visitorInfo-foreign":"For Foreign Nationals: AFN 50/-",
+    "visitorInfo-phone-photography":"Photography with Smart Phone Camera: AFN 40/-",
+    "visitorInfo-camera-photography":"Photography with DSLR Camera: AFN 60/-",
+    
+    "visitorInfo-location-title":"Location",
+    "visitorInfo-location":"Darul-Aman, Kabul, Afghanistan",
+    
+    "visitorInfo-phone-title":"Phone",
+    "visitorInfo-phone":"+93 20 252 0329",
+    
+    "visitorInfo-email-title":"Email",
+    "visitorInfo-email":"nationalmuseum.afg@gmail.com",
+    
+    "visitorInfo-inquiry":"For any query or information regarding the museum, please contact the Information Desk",
+
+
+
+
+
+
 
 
 
