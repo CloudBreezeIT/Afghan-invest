@@ -66,19 +66,57 @@
     "musemuInfoBar.open-today":"Open today: 10.00–17.00",
     "musemuInfoBar.last-entry":"Last entry: 12.7",
 
-    "aboutMuseum-main-title":"Visit the Museum",
+    "museumVisits-main-title":"Visit the Museum",
 
-    "aboutMuseum-1st-image-title":"Plan Your Visit",
-    "aboutMuseum-1st-image-desc":"Book tickets and plan your day including exhibitions, facilities, access, food and travel",
+    "museumVisits-1st-image-title":"Plan Your Visit",
+    "museumVisits-1st-image-desc":"Book tickets and plan your day including exhibitions, facilities, access, food and travel",
     
-    "aboutMuseum-2nd-image-title":"Museum map",
-    "aboutMuseum-2nd-image-desc":"Navigate the Museum with ease, using our floor-by-floor plan and discover what not to miss",
+    "museumVisits-2nd-image-title":"Museum map",
+    "museumVisits-2nd-image-desc":"Navigate the Museum with ease, using our floor-by-floor plan and discover what not to miss",
     
-    "aboutMuseum-3rd-image-title":"Galleries",
-    "aboutMuseum-3rd-image-desc":"Walk through two million years of history and culture across more than 50 galleries",
+    "museumVisits-3rd-image-title":"Galleries",
+    "MuseumVisits-3rd-image-desc":"Walk through two million years of history and culture across more than 50 galleries",
     
-    "aboutMuseum-4th-image-title":"Family visits",
-    "aboutMuseum-4th-image-desc":"From family facilities to activities and events, discover how to make the most of your day at the Museum",
+    "museumVisits-4th-image-title":"Family visits",
+    "museumVisits-4th-image-desc":"From family facilities to activities and events, discover how to make the most of your day at the Museum",
+
+    "aboutMuseum-title":"Afghanistan National Museum",
+    "aboutMuseum.main-title":"Arts Globally Covered",
+    "aboutMuseum-desc":"The largest museum across Afghanistan and boasts exquisite collections of armor, antiques, ornaments, skeleton, fossils, mummies, beautiful Mughal paintings",
+    "aboutMuseum-btn":"More Videos",
+
+    "eventSection-main-title":"Museum Events",
+    
+    "eventSection.1st-image-title":"Art and History Expo",
+    "eventSection.1st-image-desc":"Discover the rich history of art through this immersive exhibition of classic and modern art pieces",
+    
+    "eventSection.2nd-image-title":"Ancient Egypt Showcase",
+    "eventSection.2nd-image-desc":"Explore the world of ancient Egypt, featuring artifacts, sculptures, and historical treasures",
+    
+    "eventSection.3rd-image-title":"Renaissance Art Exhibition",
+    "eventSection.3rd-image-desc":"A collection of stunning works from the Renaissance period, showcasing masterful art and history",
+    
+    "eventSection.4th-image-title":"Modern Art Masterpieces",
+    "eventSection.4th-image-desc":"A diverse collection of modern art pieces from the world's top artists and innovators",
+    
+    "eventSection.5th-image-title":"Impressionism and Beyond",
+    "eventSection.5th-image-desc":"A breathtaking exhibition of impressionist works and their impact on the modern art world",
+    
+    "eventSection.6th-image-title":"Photography Through the Ages",
+    "eventSection.6th-image-desc":"A stunning showcase of photography's evolution from its early days to the digital age",
+    
+    "eventSection.7th-image-title":"Sculpture and Stone Art",
+    "eventSection.7th-image-desc":"An in-depth look at stone art and sculpture from different periods of human history",
+    
+    "eventSection.8th-image-title":"Famous Portraits of the Past",
+    "eventSection.8th-image-desc":"A collection of iconic portrait art that has shaped history and the art world as we know it",
+    
+    "eventSection.9th-image-title":"Ancient Asian Art",
+    "eventSection.9th-image-desc":"Experience the beauty and intricacy of ancient Asian art, showcasing a rich cultural history",
+
+    "eventSection-btn":"Read More",
+
+
 
 
 

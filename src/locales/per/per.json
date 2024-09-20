@@ -67,19 +67,61 @@
     "musemuInfoBar.open-today":"امروز باز است: ۱۰:۰۰–۱۷:۰۰",
     "musemuInfoBar.last-entry":"آخرین ورود: ۱۲:۷",
 
-    "aboutMuseum-main-title":"از موزه بازدید کنید",
+    "museumVisits-main-title":"از موزه بازدید کنید",
 
-    "aboutMuseum-1st-image-title":"برنامه‌ریزی بازدید شما",
-    "aboutMuseum-1st-image-desc":"بلیط‌ها را رزرو کنید و روز خود را برنامه‌ریزی کنید، شامل نمایشگاه‌ها، امکانات، دسترسی، غذا و سفر",
+    "museumVisits-1st-image-title":"برنامه‌ریزی بازدید شما",
+    "museumVisits-1st-image-desc":"بلیط‌ها را رزرو کنید و روز خود را برنامه‌ریزی کنید، شامل نمایشگاه‌ها، امکانات، دسترسی، غذا و سفر",
 
-    "aboutMuseum-2nd-image-title":"نقشه موزه",
-    "aboutMuseum-2nd-image-desc":"با استفاده از نقشه طبقه به طبقه ما، به راحتی در موزه گشت و گذار کنید و ببینید چه چیزهایی را نباید از دست بدهید",
+    "museumVisits-2nd-image-title":"نقشه موزه",
+    "museumVisits-2nd-image-desc":"با استفاده از نقشه طبقه به طبقه ما، به راحتی در موزه گشت و گذار کنید و ببینید چه چیزهایی را نباید از دست بدهید",
 
-    "aboutMuseum-3rd-image-title":"گالری‌ها",
-    "aboutMuseum-3rd-image-desc":"در بیش از ۵۰ گالری قدم بزنید و دو میلیون سال از تاریخ و فرهنگ را مرور کنید",
+    "museumVisits-3rd-image-title":"گالری‌ها",
+    "museumVisits-3rd-image-desc":"در بیش از ۵۰ گالری قدم بزنید و دو میلیون سال از تاریخ و فرهنگ را مرور کنید",
 
-    "aboutMuseum-4th-image-title":"بازدیدهای خانوادگی",
-    "aboutMuseum-4th-image-desc":"از امکانات خانوادگی تا فعالیت‌ها و رویدادها، کشف کنید که چگونه می‌توانید از روز خود در موزه بیشترین بهره را ببرید",
+    "museumVisits-4th-image-title":"بازدیدهای خانوادگی",
+    "museumVisits-4th-image-desc":"از امکانات خانوادگی تا فعالیت‌ها و رویدادها، کشف کنید که چگونه می‌توانید از روز خود در موزه بیشترین بهره را ببرید",
+
+
+    "aboutMuseum-title":"موزه ملی افغانستان",
+    "aboutMuseum.main-title":"پوشش جهانی هنرها",
+    "aboutMuseum-desc":"بزرگترین موزه در سراسر افغانستان که دارای مجموعه‌های بی‌نظیری از زره‌ها، عتیقه‌ها، زیورآلات، اسکلت‌ها، فسیل‌ها، مومیایی‌ها و نقاشی‌های زیبای مغولی است",
+    "aboutMuseum-btn":"ویدیوهای بیشتر",
+
+
+
+
+    "eventSection-main-title":"رویدادهای موزه",
+
+    "eventSection.1st-image-title":"نمایشگاه هنر و تاریخ",
+    "eventSection.1st-image-desc":"تاریخ غنی هنر را از طریق این نمایشگاه غوطه‌ور از آثار کلاسیک و مدرن کشف کنید",
+
+    "eventSection.2nd-image-title":"نمایشگاه مصر باستان",
+    "eventSection.2nd-image-desc":"جهان مصر باستان را کشف کنید، شامل آثار باستانی، مجسمه‌ها و گنجینه‌های تاریخی",
+
+    "eventSection.3rd-image-title":"نمایشگاه هنر رنسانس",
+    "eventSection.3rd-image-desc":"مجموعه‌ای از آثار شگفت‌انگیز از دوران رنسانس که هنر و تاریخ استادانه‌ای را به نمایش می‌گذارد",
+
+    "eventSection.4th-image-title":"شاهکارهای هنر مدرن",
+    "eventSection.4th-image-desc":"مجموعه‌ای متنوع از آثار هنری مدرن از برترین هنرمندان و نوآوران جهان",
+
+    "eventSection.5th-image-title":"امپرسیونیسم و فراتر از آن",
+    "eventSection.5th-image-desc":"نمایشگاهی نفس‌گیر از آثار امپرسیونیستی و تأثیر آنها بر دنیای هنر مدرن",
+
+    "eventSection.6th-image-title":"عکاسی در گذر زمان",
+    "eventSection.6th-image-desc":"نمایشگاهی شگفت‌انگیز از تکامل عکاسی از روزهای اولیه تا عصر دیجیتال",
+
+    "eventSection.7th-image-title":"هنر مجسمه و سنگ",
+    "eventSection.7th-image-desc":"نگاهی عمیق به هنر سنگ و مجسمه‌سازی از دوره‌های مختلف تاریخ بشر",
+
+    "eventSection.8th-image-title":"پرتره‌های مشهور گذشته",
+    "eventSection.8th-image-desc":"مجموعه‌ای از پرتره‌های نمادین که تاریخ و دنیای هنر را شکل داده‌اند",
+
+    "eventSection.9th-image-title":"هنر باستانی آسیایی",
+    "eventSection.9th-image-desc":"زیبایی و ظرافت هنر باستانی آسیایی را تجربه کنید که تاریخ فرهنگی غنی را به نمایش می‌گذارد",
+
+    "eventSection-btn":"بیشتر بخوانید",
+
+
 
     "home-banner.slider-ist.heading": "توسعه مناسب",
     "home-banner.slider-ist.description": "نیروی محرکه پشت سر سرمایه گذاری افغانستان را کشف کنید: چشم انداز ما، تیم ما، تعهد ما",

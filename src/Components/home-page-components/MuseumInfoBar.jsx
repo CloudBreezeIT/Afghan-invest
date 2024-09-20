@@ -8,7 +8,7 @@ const MuseumInfoBar = () => {
     const { t } = useTranslation();
   return (
     <>
-    <div className='w-full md:w-[1150px] m-auto '>
+    <div className='w-full md:w-[1150px] m-auto pl-8 md:pl-0 '>
         <div className="flex flex-col md:flex-row justify-between gap-10 py-20">
             <div className="">
                 <p className='text-3xl md:text-4xl font-semibold w-full md:w-[700px]'>{t('musemuInfoBar.title')}</p>

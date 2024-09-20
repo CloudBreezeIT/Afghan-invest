@@ -8,8 +8,10 @@ import Gallery from "../../Components/home-page-components/Gallery";
 import About from "../../Components/home-page-components/About";
 import Hero from "../../Components/home-page-components/Hero";
 import MuseumInfoBar from "../../Components/home-page-components/MuseumInfoBar";
-import AboutMuseum from "../../Components/home-page-components/AboutMuseum";
 import EventSection from "../../Components/home-page-components/EventSection";
+import MuseumVisits from "../../Components/home-page-components/MuseumVisits";
+import AboutMuseum from "../../Components/home-page-components/AboutMuseum";
+import DirectorateSection from "../../Components/home-page-components/DirectorateSection";
 
 const Home = () => {
   return (
@@ -17,8 +19,10 @@ const Home = () => {
       {/* <Banner /> */}
       <Hero />
       <MuseumInfoBar/>
+      <MuseumVisits/>
       <AboutMuseum/>
       <EventSection />
+      <DirectorateSection/>
       {/* <About /> */}
       {/* <Service /> */}
       {/* <NewsAndMedia /> */}

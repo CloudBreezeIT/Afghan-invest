@@ -11,73 +11,64 @@ export default function EventSection() {
   const events = [
     {
       id: 2,
-      title: "Art and History Expo",
-      description:
-        "Discover the rich history of art through this immersive exhibition of classic and modern art pieces.",
+      title: t("eventSection.1st-image-title"),
+      description:t("eventSection.1st-image-desc"),
       image:
         "https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFydCUyMGV2ZW50c3xlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 3,
-      title: "Ancient Egypt Showcase",
-      description:
-        "Explore the world of ancient Egypt, featuring artifacts, sculptures, and historical treasures.",
+      title: t("eventSection.2nd-image-title"),
+      description:t("eventSection.2nd-image-desc"),
       image:
         "https://images.unsplash.com/photo-1650831491240-f97283df9b62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFydCUyMGV2ZW50c3xlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 4,
-      title: "Renaissance Art Exhibition",
-      description:
-        "A collection of stunning works from the Renaissance period, showcasing masterful art and history.",
+      title: t("eventSection.3rd-image-title"),
+      description:t("eventSection.3rd-image-desc"),
       image:
         "https://plus.unsplash.com/premium_photo-1694475231200-13b67c9d04b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bXVzZXVtJTIwb2YlMjBmaW5lJTIwYXJ0cyUyMGJvc3RvbnxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 5,
-      title: "Modern Art Masterpieces",
-      description:
-        "A diverse collection of modern art pieces from the world's top artists and innovators.",
+      title:t("eventSection.4th-image-title"),
+      description:t("eventSection.4th-image-desc"),
       image:
         "https://images.unsplash.com/photo-1528217580778-96e570819666?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNjdWxwdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 6,
-      title: "Impressionism and Beyond",
-      description:
-        "A breathtaking exhibition of impressionist works and their impact on the modern art world.",
+      title:t("eventSection.5th-image-title"),
+      description:t("eventSection.5th-image-desc"),
       image:
         "https://plus.unsplash.com/premium_photo-1672287578309-2a2115000688?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2N1bHB0dXJlfGVufDB8fDB8fHww",
     },
     {
       id: 7,
-      title: "Photography Through the Ages",
-      description:
-        "A stunning showcase of photography's evolution from its early days to the digital age.",
+      title: t("eventSection.6th-image-title"),
+      description:t("eventSection.6th-image-desc"),
       image:
         "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     },
     {
       id: 8,
-      title: "Sculpture and Stone Art",
-      description:
-        "An in-depth look at stone art and sculpture from different periods of human history.",
+      title: t("eventSection.7th-image-title"),
+      description:t("eventSection.7th-image-desc"),
       image:
         "https://images.unsplash.com/photo-1491249149628-28cb9a16356a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG11c2V1bSUyMG9mJTIwZmluZSUyMGFydHMlMjBib3N0b258ZW58MHx8MHx8fDA%3D",
     },
     {
       id: 9,
-      title: "Famous Portraits of the Past",
-      description:
-        "A collection of iconic portrait art that has shaped history and the art world as we know it.",
+      title: t("eventSection.8th-image-title"),
+      description:t("eventSection.8th-image-desc"),
       image:
         "https://plus.unsplash.com/premium_photo-1678580372060-eac9c8d437ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG11c2V1bSUyMG9mJTIwZmluZSUyMGFydHMlMjBib3N0b258ZW58MHx8MHx8fDA%3D",
     },
     {
       id: 10,
-      title: "Ancient Asian Art",
-      description:
-        "Experience the beauty and intricacy of ancient Asian art, showcasing a rich cultural history.",
+      title: t("eventSection.9th-image-title"),
+      description:t("eventSection.9th-image-desc"),
       image:
         "https://images.unsplash.com/photo-1543336414-319b2b916cdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG11c2V1bSUyMG9mJTIwZmluZSUyMGFydHMlMjBib3N0b258ZW58MHx8MHx8fDA%3D",
     },
@@ -111,7 +102,7 @@ export default function EventSection() {
   return (
     <div className="relative w-full md:w-[1150px] m-auto py-20">
       <h1 className="pb-5 text-3xl md:text-4xl font-semibold">
-        {t("Museum Events")}
+        {t("eventSection-main-title")}
       </h1>
 
       <Slider ref={sliderRef} {...sliderSettings}>
@@ -141,7 +132,7 @@ export default function EventSection() {
                   className="align-middle font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gray-900 text-white hover:bg-gray-800"
                   type="button"
                 >
-                  {t("Read More")}
+                  {t("eventSection-btn")}
                 </button>
               </div>
             </div>
@@ -164,6 +155,7 @@ export default function EventSection() {
       >
         <FaArrowRight size={20} />
       </button>
+      <div className="bg-gray-900 border-2 mt-14"></div>
     </div>
   );
 }

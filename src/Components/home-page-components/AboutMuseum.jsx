@@ -1,71 +1,27 @@
-import React from "react";
+import React from 'react'
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { stringConcat } from "../../helper-functions/formatText";
 
 const AboutMuseum = () => {
-  const { t } = useTranslation();
-  const cardData = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1544213456-bc37cb97df74?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: t("aboutMuseum-1st-image-title"),
-      desc: t("aboutMuseum-1st-image-desc"),
-    },
-    {
-      image:
-        "https://plus.unsplash.com/premium_photo-1682088715035-11e11e28f50f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: t("aboutMuseum-2nd-image-title"),
-      desc: t("aboutMuseum-2nd-image-desc"),
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1554907984-15263bfd63bd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: t("aboutMuseum-3rd-image-title"),
-      desc: t("aboutMuseum-3rd-image-desc"),
-    },
-    {
-      image:
-        "https://plus.unsplash.com/premium_photo-1683140790296-6815a1675b75?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: t("aboutMuseum-4th-image-title"),
-      desc: t("aboutMuseum-4th-image-desc"),
-    },
-  ];
+    const { t } = useTranslation();
   return (
     <>
-      <div className="w-full md:w-[1150px] m-auto ">
-        <div className="py-20">
-          <h1 className="pb-5 text-3xl md:text-4xl font-semibold">
-            {t("aboutMuseum-main-title")}
-          </h1>
-
-          <div className="flex flex-col md:flex-row justify-center items-center gap-12 py-6 ">
-            {cardData.map((item, index) => (
-              <div
-                key={index}
-                className=" shadow-2xl hover:scale-105 transition-transform duration-500 cursor-pointer p-2"
-              >
-                <div className="w-[250px]">
-                  <img src={item.image} alt="" />
-                </div>
-                <div className="px-5 py-3">
-                  <h1 className="text-xl font-semibold hover:underline ">
-                    {/* {item.title} */}
-                    {stringConcat(item.title, 15)}
-
-                  </h1>
-                  <p className="pt-3 pb-6">
-                    {/* {item.desc.slice(0,70)}... */}
-                    {stringConcat(item.desc, 45)}
-                    </p>
-                </div>
-              </div>
-            ))}
-          </div>
+      <div className='w-full md:w-[1150px] m-auto pl-8 md:pl-0 '>
+        <div className="flex flex-col md:flex-row justify-between gap-10 py-20">
+            <div className="">
+            <iframe className='rounded-md' width="560" height="315" src="https://www.youtube.com/embed/iyb2nCc2fHg?si=nL7ptMtDSfQcTWAT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div className="flex flex-col items-start justify-center">
+                <p className='pb-6 text-yellow-700 font-semibold uppercase text-lg'>{t("aboutMuseum-title")}</p>
+                <p className='pb-6 font-bold uppercase text-4xl'>{t("aboutMuseum.main-title")}</p>
+                <p className='py-[2px] text-lg'>{t("aboutMuseum-desc")}</p>
+                <button className='mt-6 px-4 py-2 bg-yellow-700 text-white font-semibold flex items-center gap-2 rounded-full hover:bg-white hover:text-yellow-700  duration-300 hover:border-2 border-yellow-700'>{t("aboutMuseum-btn")}<FaLongArrowAltRight/></button>
+            </div>
         </div>
         <div className="bg-gray-900 border-2"></div>
-      </div>
-    </>
-  );
-};
+    </div>
+        </>
+  )
+}
 
-export default AboutMuseum;
+export default AboutMuseum
