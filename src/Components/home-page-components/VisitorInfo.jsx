@@ -16,43 +16,43 @@ const VisitorInfo = () => {
       </div>
       <div className="">
         <div className="flex flex-col justify-center items-start">
-            <button className='bg-yellow-600 text-white uppercase font-semibold px-4 py-2 rounded hover:bg-white hover:text-yellow-600 transition-all duration-300 border-yellow-600 border-2 my-4'><Link>{t("visitorInfo-btn")}</Link></button>
-            <h1 className='text-yellow-600 font-bold text-2xl md:text-4xl my-4'>{t("visitorInfo-main-title")}</h1>
+            <button className='bg-mstheme text-white uppercase font-semibold px-4 py-2 rounded hover:bg-mstheme_hover transition-all duration-300 my-4'><Link>{t("visitorInfo-btn")}</Link></button>
+            <h1 className='text-black font-bold text-2xl md:text-4xl my-4'>{t("visitorInfo-main-title")}</h1>
             <p className='my-3'>{t("visitorInfo-closed")}</p>
-            <p className='text-xl text-yellow-600 font-semibold my-1'>{t("visitorInfo-open-hour")}</p>
-            <p className='flex items-center gap-2 justify-center'><span className='text-yellow-600'><MdWatchLater /></span><span>{t("visitorInfo-open-time")}</span></p>
+            <p className='text-xl text-black font-semibold my-1'>{t("visitorInfo-open-hour")}</p>
+            <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><MdWatchLater /></span><span>{t("visitorInfo-open-time")}</span></p>
         </div>
         <div className='bg-slate-900 border-2 my-4'></div>
         <div className="flex flex-col justify-center items-start">
-            <h1 className='text-yellow-600 font-semibold text-2xl my-3'>{t("visitorInfo-entry")}</h1>
-            <p className='flex items-center gap-2 justify-center'><span className='text-yellow-600'><FaUser /></span><span>{t("visitorInfo-adults")}</span></p>
-            <p className='flex items-center gap-2 justify-center'><span className='text-yellow-600'><FaUser /></span><span>{t("visitorInfo-kids")}</span></p>
-            <p className='flex items-center gap-2 justify-center'><span className='text-yellow-600'><FaUser /></span><span>{t("visitorInfo-foreign")}</span></p>
-            <p className='flex items-center gap-2 justify-center'><span className='text-yellow-600'><RiSmartphoneFill /></span><span>{t("visitorInfo-phone-photography")}</span></p>
-            <p className='flex items-center gap-2 justify-center'><span className='text-yellow-600'><FaCamera /></span><span>{t("visitorInfo-camera-photography")}</span></p>
+            <h1 className='text-black font-semibold text-2xl my-3'>{t("visitorInfo-entry")}</h1>
+            <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><FaUser /></span><span>{t("visitorInfo-adults")}</span></p>
+            <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><FaUser /></span><span>{t("visitorInfo-kids")}</span></p>
+            <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><FaUser /></span><span>{t("visitorInfo-foreign")}</span></p>
+            <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><RiSmartphoneFill /></span><span>{t("visitorInfo-phone-photography")}</span></p>
+            <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><FaCamera /></span><span>{t("visitorInfo-camera-photography")}</span></p>
         </div>
         <div className='bg-slate-900 border-2 my-4'></div>
         <div className="flex justify-center items-start flex-col">
-            <h1 className='text-yellow-600 font-semibold text-2xl my-3'>{t("visitorInfo-location-title")}</h1>
-            <p className='flex items-center justify-center gap-2'><span className='text-yellow-600'><FaMapMarkerAlt /></span> <span>{t("visitorInfo-location")}</span></p>
+            <h1 className='text-black font-semibold text-2xl my-3'>{t("visitorInfo-location-title")}</h1>
+            <p className='flex items-center justify-center gap-2'><span className='text-mstheme'><FaMapMarkerAlt /></span> <span>{t("visitorInfo-location")}</span></p>
         </div>
         <div className='bg-slate-900 border-2 my-4'></div>
         <div className="flex justify-center items-start flex-col">
-            <h1 className='text-yellow-600 font-semibold text-2xl my-3'>{t("visitorInfo-phone-title")}</h1>
-            <p className='flex items-center justify-center gap-2'><span className='text-yellow-600'><FaPhoneAlt /></span><span>{t("visitorInfo-phone")}</span></p>
+            <h1 className='text-black font-semibold text-2xl my-3'>{t("visitorInfo-phone-title")}</h1>
+            <p className='flex items-center justify-center gap-2'><span className='text-mstheme'><FaPhoneAlt /></span><span>{t("visitorInfo-phone")}</span></p>
         </div>
         <div className='bg-slate-900 border-2 my-4'></div>
         <div className="flex justify-center items-start flex-col">
-            <h1 className='text-yellow-600 font-semibold text-2xl my-3'>{t("visitorInfo-email-title")}</h1>
-            <p className='flex items-center justify-center gap-2'><span className='text-yellow-600'><MdEmail /></span><span>{t("visitorInfo-email")}</span></p>
+            <h1 className='text-black font-semibold text-2xl my-3'>{t("visitorInfo-email-title")}</h1>
+            <p className='flex items-center justify-center gap-2'><span className='text-mstheme'><MdEmail /></span><span>{t("visitorInfo-email")}</span></p>
         </div>
         <div className='bg-slate-900 border-2 my-4'></div>
         <div className="flex justify-center items-start flex-col">
-            <p className='flex items-center justify-center gap-2'><span className='text-yellow-600'><HiInformationCircle /></span><span>{t("visitorInfo-inquiry")}</span></p>
+            <p className='flex items-center justify-center gap-2'><span className='text-mstheme'><HiInformationCircle /></span><span>{t("visitorInfo-inquiry")}</span></p>
         </div>
       </div>
       </div>
-      <div className="bg-gray-900 border-2 my-16"></div>
+      <div className="w-full mt-14 h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
     </div>
   )
 }

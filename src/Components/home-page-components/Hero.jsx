@@ -9,37 +9,37 @@ const Hero = () => {
   // Data for the hero section
   const heroData = [
     {
-      image: "https://images.unsplash.com/photo-1515318650024-02fe7e49c5b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWV1c2V1bXxlbnwwfDB8MHx8fDA%3D",
+      image: "https://scontent.fpew3-1.fna.fbcdn.net/v/t39.30808-6/405026955_782298107274897_8069942543195540519_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGC0eKUW05cFIzaadq5shUo4yE3pcgCucvjITelyAK5y6-TwahWlgxTJbS7zBRT-aVe_dRsMB-UEjngutMpGj4c&_nc_ohc=VqhHt94wSoAQ7kNvgEvUgJJ&_nc_ht=scontent.fpew3-1.fna&_nc_gid=AP_nes3fSRWnKxQKfWkikLN&oh=00_AYDwlr_Xbx66YO0Xs2QyrEbOykFL1I-5hxBLVGuOHMgHTQ&oe=66F3C052",
       title: t('hero.1st-image-title'),
       description: t('hero.1st-image-desc'),
       buttonText: t('hero.1st-image-btn'),
     },
     {
-      image: "https://images.unsplash.com/photo-1669413543156-d025fe5873b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1ldXNldW18ZW58MHwwfDB8fHww",
+      image: "https://scontent.fpew3-1.fna.fbcdn.net/v/t39.30808-6/368847194_724833366354705_5337103953886550868_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHZgCvvhekbkb9pJIeetf2aljPGKaQnXE-WM8YppCdcTwwjtYoYP1M8bQHI7VWddqPRTHGjsDW6OaR3KmP2dIAe&_nc_ohc=c3GldryOJgcQ7kNvgFTgxm6&_nc_ht=scontent.fpew3-1.fna&_nc_gid=AA4dYoyQOGwbPvMe616sinn&oh=00_AYDtFi89ReHu6Y-y2i6MKyIg71Yo3yAhadvM6FPtCvcdmA&oe=66F3BF29",
       title: t('hero.2nd-image-title'),
       description: t('hero.2nd-image-desc'),
       buttonText: t('hero.2nd-image-btn'),
     },
     {
-      image: "https://images.unsplash.com/photo-1669413540594-a177707fb29c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1ldXNldW18ZW58MHwwfDB8fHww",
+      image: "https://scontent.fpew3-1.fna.fbcdn.net/v/t39.30808-6/363302211_708678144636894_6323964984479790299_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHZXrUCKt845hIcDeQEvVimMdotoVXQypcx2i2hVdDKl3tZ9Et6tf9RrwiRZf2gfiNsohI-i9pXmji0wKcY-NMi&_nc_ohc=EHgUVkTEFpcQ7kNvgEqKWLL&_nc_ht=scontent.fpew3-1.fna&_nc_gid=AMQ-gSfbZBhw9RITL5fnOXU&oh=00_AYC5oSB2oQ_9v_SmZWQLZSkIL73Pkvgq4LulZ9R84LdFuQ&oe=66F3AB40",
       title: t('hero.3rd-image-title'),
       description: t('hero.3rd-image-desc'),
       buttonText: t('hero.3rd-image-btn'),
     },
     {
-      image: "https://images.unsplash.com/photo-1483721310020-03333e577078?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bXVzZXVtfGVufDB8fDB8fHww",
+      image: "https://scontent.fpew3-1.fna.fbcdn.net/v/t39.30808-6/279920486_2841224369510103_4072302488387822222_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG5_52pJPH3ulccBLBrxTjygVA9PkZ4RAqBUD0-RnhECtv0Vd9fXJv7I1az-Bc1WmCw3kkNIy9kUAnqQPRtQLVd&_nc_ohc=Vnx9TowFVq8Q7kNvgGeOvJ1&_nc_ht=scontent.fpew3-1.fna&oh=00_AYAlrU3F0okc0aMFNRIzkVM3KrH3uEXMYifRInh_OT60Ow&oe=66F3B803",
       title: t('hero.4th-image-title'),
       description: t('hero.4th-image-desc'),
       buttonText: t('hero.4th-image-btn'),
     },
     {
-      image: "https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "https://scontent.fpew3-1.fna.fbcdn.net/v/t39.30808-6/275673470_2805178579781349_4422024546661456263_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEAjjPWxxAsAkKHEW6-ylUooyHDpNY2ZfWjIcOk1jZl9fxLyTCjsLFLbXIrPSslILAbZV_Echb5RjBiBrDiflQj&_nc_ohc=55B9oWkSRMoQ7kNvgHKY__8&_nc_ht=scontent.fpew3-1.fna&oh=00_AYDfdT3YowZwNGiPfyIY9ayoaYDNBBMpp9BwLB8MLKdv3Q&oe=66F3AB0F",
       title: t('hero.5th-image-title'),
       description: t('hero.5th-image-desc'),
       buttonText: t('hero.5th-image-btn'),
     },
     {
-      image: "https://images.pexels.com/photos/1154198/pexels-photo-1154198.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "https://scontent.fpew3-1.fna.fbcdn.net/v/t1.6435-9/185356011_2598218207144055_6736339406889134223_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFbptGuLkUj5rtkBClYCtAaAFghMswpqvMAWCEyzCmq8wQ6VG1hTIMVdHimujQjaUU1csryZCW6qMXaoo_CSXBZ&_nc_ohc=17Py9Nk0x30Q7kNvgGbv8A2&_nc_ht=scontent.fpew3-1.fna&_nc_gid=AQMvqiSn8uinxeDkfdJEPhy&oh=00_AYD11O_PUhT4ylQgmGBkuFubwbxsrc-tdGPrBJ-mAJmubQ&oe=67155DA5",
       title: t('hero.6th-image-title'),
       description: t('hero.6th-image-desc'),
       buttonText: t('hero.6th-image-btn'),
@@ -93,7 +93,7 @@ const Hero = () => {
                   <p className="mb-5 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
                     {item.description}
                   </p>
-                  <button className="bg-gray-600 px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base md:text-lg font-semibold hover:bg-slate-300 hover:text-black transition-all duration-300 shadow-lg hover:shadow-2xl">
+                  <button className="bg-mstheme hover:bg-mstheme_hover text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl">
                     {item.buttonText}
                   </button>
                 </div>

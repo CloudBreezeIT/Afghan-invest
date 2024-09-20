@@ -19,7 +19,8 @@ const MuseumInfoBar = () => {
                 <p className='flex justify-center items-center gap-3 py-[2px] text-lg'> <MdOutlineWatchLater/>  {t('musemuInfoBar.last-entry')}</p>
             </div>
         </div>
-        <div className="bg-gray-900 border-2"></div>
+        <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
+
     </div>
         </>
   )

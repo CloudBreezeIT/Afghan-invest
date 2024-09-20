@@ -12,13 +12,14 @@ const AboutMuseum = () => {
             <iframe className='rounded-md' width="560" height="315" src="https://www.youtube.com/embed/iyb2nCc2fHg?si=nL7ptMtDSfQcTWAT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div className="flex flex-col items-start justify-center">
-                <p className='pb-6 text-yellow-700 font-semibold uppercase text-lg'>{t("aboutMuseum-title")}</p>
+                <p className='pb-6 text-mstheme font-semibold uppercase text-lg'>{t("aboutMuseum-title")}</p>
                 <p className='pb-6 font-bold uppercase text-4xl'>{t("aboutMuseum.main-title")}</p>
                 <p className='py-[2px] text-lg'>{t("aboutMuseum-desc")}</p>
-                <button className='mt-6 px-4 py-2 bg-yellow-700 text-white font-semibold flex items-center gap-2 rounded-full hover:bg-white hover:text-yellow-700  duration-300 hover:border-2 border-yellow-700'>{t("aboutMuseum-btn")}<FaLongArrowAltRight/></button>
+                <button className='mt-6 px-4 py-2 bg-mstheme text-white font-semibold flex items-center gap-2 rounded-full hover:bg-mstheme_hover transition ease-in-out  duration-500'>{t("aboutMuseum-btn")}<FaLongArrowAltRight/></button>
             </div>
         </div>
-        <div className="bg-gray-900 border-2"></div>
+        <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
+
     </div>
         </>
   )

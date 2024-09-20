@@ -8,6 +8,8 @@ module.exports = {
         secondary: '#403b49',
         // usetheme: '#723C42',
         usetheme: '#b53d3c',
+        mstheme: '#1f4897',
+        mstheme_hover: '#3a66b3',
       },
     },
   },
