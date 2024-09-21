@@ -22,7 +22,7 @@ const VisitorInfo = () => {
             <p className='text-xl text-black font-semibold my-1'>{t("visitorInfo-open-hour")}</p>
             <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><MdWatchLater /></span><span>{t("visitorInfo-open-time")}</span></p>
         </div>
-        <div className='bg-slate-900 border-2 my-4'></div>
+        <div className='w-full h-[2px] bg-gradient-to-r from-transparent via-mstheme to-transparent my-2'></div>
         <div className="flex flex-col justify-center items-start">
             <h1 className='text-black font-semibold text-2xl my-3'>{t("visitorInfo-entry")}</h1>
             <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><FaUser /></span><span>{t("visitorInfo-adults")}</span></p>
@@ -31,28 +31,28 @@ const VisitorInfo = () => {
             <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><RiSmartphoneFill /></span><span>{t("visitorInfo-phone-photography")}</span></p>
             <p className='flex items-center gap-2 justify-center'><span className='text-mstheme'><FaCamera /></span><span>{t("visitorInfo-camera-photography")}</span></p>
         </div>
-        <div className='bg-slate-900 border-2 my-4'></div>
+        <div className='w-full h-[2px] bg-gradient-to-r from-transparent via-mstheme to-transparent my-2'></div>
         <div className="flex justify-center items-start flex-col">
             <h1 className='text-black font-semibold text-2xl my-3'>{t("visitorInfo-location-title")}</h1>
             <p className='flex items-center justify-center gap-2'><span className='text-mstheme'><FaMapMarkerAlt /></span> <span>{t("visitorInfo-location")}</span></p>
         </div>
-        <div className='bg-slate-900 border-2 my-4'></div>
+        <div className='w-full h-[2px] bg-gradient-to-r from-transparent via-mstheme to-transparent my-2'></div>
         <div className="flex justify-center items-start flex-col">
             <h1 className='text-black font-semibold text-2xl my-3'>{t("visitorInfo-phone-title")}</h1>
             <p className='flex items-center justify-center gap-2'><span className='text-mstheme'><FaPhoneAlt /></span><span>{t("visitorInfo-phone")}</span></p>
         </div>
-        <div className='bg-slate-900 border-2 my-4'></div>
+        <div className='w-full h-[2px] bg-gradient-to-r from-transparent via-mstheme to-transparent my-2'></div>
         <div className="flex justify-center items-start flex-col">
             <h1 className='text-black font-semibold text-2xl my-3'>{t("visitorInfo-email-title")}</h1>
             <p className='flex items-center justify-center gap-2'><span className='text-mstheme'><MdEmail /></span><span>{t("visitorInfo-email")}</span></p>
         </div>
-        <div className='bg-slate-900 border-2 my-4'></div>
+        <div className='w-full h-[2px] bg-gradient-to-r from-transparent via-mstheme to-transparent my-2'></div>
         <div className="flex justify-center items-start flex-col">
             <p className='flex items-center justify-center gap-2'><span className='text-mstheme'><HiInformationCircle /></span><span>{t("visitorInfo-inquiry")}</span></p>
         </div>
       </div>
       </div>
-      <div className="w-full mt-14 h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
+      <div className="w-full mt-14 h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent mb-16"></div>
     </div>
   )
 }
