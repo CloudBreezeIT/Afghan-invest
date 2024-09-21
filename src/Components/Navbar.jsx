@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronDown, FaGlobe } from "react-icons/fa"; // Importing only the dropdown icon
-import logo from "../../src/images/logo/afghanInvest.png";
+// import logo from "../../src/images/logo/afghanInvest.png";
+import mlogo from '../images/logo/mlogo.png'
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookies from "js-cookie";
@@ -51,7 +52,7 @@ const Navbar = () => {
           to="/"
           className="flex items-center text-xl font-bold hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
         >
-          {/* <img src={logo} alt="Afghan Invest Logo" className="h-10 w-auto mr-2" /> */}
+           <img src={mlogo} alt="National Museum Afghanistan Logo" className="h-14 w-auto mr-2" /> 
           NAM
         </Link>
       </div>
