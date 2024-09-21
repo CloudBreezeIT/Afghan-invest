@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className="bg-mstheme text-white py-8">
             <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
                 <div className="flex flex-col items-center lg:items-start">
-                    <Link to="/" className="text-3xl font-bold mb-4">{t("footer-main-title")}</Link>
+                    <Link to="/" className="text-3xl font-bold mb-4">{t("footer.main-title")}</Link>
                     <ul className="flex flex-col lg:flex-row lg:gap-8 text-center lg:text-left">
                         <li><Link className='text-lg font-medium hover:bg-mstheme_hover  px-2 py-1 rounded' to="/">{t("header.first-menu")}</Link></li>
                         <li><Link className='text-lg font-medium hover:bg-mstheme_hover  px-2 py-1 rounded' to="/about">{t("header.fourth-menu")}</Link></li>
@@ -34,7 +34,7 @@ const Footer = () => {
                 <a href="https://linkedin.com/nationalmuseum.afg" target="_blank" rel="noopener noreferrer" className="text-xl mx-3 hover:bg-mstheme_hover  px-2 py-1 rounded"><FiLinkedin className='hover:scale-110 transition-transform duration-300'/></a>
             </div>
             <div className="text-center mt-6">
-                <p className="text-md">&copy; {t("footer-desc")} <Link to="https://www.linkedin.com/company/cloudbreeze/posts/?feedView=all" className='font-thin'>{t("footer-company-name")}</Link></p>
+                <p className="text-md">&copy; {t("footer.desc")} <Link to="https://www.linkedin.com/company/cloudbreeze/posts/?feedView=all" className='font-thin'>{t("footer.company-name")}</Link></p>
             </div>
         </footer>
     );
