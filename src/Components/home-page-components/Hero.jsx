@@ -64,7 +64,7 @@ const Hero = () => {
     dots: true,
     infinite: true,
     speed: 800, // Smooth transition speed
-    fade: true,  // Enable fade transition
+    // fade: true,  // Enable fade transition
     cssEase: "ease-in-out", // Smoother transition
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -72,8 +72,10 @@ const Hero = () => {
     autoplaySpeed: 5000,
   };
 
+  
+
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen overflow-hidden mt-12">
       <Slider {...settings}>
         {heroData.map((item, index) => (
           <div key={index} className="relative w-full">
