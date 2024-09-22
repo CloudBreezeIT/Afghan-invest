@@ -34,7 +34,7 @@ const Footer = () => {
                 <a href="https://linkedin.com/nationalmuseum.afg" target="_blank" rel="noopener noreferrer" className="text-xl mx-3 hover:bg-mstheme_hover  px-2 py-1 rounded"><FiLinkedin className='hover:scale-110 transition-transform duration-300'/></a>
             </div>
             <div className="text-center mt-6">
-                <p className="text-md">&copy; {t("footer.desc")} <Link to="https://www.linkedin.com/company/cloudbreeze/posts/?feedView=all" className='font-thin'>{t("footer.company-name")}</Link></p>
+                <p className="text-md">&copy; {t("footer.desc")} <Link to="https://www.linkedin.com/company/cloudbreeze/posts/?feedView=all" className='font-bold'>{t("footer.company-name")}</Link></p>
             </div>
         </footer>
     );
