@@ -1,3 +1,4 @@
+import NotFound from "../Pages/NotFound";
 import Root from "../Pages/Root";
 import aboutusRoutes from "./aboutusRoutes";
 import contactusRoutes from "./contactusRoutes";
@@ -16,6 +17,10 @@ const mainRoutes = [
         ...galleryRoutes,
         ...contactusRoutes,
         ...eventsRoutes,
+        {
+          path: "*", // Catch all unmatched routes
+          element: <NotFound />, // Render the NotFound component
+        },
     ],
   },
 ];
