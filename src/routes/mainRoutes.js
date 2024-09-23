@@ -1,5 +1,6 @@
 import Root from "../Pages/Root";
 import aboutusRoutes from "./aboutusRoutes";
+import galleryRoutes from "./galleryRoutes";
 import homeRoutes from "./homeRoutes";
 
 
@@ -10,6 +11,7 @@ const mainRoutes = [
     children: [
         ...homeRoutes,
         ...aboutusRoutes,
+        ...galleryRoutes,
     ],
   },
 ];

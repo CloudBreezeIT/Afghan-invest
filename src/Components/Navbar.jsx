@@ -188,12 +188,12 @@ const Navbar = () => {
                   className="dropdown-content p-2 shadow bg-mstheme rounded-box w-40 mt-1 z-20"
                 >
                   <li>
-                    <Link to={'/gallery'} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/gallery/photos' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.sixth-sub-menu-1")}
                     </Link>
                   </li>
                   <li>
-                    <Link to={''} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='gallery/videos' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.sixth-sub-menu-2")}
                     </Link>
                   </li>
