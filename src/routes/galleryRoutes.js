@@ -1,14 +1,14 @@
-import Gallery from '../Pages/gallery-page/Gallery'
-import GalleryVideos from '../Pages/gallery-page/GalleryVideos';
+import GalleryPage from '../Pages/gallery-page/GalleryPage'
+import GalleryVideosPage from '../Pages/gallery-page/GalleryVideosPage';
 
 const galleryRoutes = [
   {
     path: "/gallery/photos",
-    element: <Gallery />
+    element: <GalleryPage />
   },
   {
     path: "/gallery/videos",
-    element: <GalleryVideos />
+    element: <GalleryVideosPage />
   },
 ];
 
