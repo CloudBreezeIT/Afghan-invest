@@ -2,7 +2,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import mainRoutes from "./routes/mainRoutes";
 
-const router = createBrowserRouter(mainRoutes);
+const router = createBrowserRouter(mainRoutes, { basename: process.env.PUBLIC_URL });
 
 function App() {
   return (
