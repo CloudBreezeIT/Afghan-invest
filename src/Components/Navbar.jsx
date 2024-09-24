@@ -96,22 +96,22 @@ const Navbar = () => {
                   className="dropdown-content p-2 shadow bg-mstheme rounded-box w-40 mt-1 z-20"
                 >
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/about/history' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.second-sub-menu-1")}
                     </Link>
                   </li>
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/about/directorates' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.second-sub-menu-2")}
                     </Link>
                   </li>
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/about/technical-staff' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.second-sub-menu-3")}
                     </Link>
                   </li>
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/about/regulations&policies' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.second-sub-menu-4")}
                     </Link>
                   </li>
