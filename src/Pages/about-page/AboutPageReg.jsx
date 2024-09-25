@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import RegulationsAndPolicies from "../../Components/about-us-page-components/RegulationsAndPolicies";
 
 const AboutPageReg = () => {
   return (
-    <div>
-      AboutPageReg
-    </div>
-  )
-}
+    <>
+      <RegulationsAndPolicies />
+    </>
+  );
+};
 
-export default AboutPageReg
+export default AboutPageReg;
