@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutHistory = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="min-h-screen w-full">
@@ -14,46 +16,44 @@ const AboutHistory = () => {
           }}
         >
           <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-            History of Our Museum
+          {t("aboutHistory-main-title")}
           </h1>
         </div>
         {/* ends of Background Image */}
         {/* heading with description start here */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            History of the National Museum of Afghanistan
+          {t("titleWithDesc-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <p className="text-xl my-8">
-            Explore the National Museum of Afghanistan’s rich history,
-            showcasing timeless artifacts and treasures that capture the essence
-            of the nation's vibrant past. Discover beauty in every piece!
+            {t("titleWithDesc-desc")}
           </p>
         </div>
         {/* heading with description ends here */}
         {/* Historical topics starts here */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Historical topics
+            {t("historicalTopics-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-16">
   {[
     {
       img: "https://images.pexels.com/photos/4162723/pexels-photo-4162723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Ancient Afghan Artifacts",
+      title: t("historicalTopics-1st-img-title"),
     },
     {
       img: "https://images.pexels.com/photos/6942814/pexels-photo-6942814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Silk Road Cultural Legacy",
+      title: t("historicalTopics-2nd-img-title"),
     },
     {
       img: "https://images.pexels.com/photos/4162723/pexels-photo-4162723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Dynastic Empire-Era Relics",
+      title: t("historicalTopics-3rd-img-title"),
     },
     {
       img: "https://images.pexels.com/photos/5327973/pexels-photo-5327973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Cultural Heritage Revival",
+      title: t("historicalTopics-4th-img-title"),
     },
   ].map((item, index) => (
     <div
@@ -80,7 +80,7 @@ const AboutHistory = () => {
         {/* gallery collection starts here */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Help Support Us During this Historical Time
+            {t("historicalTime-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <div className="flex flex-col md:flex-row justify-center gap-12 my-16">
@@ -91,9 +91,9 @@ const AboutHistory = () => {
                 src="https://cdn.pixabay.com/photo/2012/10/10/15/46/girl-60636_1280.jpg"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold mb-2">Make a Donation</h1>
+                <h1 className="text-lg font-semibold mb-2">{t("historicalTime-1st-img-title")}</h1>
                 <p className="text-sm text-gray-600">
-                  Support our mission by making a meaningful donation today!
+                {t("historicalTime-1st-img-desc")}
                 </p>
               </div>
             </div>
@@ -106,9 +106,9 @@ const AboutHistory = () => {
                 alt="Afghanistan National Flag"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold mb-2">Become a Member</h1>
+                <h1 className="text-lg font-semibold mb-2">{t("historicalTime-2nd-img-title")}</h1>
                 <p className="text-sm text-gray-600">
-                  Join us today and enjoy exclusive member benefits!
+                {t("historicalTime-2nd-img-desc")}
                 </p>
               </div>
             </div>
@@ -121,9 +121,9 @@ const AboutHistory = () => {
                 alt="Intricately carved stone deity"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold mb-2">Get Involved</h1>
+                <h1 className="text-lg font-semibold mb-2">{t("historicalTime-3rd-img-title")}</h1>
                 <p className="text-sm text-gray-600">
-                  Join us and contribute to preserving Afghanistan’s heritage!
+                {t("historicalTime-3rd-img-desc")}
                 </p>
               </div>
             </div>
@@ -135,9 +135,9 @@ const AboutHistory = () => {
                 alt="Intricately carved stone deity"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold mb-2">Shop from Us</h1>
+                <h1 className="text-lg font-semibold mb-2">{t("historicalTime-4th-img-title")}</h1>
                 <p className="text-sm text-gray-600">
-                  Explore unique items and support our cultural preservation!
+                {t("historicalTime-4th-img-desc")}
                 </p>
               </div>
             </div>

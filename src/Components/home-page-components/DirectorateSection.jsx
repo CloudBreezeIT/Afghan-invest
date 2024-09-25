@@ -20,7 +20,7 @@ const DirectorateSection = () => {
                 <p className='w-[600px] px-4 md:px-0'>
                 <span className=''>{t("directorateSection-greeting")}</span> <br />
                 <span>{t("directorateSection-desc")}</span>
-                <span><Link className='text-mstheme font-semibold'>{t("directorateSection-btn")}</Link></span>
+                <span><Link to='/about/directorates' className='text-mstheme font-semibold'>{t("directorateSection-btn")}</Link></span>
                 </p>
                 
             </div>

@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutDirectorates = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen w-full">
       {/* start of Background Image */}
@@ -13,14 +15,14 @@ const AboutDirectorates = () => {
         }}
       >
         <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-          Message from Directorates
+         {t("aboutDirectorate-main-title")}
         </h1>
       </div>
       {/* ends of Background Image */}
       {/* heading start here */}
       <div className="w-full px-4 md:px-0 md:w-[1200px] mx-auto my-24">
         <h1 className="text-4xl font-bold my-8 text-mstheme">
-          Director's Message
+          {t("director-msg-title")}
         </h1>
         <div className="w-full h-1 bg-gradient-to-r from-mstheme via-mstheme to-transparent"></div>
       </div>
@@ -40,26 +42,17 @@ const AboutDirectorates = () => {
           {/* Text content section */}
           <div className="md:w-2/3 text-center md:text-left">
             <h1 className="text-mstheme text-4xl font-bold mb-2">
-              Omara Khan Massoudi
+              {t("director-name")}
             </h1>
             <h2 className="text-mstheme text-xl mb-6">
-              Director, National Museum Afghanistan
+              {t("director-name-sub-title")}
             </h2>
 
             <p className="text-gray-700 leading-relaxed">
-              Greetings from National Museum Afghanistan. The Afghan National
-              Museum was opened in 1919 during the reign of King Amanullah Khan
-              and is the first museum in the Asia-Pacific region. Over the
-              decades, it has amassed an extensive collection of artifacts,
-              ranging from prehistoric relics to treasures from the Silk Road
-              and ancient empires.
+              {t("director-msg-desc-1")}.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Despite facing challenges, including looting and destruction
-              during conflicts, the museum remains a symbol of resilience,
-              dedicated to safeguarding the nation's history. Today, it stands
-              as a beacon of Afghan culture, attracting scholars, historians,
-              and visitors from around the world.
+              {t("director-msg-desc-2")}
             </p>
           </div>
         </div>
