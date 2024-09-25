@@ -55,7 +55,7 @@ export default function RegulationsAndPolicies() {
           backgroundPosition: "center",
         }}
       >
-        <h1 className="text-white text-center text-4xl font-bold shadow-lg">
+        <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
           Regulations and Policies
         </h1>
       </div>
