@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import TechnicalStaff from "../../Components/about-us-page-components/TechnicalStaff";
 
 const AboutPageTechnical = () => {
   return (
-    <div>
-      AboutPageTechnical
-    </div>
-  )
-}
+    <>
+      <TechnicalStaff />
+    </>
+  );
+};
 
-export default AboutPageTechnical
+export default AboutPageTechnical;
