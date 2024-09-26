@@ -242,6 +242,82 @@
   "regAndPol-freq-Ques-4": "تاسو کوم ډول کوکي کاروئ؟",
   "regAndPol-freq-Ques-4-answer": "موږ د وېبپاڼې د فعالیت لپاره ضروري کوکي کاروو او د کارونکي تجربې د ښه کولو لپاره تحلیلي کوکي کاروو.",
 
+  "eventsPage-main-title": "زموږ پیښې وګورئ",
+
+  "eventsPage-up-com-events-main-title": "راتلونکې پیښې",
+
+  "eventsPage-up-com-events-1st-title": "د تاریخي اثارو نندارتون",
+  "eventsPage-up-com-events-1st-desc": "لکه د بختریا طلايي ټولګه، د ګندهارا بودایي پاتې شوني، او د کوشان امپراتورۍ ټوټې",
+
+  "eventsPage-up-com-events-2nd-title": "ښوونیز پروګرامونه او کارګاوې",
+  "eventsPage-up-com-events-2nd-desc": "ښوونیزې پیښې چې پوهان، لرغونپوهان او تاریخپوهان د زده کوونکو او څېړونکو لپاره د کارګاوو ترسره کولو لپاره راوبولي",
+
+  "eventsPage-up-com-events-3rd-title": "کلتوري پیښې او جشنونه",
+  "eventsPage-up-com-events-3rd-desc": "موزیم ډیری وختونه د افغان میراث په ویاړ کلتوري جشنونه کوربه توب کوي، چې پکې د نوروز (فارسي نوی کال) په ګډون دودیزې صنایع، موسیقي او خواړه نندارې ته وړاندې کېږي",
+
+  "eventsPage-up-com-events-4th-title": "د افغان هنرونو او صنایعو نندارتون",
+  "eventsPage-up-com-events-4th-desc": "یو ژوندی نندارتون چې د ځایي افغان هنرمندانو او صنعتکارانو ویاړ کوي",
+
+  "eventsPage-up-com-events-btn": "نور معلومات ترلاسه کړئ",
+
+  "eventsPage-past-events-main-title": "تیرې پیښې",
+
+  "eventsPage-past-events-1st-title": "د تاریخي موزیم سفر",
+  "eventsPage-past-events-1st-desc": "د افغانستان د ملي موزیم یو لارښود شوی سفر",
+
+  "eventsPage-past-events-2nd-title": "د تاریخي نسخو نندارتون",
+  "eventsPage-past-events-2nd-desc": "د افغان تاریخي نسخو یوه نادره ټولګه په نندارتون کې ښودل شوې ده",
+
+  "eventsPage-past-events-3rd-title": "هنري نندارتونونه او د ځایي هنرمندانو نندارې",
+  "eventsPage-past-events-3rd-desc": "موزیم د افغان هنر نندارتونونه وړاندې کوي چې میراث، هویت او شخړې ته پام کوي",
+
+  "eventsPage-past-events-btn": "تفصیلات وګورئ",
+
+  "eventsPage-update-main-title": "خبر وسئ!",
+  "eventsPage-update-desc": "د راتلونکو پیښو په اړه د تازه معلوماتو ترلاسه کولو لپاره زموږ خبر پاڼې ته ګډون وکړئ",
+  "eventspage-input-placeholder": "خپل بریښنالیک ولیکئ...",
+  "eventspage-update-btn": "ګډون وکړئ",
+
+  "galleryPhotos-main-title": "زموږ په ګالري کې عکسونه",
+
+  "galleryPhotos-title": "زموږ خلاقه ګالري",
+  "galleryPhotos-desc": "زموږ د خیره کوونکو لیدونو ټولګه وپلټئ، چې د خلاقیت او الهام بخښونکو شیبو جوهر ښیي. ځان پکې ډوب کړئ او په هر عکس کې ښکلا ومومئ!",
+
+  "galleryPhotos-gallery-view-title": "د ګالري لید",
+  "galleryPhotos-gallery-view-1st-img-title": "تل پاتې هنري نندارتون",
+  "galleryPhotos-gallery-view-2nd-img-title": "شانداره اسلامي معمارۍ",
+
+  "galleryPhotos-gallery-coll-main-title": "د ګالري ټولګه",
+
+  "galleryPhotos-gallery-coll-1st-img-title": "پیچلي حکاکي شوې ډبرینه مجسمه",
+  "galleryPhotos-gallery-coll-1st-img-desc": "د لرغوني هنر او کلتوري میراث نندارې ته وړاندې کول",
+
+  "galleryPhotos-gallery-coll-2nd-img-title": "د افغانستان ملي بیرغ",
+  "galleryPhotos-gallery-coll-2nd-img-desc": "انځور د افغانستان ملي بیرغ ښیي چې د نیمه وريځ آسمان په وړاندې رپیږي",
+
+  "galleryPhotos-gallery-coll-3rd-img-title": "پیچلي حکاکي شوې ډبرینه مجسمه",
+  "galleryPhotos-gallery-coll-3rd-img-desc": "د لرغوني هنر او کلتوري میراث نندارې ته وړاندې کول",
+
+  "galleryVideos-main-title": "ویډیوګانې په زموږ ټولګه کې",
+
+  "galleryVideos-title": "زموږ الهام بخښونکي ویډیوګانې",
+  "galleryVideos-desc": "زموږ ځانګړې ویډیو ټولګه ومومئ، چې کیسې او شیبې ښیي چې تاسو به الهام او بوخت کړي. د خلاقیت او تصور نړۍ ته ځان ورښکته کړئ!",
+
+  "galleryVideos-featured-main-title": "ځانګړي ویډیوګانې",
+
+  "galleryVideos-featured-1st-video-title": "خلاق سفر",
+  "galleryVideos-featured-1st-video-desc": "د هنري نوښت لاره د دې زړه پورې مستند له لارې تعقیب کړئ",
+
+  "galleryVideos-featured-2nd-video-title": "نوښتګر ډیزاین رجحانات",
+  "galleryVideos-featured-2nd-video-desc": "په دې ژور ویډیو کې د ډیزاین وروستي رجحانات وپلټئ",
+
+  "galleryVideos-featured-3rd-video-title": "شاهکار جوړښتونه",
+  "galleryVideos-featured-3rd-video-desc": "د تل پاتې هنري شاهکارونو تکامل وګورئ",
+
+  "gallerryVideos-more-videos-main-title": "نوره ویډیوګانې",
+  "gallerryVideos-more-video-title": "د افغانستان ملي موزیم",
+  "gallerryVideos-more-video-desc": "د افغانستان بډای میراث ساتنه",
+
   "home-banner.slider-ist.heading": "مناسب پرمختګ",
   "home-banner.slider-ist.description": "د افغان انویسټ د حرکت ځواک کشف کړئ: زموږ لید، زموږ ټیم، زموږ ژمنه",
   "home-banner.slider-2nd.heading": "د کانونو سکتور",

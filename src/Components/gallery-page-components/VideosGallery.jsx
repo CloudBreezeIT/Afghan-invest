@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const VideosGallery = () => {
+  const { t } = useTranslation();
     // Array of video links from National Museum of Afghanistan
     const videos = [
       "https://www.youtube.com/embed/QaEZVrI2DF8?si=r8URkQN9SCzFLfH5",
@@ -28,7 +30,7 @@ const VideosGallery = () => {
           }}
         >
           <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-            Videos in Our Collection
+            {t("galleryVideos-main-title")}
           </h1>
         </div>
         {/* End of Background Image */}
@@ -36,20 +38,18 @@ const VideosGallery = () => {
         {/* Section with Description */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Our Inspiring Videos
+            {t("galleryVideos-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <p className="text-xl my-8">
-            Discover our exclusive video collection, capturing stories and
-            moments that will inspire and engage you. Dive into a world of
-            creativity and imagination!
+            {t("galleryVideos-desc")}
           </p>
         </div>
 
         {/* Video Gallery */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Featured Videos
+           {t("galleryVideos-featured-main-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
 
@@ -67,10 +67,9 @@ const VideosGallery = () => {
                 ></iframe>
               </div>
               <div className="p-4">
-                <h1 className="text-lg font-semibold mb-2">Creative Journey</h1>
+                <h1 className="text-lg font-semibold mb-2">{t("galleryVideos-featured-1st-video-title")}</h1>
                 <p className="text-sm text-gray-600">
-                  Follow the path of artistic innovation through this
-                  captivating documentary.
+                {t("galleryVideos-featured-2nd-video-desc")}
                 </p>
               </div>
             </div>
@@ -88,10 +87,10 @@ const VideosGallery = () => {
               </div>
               <div className="p-4">
                 <h1 className="text-lg font-semibold mb-2">
-                  Innovative Design Trends
+                {t("galleryVideos-featured-2nd-video-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                  Explore the latest design trends in this insightful video.
+                {t("galleryVideos-featured-2nd-video-desc")}
                 </p>
               </div>
             </div>
@@ -109,10 +108,10 @@ const VideosGallery = () => {
               </div>
               <div className="p-4">
                 <h1 className="text-lg font-semibold mb-2">
-                  Masterpiece Creations
+                {t("galleryVideos-featured-3rd-video-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                  Witness the evolution of timeless artistic masterpieces.
+                {t("galleryVideos-featured-3rd-video-desc")}
                 </p>
               </div>
             </div>
@@ -122,7 +121,7 @@ const VideosGallery = () => {
         {/* More Videos Section */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            More Videos
+            {t("gallerryVideos-more-videos-main-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12">
@@ -140,10 +139,10 @@ const VideosGallery = () => {
                 ></iframe>
                 <div className="p-4">
                   <h1 className="text-lg font-semibold mb-2">
-                    Video Title {i + 1}
+                  {t("gallerryVideos-more-video-title")} {i + 1}
                   </h1>
                   <p className="text-sm text-gray-600">
-                  Showcasing Afghan cultural heritage.                  </p>
+                  {t("gallerryVideos-more-video-desc")}</p>
                 </div>
               </div>
             ))}

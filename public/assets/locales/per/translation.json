@@ -240,6 +240,82 @@
   "regAndPol-freq-Ques-4": "چه نوع کوکی‌هایی را استفاده می‌کنید؟",
   "regAndPol-freq-Ques-4-answer": "ما از کوکی‌های ضروری برای عملکرد وب‌سایت و از کوکی‌های تحلیلی برای بهبود تجربه کاربری استفاده می‌کنیم.",
 
+  "eventsPage-main-title": "کاوش رویدادهای ما",
+
+  "eventsPage-up-com-events-main-title": "رویدادهای آینده",
+
+  "eventsPage-up-com-events-1st-title": "نمایشگاه آثار تاریخی",
+  "eventsPage-up-com-events-1st-desc": "نمایش آثار باستانی مانند مجموعه طلای بلخ، بقایای بودایی گندهارا، و قطعاتی از امپراتوری کوشان",
+
+  "eventsPage-up-com-events-2nd-title": "برنامه‌ها و کارگاه‌های آموزشی",
+  "eventsPage-up-com-events-2nd-desc": "رویدادهای آموزشی که محققان، باستان‌شناسان و تاریخ‌شناسان را دعوت می‌کنند تا کارگاه‌هایی برای دانشجویان و پژوهشگران برگزار کنند",
+
+  "eventsPage-up-com-events-3rd-title": "رویدادها و جشنواره‌های فرهنگی",
+  "eventsPage-up-com-events-3rd-desc": "موزه اغلب جشنواره‌های فرهنگی برای بزرگداشت میراث افغانستان برگزار می‌کند، از جمله نوروز (سال نو فارسی) که در آن صنایع دستی، موسیقی و غذاهای سنتی به نمایش گذاشته می‌شوند",
+
+  "eventsPage-up-com-events-4th-title": "نمایشگاه هنرها و صنایع دستی افغانستان",
+  "eventsPage-up-com-events-4th-desc": "نمایشگاهی پرجنب‌وجوش برای بزرگداشت هنرمندان و صنعتگران محلی افغانستان",
+
+  "eventsPage-up-com-events-btn": "بیشتر بدانید",
+
+  "eventsPage-past-events-main-title": "رویدادهای گذشته",
+
+  "eventsPage-past-events-1st-title": "تور تاریخی موزه",
+  "eventsPage-past-events-1st-desc": "یک تور راهنمایی شده از موزه ملی افغانستان",
+
+  "eventsPage-past-events-2nd-title": "نمایشگاه نسخه‌های خطی تاریخی",
+  "eventsPage-past-events-2nd-desc": "مجموعه‌ای نادر از نسخه‌های خطی تاریخی افغانستان به نمایش گذاشته شده است",
+
+  "eventsPage-past-events-3rd-title": "نمایشگاه هنر و آثار هنرمندان محلی",
+  "eventsPage-past-events-3rd-desc": "موزه آثار هنری افغانستان در زمینه‌های میراث، هویت و تأثیرات جنگ را به نمایش می‌گذارد",
+
+  "eventsPage-past-events-btn": "جزئیات را ببینید",
+
+  "eventsPage-update-main-title": "به‌روز بمانید!",
+  "eventsPage-update-desc": "برای دریافت به‌روزرسانی‌ها در مورد رویدادهای آینده، در خبرنامه ما مشترک شوید",
+  "eventspage-input-placeholder": "ایمیل خود را وارد کنید...",
+  "eventspage-update-btn": "اشتراک",
+
+  "galleryPhotos-main-title": "عکس‌ها در گالری ما",
+
+  "galleryPhotos-title": "گالری خلاقانه ما",
+  "galleryPhotos-desc": "مجموعه‌ای از تصاویر خیره‌کننده را کاوش کنید که جوهره خلاقیت و لحظات الهام‌بخش را به تصویر می‌کشند. به درون شیرجه بزنید و زیبایی را در هر فریم کشف کنید!",
+
+  "galleryPhotos-gallery-view-title": "نمای گالری",
+  "galleryPhotos-gallery-view-1st-img-title": "نمایش هنر بی‌زمان",
+  "galleryPhotos-gallery-view-2nd-img-title": "معماری باشکوه اسلامی",
+
+  "galleryPhotos-gallery-coll-main-title": "مجموعه گالری",
+
+  "galleryPhotos-gallery-coll-1st-img-title": "مجسمه سنگی با حکاکی‌های پیچیده",
+  "galleryPhotos-gallery-coll-1st-img-desc": "نمایش هنر باستانی و میراث فرهنگی",
+
+  "galleryPhotos-gallery-coll-2nd-img-title": "پرچم ملی افغانستان",
+  "galleryPhotos-gallery-coll-2nd-img-desc": "تصویر پرچم ملی افغانستان را نشان می‌دهد که در برابر آسمان نیمه‌ابری در حال اهتزاز است",
+
+  "galleryPhotos-gallery-coll-3rd-img-title": "مجسمه سنگی با حکاکی‌های پیچیده",
+  "galleryPhotos-gallery-coll-3rd-img-desc": "نمایش هنر باستانی و میراث فرهنگی",
+
+  "galleryVideos-main-title": "ویدیوها در مجموعه ما",
+
+  "galleryVideos-title": "ویدیوهای الهام‌بخش ما",
+  "galleryVideos-desc": "مجموعه ویدیویی اختصاصی ما را کشف کنید که داستان‌ها و لحظاتی را به تصویر می‌کشد که شما را الهام و درگیر خواهد کرد. به دنیای خلاقیت و تخیل شیرجه بزنید!",
+
+  "galleryVideos-featured-main-title": "ویدیوهای ویژه",
+
+  "galleryVideos-featured-1st-video-title": "سفر خلاقانه",
+  "galleryVideos-featured-1st-video-desc": "مسیر نوآوری هنری را از طریق این مستند جذاب دنبال کنید",
+
+  "galleryVideos-featured-2nd-video-title": "روندهای نوآورانه طراحی",
+  "galleryVideos-featured-2nd-video-desc": "جدیدترین روندهای طراحی را در این ویدیوی بصیرتی کاوش کنید",
+
+  "galleryVideos-featured-3rd-video-title": "خلق شاهکارها",
+  "galleryVideos-featured-3rd-video-desc": "شاهد تکامل شاهکارهای هنری بی‌زمان باشید",
+
+  "gallerryVideos-more-videos-main-title": "ویدیوهای بیشتر",
+  "gallerryVideos-more-video-title": "موزه ملی افغانستان",
+  "gallerryVideos-more-video-desc": "حفظ میراث غنی افغانستان",
+
   "home-banner.slider-ist.heading": "توسعه مناسب",
   "home-banner.slider-ist.description": "نیروی محرکه پشت سر سرمایه گذاری افغانستان را کشف کنید: چشم انداز ما، تیم ما، تعهد ما",
   "home-banner.slider-2nd.heading": "بخش معدنی",

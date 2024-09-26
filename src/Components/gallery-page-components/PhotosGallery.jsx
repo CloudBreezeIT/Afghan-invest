@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const PhotosGallery = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="min-h-screen w-full">
@@ -14,27 +16,25 @@ const PhotosGallery = () => {
           }}
         >
           <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-            Photos In Our Gallery
+            {t("galleryPhotos-main-title")}
           </h1>
         </div>
         {/* ends of Background Image */}
         {/* heading with description start here */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Our Creative Gallery
+            {t("galleryPhotos-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <p className="text-xl my-8">
-            Explore our collection of stunning visuals, capturing the essence of
-            creativity and moments that inspire. Dive in and discover beauty in
-            every frame!
+            {t("galleryPhotos-desc")}
           </p>
         </div>
         {/* heading with description ends here */}
         {/* gallery view starts here */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Gallery View
+           {t("galleryPhotos-gallery-view-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <div className="flex flex-col md:flex-row justify-center gap-12 my-16">
@@ -45,7 +45,7 @@ const PhotosGallery = () => {
                 alt=""
               />
               <h1 className="p-2 text-xl group-hover:bg-white group-hover:text-mstheme transition duration-500 font-semibold tracking-wide">
-                Timeless Art Display
+                {t("galleryPhotos-gallery-view-1st-img-title")}
               </h1>
             </div>
             <div className="bg-mstheme text-white rounded-xl group">
@@ -55,7 +55,7 @@ const PhotosGallery = () => {
                 alt=""
               />
               <h1 className="p-2 text-xl group-hover:bg-white group-hover:text-mstheme transition duration-500 font-semibold tracking-wide">
-                Majestic Islamic Architecture
+              {t("galleryPhotos-gallery-view-2nd-img-title")}
               </h1>
             </div>
           </div>
@@ -65,7 +65,7 @@ const PhotosGallery = () => {
         {/* gallery collection starts here */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Gallery Collection
+            {t("galleryPhotos-gallery-coll-main-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <div className="flex flex-col md:flex-row justify-center gap-12 my-16">
@@ -78,10 +78,10 @@ const PhotosGallery = () => {
               />
               <div className="p-4">
                 <h1 className="text-lg font-semibold mb-2">
-                  Intricately Carved Stone Deity
+                  {t("galleryPhotos-gallery-coll-1st-img-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                  Showcasing ancient artistry and cultural heritage.
+                 {t("galleryPhotos-gallery-coll-1st-img-desc")}
                 </p>
               </div>
             </div>
@@ -95,11 +95,10 @@ const PhotosGallery = () => {
               />
               <div className="p-4">
                 <h1 className="text-lg font-semibold mb-2">
-                  Afghanistan National Flag
+                {t("galleryPhotos-gallery-coll-2nd-img-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                  The image shows Afghanistan's national flag waving against a
-                  partly cloudy sky.
+                {t("galleryPhotos-gallery-coll-2nd-img-desc")}
                 </p>
               </div>
             </div>
@@ -113,10 +112,10 @@ const PhotosGallery = () => {
               />
               <div className="p-4">
                 <h1 className="text-lg font-semibold mb-2">
-                  Intricately Carved Stone Deity
+                {t("galleryPhotos-gallery-coll-3rd-img-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                  Showcasing ancient artistry and cultural heritage.
+                {t("galleryPhotos-gallery-coll-3rd-img-desc")}
                 </p>
               </div>
             </div>
