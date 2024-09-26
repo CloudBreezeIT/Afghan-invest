@@ -1,45 +1,47 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function RegulationsAndPolicies() {
+  const { t } = useTranslation();
   const policies = [
     {
-      title: "Privacy Policy",
+      title: t("regAndPol-imp-pol-1st-card-title"),
       description:
-        "Our privacy policy outlines how we collect, use, and protect your personal information.",
+        t("regAndPol-imp-pol-1st-card-desc"),
     },
     {
-      title: "Terms of Service",
+      title: t("regAndPol-imp-pol-2nd-card-title"),
       description:
-        "These terms govern your use of our services and outline your rights and responsibilities.",
+      t("regAndPol-imp-pol-2nd-card-desc"),
     },
     {
-      title: "Refund Policy",
+      title: t("regAndPol-imp-pol-3rd-card-title"),
       description:
-        "Learn about our refund process, eligibility, and how to request a refund.",
+      t("regAndPol-imp-pol-3rd-card-desc"),
     },
     {
-      title: "Cookie Policy",
+      title: t("regAndPol-imp-pol-4th-card-title"),
       description:
-        "This policy explains how we use cookies and similar technologies on our website.",
+      t("regAndPol-imp-pol-4th-card-desc"),
     },
   ];
 
   const faqs = [
     {
-      question: "How can I access the full terms and conditions?",
-      answer: "You can view the full terms and conditions on our Terms of Service page.",
+      question: t("regAndPol-freq-Ques-1"),
+      answer: t("regAndPol-freq-Ques-1-answer"),
     },
     {
-      question: "What should I do if I have concerns about my privacy?",
-      answer: "Please contact our support team for any privacy-related concerns or questions.",
+      question: t("regAndPol-freq-Ques-2"),
+      answer: t("regAndPol-freq-Ques-2-answer"),
     },
     {
-      question: "How do I request a refund?",
-      answer: "To request a refund, please visit our Refund Policy page for detailed instructions.",
+      question: t("regAndPol-freq-Ques-3"),
+      answer:t("regAndPol-freq-Ques-3-answer"),
     },
     {
-      question: "What types of cookies do you use?",
-      answer: "We use essential cookies to operate our website and analytics cookies to improve user experience.",
+      question: t("regAndPol-freq-Ques-4"),
+      answer: t("regAndPol-freq-Ques-4-answer"),
     },
   ];
 
@@ -56,14 +58,14 @@ export default function RegulationsAndPolicies() {
         }}
       >
         <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-          Regulations and Policies
+        {t("regAndPol-main-title")}
         </h1>
       </div>
 
       {/* Content Section */}
       <div className="w-full max-w-5xl mx-auto px-4 py-16">
         <h2 className="text-center text-3xl font-bold mb-10 text-mstheme">
-          Important Policies
+        {t("regAndPol-imp-pol-main-title")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {policies.map((policy, index) => (
@@ -83,7 +85,7 @@ export default function RegulationsAndPolicies() {
       {/* FAQs Section */}
       <div className="w-full max-w-5xl mx-auto px-4 py-16 bg-gray-200 rounded-lg shadow-md">
         <h2 className="text-center text-3xl font-bold mb-10 text-mstheme">
-          Frequently Asked Questions
+          {t("regAndPol-freq-Ques-main-Title")}
         </h2>
         <div className="space-y-6">
           {faqs.map((faq, index) => (

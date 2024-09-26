@@ -1,63 +1,72 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-const staffData = [
-  {
-    id: 1,
-    name: "John Doe",
-    position: "Lead Engineer",
-    description:
-      "An expert in mechanical engineering with over 15 years of experience in large-scale projects.",
-    image:
-      "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
-  },
-  {
-    id: 2,
-    name: "M. Bilal",
-    position: "Senior React Developer",
-    description:
-      "A frontend developer specializing in React, JavaScript, and ReduxToolkit.",
-    image:
-      "https://scontent.fpew3-1.fna.fbcdn.net/v/t39.30808-6/342510633_620905219517753_2503987777587080160_n.jpg?stp=dst-jpg_s206x206&_nc_cat=105&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeFeZHTwGP2uqIcKBw-zt-oPn1iTqfiKyeWfWJOp-IrJ5Qz3U4rj5G6yQydTSOAxEAnpZ_geMDtTNm7VcBovcP7U&_nc_ohc=NgP7f0ek4fQQ7kNvgG8eou2&_nc_ht=scontent.fpew3-1.fna&_nc_gid=AQK7Pv8TLLRmv4d3m4kqgLw&oh=00_AYB25FbeVyKDRWtT8K9dta2LwpMkvLeTcK33zQorDFUAUg&oe=66FA2192",
-  },
-  {
-    id: 3,
-    name: "Michael Lee",
-    position: "Electrical Engineer",
-    description:
-      "Experienced in electrical systems design and troubleshooting in industrial environments.",
-    image:
-      "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
-  },
-  {
-    id: 4,
-    name: "Emily Johnson",
-    position: "Project Manager",
-    description:
-      "Has successfully managed multiple technical teams and projects, ensuring on-time delivery and quality.",
-    image:
-      "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
-  },
-  {
-    id: 5,
-    name: "Chris Williams",
-    position: "QA Engineer",
-    description:
-      "Dedicated to ensuring quality across all phases of the product lifecycle, with a sharp focus on automation testing.",
-    image:
-      "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
-  },
-  {
-    id: 6,
-    name: "Sophia Brown",
-    position: "Network Engineer",
-    description:
-      "Specializes in network infrastructure, managing both on-premises and cloud environments.",
-    image:
-      "https://media.istockphoto.com/id/1283748374/photo/coronavirus-country-concept.jpg?s=1024x1024&w=is&k=20&c=eeeV0QUKeP04xLOZNr1qmrlJ1kyTbjoZPiFVpOd-188=",
-  },
-];
+
 
 export default function TechnicalStaff() {
+  const { t } = useTranslation();
+  
+
+  const staffData = [
+  
+    {
+      id: 1,
+      name: t("technicalStaff-1st-card-name"),
+      position: t("technicalStaff-1st-card-position"),
+      description:
+        t("technicalStaff-1st-card-desc"),
+      image:
+        "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
+    },
+    {
+      id: 2,
+      name: t("technicalStaff-2nd-card-name"),
+      position: t("technicalStaff-2nd-card-position"),
+      description:
+      t("technicalStaff-2nd-card-desc"),
+      image:
+        "https://scontent.fpew3-1.fna.fbcdn.net/v/t39.30808-6/342510633_620905219517753_2503987777587080160_n.jpg?stp=dst-jpg_s206x206&_nc_cat=105&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeFeZHTwGP2uqIcKBw-zt-oPn1iTqfiKyeWfWJOp-IrJ5Qz3U4rj5G6yQydTSOAxEAnpZ_geMDtTNm7VcBovcP7U&_nc_ohc=NgP7f0ek4fQQ7kNvgG8eou2&_nc_ht=scontent.fpew3-1.fna&_nc_gid=AQK7Pv8TLLRmv4d3m4kqgLw&oh=00_AYB25FbeVyKDRWtT8K9dta2LwpMkvLeTcK33zQorDFUAUg&oe=66FA2192",
+    },
+    {
+      id: 3,
+      name: t("technicalStaff-3rd-card-name"),
+      position: t("technicalStaff-3rd-card-position"),
+      description:
+      t("technicalStaff-3rd-card-desc"),
+      image:
+        "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
+    },
+    {
+      id: 4,
+      name: t("technicalStaff-4th-card-name"),
+      position: t("technicalStaff-4th-card-position"),
+      description:
+      t("technicalStaff-4th-card-desc"),
+      image:
+        "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
+    },
+    {
+      id: 5,
+      name: t("technicalStaff-5th-card-name"),
+      position: t("technicalStaff-5th-card-position"),
+      description:
+      t("technicalStaff-5th-card-desc"),
+      image:
+        "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
+    },
+    {
+      id: 6,
+      name: t("technicalStaff-6th-card-name"),
+      position:t("technicalStaff-6th-card-position"),
+      description:
+      t("technicalStaff-6th-card-desc"),
+      image:
+        "https://media.istockphoto.com/id/1283748374/photo/coronavirus-country-concept.jpg?s=1024x1024&w=is&k=20&c=eeeV0QUKeP04xLOZNr1qmrlJ1kyTbjoZPiFVpOd-188=",
+    },
+  ];
+
+
+
   return (
     <div className="min-h-screen w-full">
       {/* Hero Section */}
@@ -70,14 +79,14 @@ export default function TechnicalStaff() {
         }}
       >
         <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-          Meet Our Professional Team
+          {t("technicalStaff-main-title")}
         </h1>
       </div>
 
       {/* Section 1: Staff Members */}
       <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
         <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
-          Our Technical Staff
+          {t("technicalStaff-card-main-title")}
         </h2>
         <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent mb-12"></div>
 
@@ -115,7 +124,7 @@ export default function TechnicalStaff() {
                     className="px-6 py-2 font-semibold text-sm bg-mstheme text-white rounded-full hover:bg-mstheme_hover shadow transition-all"
                     type="button"
                   >
-                    Contact
+                    {t("technicalStaff-card-btn")}
                   </button>
                 </div>
               </div>
@@ -141,29 +150,28 @@ export default function TechnicalStaff() {
         {/* Content Section */}
         <div className="relative z-10 w-full bg-white shadow-2xl rounded-xl p-10 text-gray-900 flex flex-col items-center space-y-8 hover:shadow-3xl transition duration-500">
           <h2 className="text-center text-4xl font-extrabold text-mstheme">
-            Be Part of Our Tech Team
+            {t("technicalStaff-team-main-title")}
           </h2>
           <p className="text-center text-lg text-gray-600">
-            We value innovation and talent. Submit your resume and let’s shape
-            the future together.
+            {t("technicalStaff-team-sub-title")}
           </p>
 
           <form className="w-full flex flex-col items-center space-y-6">
             <input
               type="email"
-              placeholder="Your Email Address"
+              placeholder={t("technicalStaff-team-input")}
               className="w-full md:w-3/4 p-4 rounded-full text-gray-900 shadow-inner focus:outline-none focus:ring-4 focus:ring-mstheme transition-transform duration-300 hover:scale-105"
             />
             <button
               type="submit"
               className="w-full md:w-auto px-8 py-4 bg-mstheme text-white rounded-full font-bold text-lg shadow-lg hover:bg-mstheme_hover transform hover:-translate-y-1 transition-transform duration-300"
             >
-              Apply Now
+              {t("technicalStaff-team-btn")}
             </button>
           </form>
 
           <p className="text-sm text-gray-500 mt-4">
-            Let’s grow together! Your data is secure with us.
+            {t("technicalStaff-team-last-sentence")}
           </p>
         </div>
       </div>

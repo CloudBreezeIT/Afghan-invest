@@ -186,6 +186,69 @@
     "director-msg-desc-2":"Despite facing challenges, including looting and destruction during conflicts, the museum remains a symbol of resilience, dedicated to safeguarding the nation's history. Today, it stands as a beacon of Afghan culture, attracting scholars, historians, and visitors from around the world.",
 
 
+    "technicalStaff-main-title":"Meet Our Professional Team",
+    
+    "technicalStaff-card-main-title":"Our Technical Staff",
+
+    "technicalStaff-1st-card-name":"Waqas Mehmood",
+    "technicalStaff-1st-card-position":"Lead Engineer",
+    "technicalStaff-1st-card-desc":"An expert in MERN Stack Technology with over 3 years of experience in large-scale projects.",
+    
+    "technicalStaff-2nd-card-name":"Muhammad Bilal",
+    "technicalStaff-2nd-card-position":"Senior React Developer",
+    "technicalStaff-2nd-card-desc":"A frontend developer specializing in React, JavaScript, and ReduxToolkit.",
+
+    "technicalStaff-3rd-card-name":"Usman Ali",
+    "technicalStaff-3rd-card-position":"Backend Developer",
+    "technicalStaff-3rd-card-desc":"An expert in Backend Development with over 3 years of experience in large-scale projects.",
+    "technicalStaff-4th-card-name":"Muhammad Saad",
+    "technicalStaff-4th-card-position":"React Developer",
+    "technicalStaff-4th-card-desc":"An expert in React Developmen with over 3 years of experience in large-scale projects.",
+    "technicalStaff-5th-card-name":"Waqas Mehmood",
+    "technicalStaff-5th-card-position":"Project Manager",
+    "technicalStaff-5th-card-desc":"An expert in Project Management with over 3 years of experience in large-scale projects.",
+    "technicalStaff-6th-card-name":"John Doe",
+    "technicalStaff-6th-card-position":"Lead Engineer",
+    "technicalStaff-6th-card-desc":"An expert in mechanical engineering with over 15 years of experience in large-scale projects.",
+    
+    "technicalStaff-card-btn":"Contact",
+
+    "technicalStaff-team-main-title":"Be Part of Our Tech Team",
+    "technicalStaff-team-sub-title":"We value innovation and talent. Submit your resume and let’s shape the future together.",
+    "technicalStaff-team-input":"Your Email Address",
+    "technicalStaff-team-btn":"Apply Now",
+    "technicalStaff-team-last-sentence":"Let’s grow together! Your data is secure with us.",
+
+
+    "regAndPol-main-title":"Regulations and Policies",
+    
+    "regAndPol-imp-pol-main-title":"Important Policies",
+    
+    "regAndPol-imp-pol-1st-card-title":"Privacy Policy",
+    "regAndPol-imp-pol-1st-card-desc":"Our privacy policy outlines how we collect, use, and protect your personal information.",
+
+    "regAndPol-imp-pol-2nd-card-title":"Terms of Service",
+    "regAndPol-imp-pol-2nd-card-desc":"These terms govern your use of our services and outline your rights and responsibilities.",
+
+    "regAndPol-imp-pol-3rd-card-title":"Refund Policy",
+    "regAndPol-imp-pol-3rd-card-desc":"Learn about our refund process, eligibility, and how to request a refund.",
+    
+    "regAndPol-imp-pol-4th-card-title":"Cookie Policy",
+    "regAndPol-imp-pol-4th-card-desc":"This policy explains how we use cookies and similar technologies on our website.",
+
+    "regAndPol-freq-Ques-main-Title":"Frequently Asked Questions",
+    
+    "regAndPol-freq-Ques-1":"How can I access the full terms and conditions?",
+    "regAndPol-freq-Ques-1-answer":"You can view the full terms and conditions on our Terms of Service page.",
+    "regAndPol-freq-Ques-2":"What should I do if I have concerns about my privacy?",
+    "regAndPol-freq-Ques-2-answer":"Please contact our support team for any privacy-related concerns or questions.",
+    "regAndPol-freq-Ques-3":"How do I request a refund?",
+    "regAndPol-freq-Ques-3-answer":"To request a refund, please visit our Refund Policy page for detailed instructions.",
+    "regAndPol-freq-Ques-4":"What types of cookies do you use?",
+    "regAndPol-freq-Ques-4-answer":"We use essential cookies to operate our website and analytics cookies to improve user experience.",
+
+
+
     "home-banner.slider-ist.heading":"Suitable Development",
     "home-banner.slider-ist.description":"DISCOVER THE DRIVING FORCE BEHIND AFGHAN INVEST: OUR VISION, OUR TEAM, OUR COMMITMENT",
     "home-banner.slider-2nd.heading":"Mining Sector",
