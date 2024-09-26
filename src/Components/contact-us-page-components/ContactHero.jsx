@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ContactHero() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="min-h-screen w-full">
@@ -14,33 +16,33 @@ export default function ContactHero() {
           }}
         >
           <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-            Get in Touch With Us
+            {t("contactPage-main-title")}
           </h1>
         </div>
 
         {/* Section 2: Contact Information */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Contact Information
+            {t("contactPage-info-title")}
           </h2>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent mb-12"></div>
 
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <div className="bg-white shadow-md p-8 rounded-lg">
               <i className="fas fa-phone-alt text-4xl text-mstheme mb-4"></i>
-              <h3 className="text-lg font-semibold">Phone</h3>
-              <p className="text-gray-600">+123 456 789</p>
+              <h3 className="text-lg font-semibold">{t("contactPage-info-phone")}</h3>
+              <p className="text-gray-600">{t("contactPage-info-phone-no")}</p>
             </div>
             <div className="bg-white shadow-md p-8 rounded-lg">
               <i className="fas fa-envelope text-4xl text-mstheme mb-4"></i>
-              <h3 className="text-lg font-semibold">Email</h3>
-              <p className="text-gray-600">info@nationalmuseum.af</p>
+              <h3 className="text-lg font-semibold">{t("contactPage-info-email")}</h3>
+              <p className="text-gray-600">{t("contactPage-info-email-value")}</p>
             </div>
             <div className="bg-white shadow-md p-8 rounded-lg">
               <i className="fas fa-map-marker-alt text-4xl text-mstheme mb-4"></i>
-              <h3 className="text-lg font-semibold">Location</h3>
+              <h3 className="text-lg font-semibold">{t("contactPage-info-location")}</h3>
               <p className="text-gray-600">
-                National Museum, Kabul, Afghanistan
+              {t("contactPage-info-location-value")}
               </p>
             </div>
           </div>
@@ -49,7 +51,7 @@ export default function ContactHero() {
         {/* Section 3: Contact Form */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Send Us a Message
+            {t("contactPage-msg-main-title")}
           </h2>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent mb-12"></div>
 
@@ -57,25 +59,25 @@ export default function ContactHero() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder={t("contactPage-input-name-placeholder")}
                 className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-mstheme"
               />
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder={t("contactPage-input-email-placeholder")}
                 className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-mstheme"
               />
             </div>
             <textarea
               rows="5"
-              placeholder="Your Message"
+              placeholder={t("contactPage-input-msg-placeholder")}
               className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-mstheme"
             ></textarea>
             <button
               type="submit"
               className="w-full p-4 bg-mstheme text-white rounded-lg font-semibold hover:bg-opacity-90 transition duration-300"
             >
-              Submit
+              {t("contactPage-msg-btn")}
             </button>
           </form>
         </div>
@@ -83,7 +85,7 @@ export default function ContactHero() {
         {/* Section 4: Location Map */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
-            Visit Us
+           {t("contactPage-map-main-title")}
           </h2>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent mb-12"></div>
           <div className="relative overflow-hidden pb-[56.25%] h-0">
