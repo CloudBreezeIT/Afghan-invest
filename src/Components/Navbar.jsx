@@ -129,32 +129,32 @@ const Navbar = () => {
                   className="dropdown-content p-2 shadow bg-mstheme rounded-box w-52 mt-1 z-20"
                 >
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/exhibition/islamic-era-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.third-sub-menu-1")}
                     </Link>
                   </li>
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/exhibition/bronze-age-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.third-sub-menu-2")}
                     </Link>
                   </li>
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/exhibition/aynak-copper-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.third-sub-menu-3")}
                     </Link>
                   </li>
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/exhibition/ai-khanum' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.third-sub-menu-4")}
                     </Link>
                   </li>
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/exhibition/thousand-cities-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.third-sub-menu-5")}
                     </Link>
                   </li>
                   <li>
-                    <Link className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/exhibition/car-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
                       {t("header.third-sub-menu-6")}
                     </Link>
                   </li>

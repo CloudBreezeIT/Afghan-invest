@@ -18,6 +18,7 @@ const mainRoutes = [
         ...contactusRoutes,
         ...eventsRoutes,
         ...aboutusRoutes,
+        ...exhibitionRoutes,
         {
           path: "*", // Catch all unmatched routes
           element: <NotFound />, // Render the NotFound component
