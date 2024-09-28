@@ -1,6 +1,7 @@
 import NotFound from "../Pages/NotFound";
 import Root from "../Pages/Root";
 import aboutusRoutes from "./aboutusRoutes";
+import articlesRoutes from "./articlesRoutes";
 import contactusRoutes from "./contactusRoutes";
 import eventsRoutes from "./eventsRoutes";
 import exhibitionRoutes from "./exhibitionRoutes";
@@ -20,6 +21,7 @@ const mainRoutes = [
         ...eventsRoutes,
         ...aboutusRoutes,
         ...exhibitionRoutes,
+        ...articlesRoutes,
         {
           path: "*", // Catch all unmatched routes
           element: <NotFound />, // Render the NotFound component
