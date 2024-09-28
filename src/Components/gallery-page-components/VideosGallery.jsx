@@ -3,25 +3,25 @@ import { useTranslation } from "react-i18next";
 
 const VideosGallery = () => {
   const { t } = useTranslation();
-    // Array of video links from National Museum of Afghanistan
-    const videos = [
-      "https://www.youtube.com/embed/QaEZVrI2DF8?si=r8URkQN9SCzFLfH5",
-      "https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK",
-      "https://www.youtube.com/embed/QaEZVrI2DF8?si=r8URkQN9SCzFLfH5",
-      "https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK",
-      "https://www.youtube.com/embed/VU9q3nSYidc?si=0jhKv_EyTYo8fZBc",
-      "https://www.youtube.com/embed/QVRiLZ-PUsk?si=KWWhsxIHS3VApEyv",
-      "https://www.youtube.com/embed/MOKjj_MMUi4?si=k62tu44gtJ_qTE58",
-      "https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK",
-      "https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK",
-      "https://www.youtube.com/embed/VU9q3nSYidc?si=0jhKv_EyTYo8fZBc",
-      "https://www.youtube.com/embed/QVRiLZ-PUsk?si=KWWhsxIHS3VApEyv",
-    ];
+  // Array of video links from National Museum of Afghanistan
+  const videos = [
+    "https://www.youtube.com/embed/QaEZVrI2DF8?si=r8URkQN9SCzFLfH5",
+    "https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK",
+    "https://www.youtube.com/embed/QaEZVrI2DF8?si=r8URkQN9SCzFLfH5",
+    "https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK",
+    "https://www.youtube.com/embed/VU9q3nSYidc?si=0jhKv_EyTYo8fZBc",
+    "https://www.youtube.com/embed/QVRiLZ-PUsk?si=KWWhsxIHS3VApEyv",
+    "https://www.youtube.com/embed/MOKjj_MMUi4?si=k62tu44gtJ_qTE58",
+    "https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK",
+    "https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK",
+    "https://www.youtube.com/embed/VU9q3nSYidc?si=0jhKv_EyTYo8fZBc",
+    "https://www.youtube.com/embed/QVRiLZ-PUsk?si=KWWhsxIHS3VApEyv",
+  ];
   return (
     <>
       <div className="min-h-screen w-full">
         {/* Start of Background Image (Same as Photos) */}
-        <div
+        {/* <div
           className="w-full min-h-96 mt-[64px]"
           style={{
             backgroundImage: `url(${"https://images.unsplash.com/photo-1505027014503-e6de34d28116?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"})`,
@@ -32,6 +32,25 @@ const VideosGallery = () => {
           <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
             {t("galleryVideos-main-title")}
           </h1>
+        </div> */}
+
+        <div
+          className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
+          style={{
+            backgroundImage: `url(${"https://images.unsplash.com/photo-1505027014503-e6de34d28116?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+            <h1 className="text-5xl font-bold mb-4">
+              {t("galleryVideos-main-title")}
+            </h1>
+            <p className="text-xl mb-6">
+              Dive into the latest stories, trends, and innovations from the
+              museum world.
+            </p>
+          </div>
         </div>
         {/* End of Background Image */}
 
@@ -41,15 +60,13 @@ const VideosGallery = () => {
             {t("galleryVideos-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
-          <p className="text-xl my-8">
-            {t("galleryVideos-desc")}
-          </p>
+          <p className="text-xl my-8">{t("galleryVideos-desc")}</p>
         </div>
 
         {/* Video Gallery */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-           {t("galleryVideos-featured-main-title")}
+            {t("galleryVideos-featured-main-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
 
@@ -67,9 +84,11 @@ const VideosGallery = () => {
                 ></iframe>
               </div>
               <div className="p-4">
-                <h1 className="text-lg font-semibold mb-2">{t("galleryVideos-featured-1st-video-title")}</h1>
+                <h1 className="text-lg font-semibold mb-2">
+                  {t("galleryVideos-featured-1st-video-title")}
+                </h1>
                 <p className="text-sm text-gray-600">
-                {t("galleryVideos-featured-2nd-video-desc")}
+                  {t("galleryVideos-featured-2nd-video-desc")}
                 </p>
               </div>
             </div>
@@ -87,10 +106,10 @@ const VideosGallery = () => {
               </div>
               <div className="p-4">
                 <h1 className="text-lg font-semibold mb-2">
-                {t("galleryVideos-featured-2nd-video-title")}
+                  {t("galleryVideos-featured-2nd-video-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                {t("galleryVideos-featured-2nd-video-desc")}
+                  {t("galleryVideos-featured-2nd-video-desc")}
                 </p>
               </div>
             </div>
@@ -108,10 +127,10 @@ const VideosGallery = () => {
               </div>
               <div className="p-4">
                 <h1 className="text-lg font-semibold mb-2">
-                {t("galleryVideos-featured-3rd-video-title")}
+                  {t("galleryVideos-featured-3rd-video-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                {t("galleryVideos-featured-3rd-video-desc")}
+                  {t("galleryVideos-featured-3rd-video-desc")}
                 </p>
               </div>
             </div>
@@ -139,10 +158,11 @@ const VideosGallery = () => {
                 ></iframe>
                 <div className="p-4">
                   <h1 className="text-lg font-semibold mb-2">
-                  {t("gallerryVideos-more-video-title")} {i + 1}
+                    {t("gallerryVideos-more-video-title")} {i + 1}
                   </h1>
                   <p className="text-sm text-gray-600">
-                  {t("gallerryVideos-more-video-desc")}</p>
+                    {t("gallerryVideos-more-video-desc")}
+                  </p>
                 </div>
               </div>
             ))}
