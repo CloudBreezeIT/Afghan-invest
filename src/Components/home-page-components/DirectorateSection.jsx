@@ -14,7 +14,7 @@ const DirectorateSection = () => {
             <div className="flex flex-col items-start justify-center">
                 <p className='text-white rounded font-semibold text-2xl bg-mstheme px-20 py-3 ml-5 md:ml-0'>{t("directorateSection-msg")}</p>
                 <div className='py-4 px-4 md:px-0 flex flex-col justify-center items-center ml-12'>
-                <img className='w-full md:w-[250px] h-[200px] rounded' src="https://scontent.fpew1-1.fna.fbcdn.net/v/t39.30808-6/452580147_943382421166464_7310790582880668937_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=V3WYbobxYIQQ7kNvgGQcnX6&_nc_ht=scontent.fpew1-1.fna&_nc_gid=Alk_bwJrGQajB2b2si9dmuq&oh=00_AYDaQcuAr3Yzzob1fWKz30d4J9_ewd332IqKqpFLCevyyg&oe=66F32668" alt="" />
+                <img className='w-full md:w-[250px] h-[200px] rounded' src="/assets/images/about/director_img.jpg" alt="" />
                 <p className='text-xl font-semibold my-[2px] uppercase text-mstheme'>{t("directorateSection-name")}</p>
                 </div>
                 <p className='w-[600px] px-4 md:px-0'>

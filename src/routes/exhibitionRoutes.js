@@ -31,3 +31,5 @@ const exhibitionRoutes = [
         element: <ExhibitionCar/>
     },
 ]
+
+export default exhibitionRoutes;

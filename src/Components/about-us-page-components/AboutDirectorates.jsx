@@ -34,7 +34,7 @@ const AboutDirectorates = () => {
           <div className="md:w-1/3">
             <img
               className="rounded-3xl shadow-lg object-cover"
-              src="https://scontent.fpew1-1.fna.fbcdn.net/v/t39.30808-6/452580147_943382421166464_7310790582880668937_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=V3WYbobxYIQQ7kNvgGQcnX6&_nc_ht=scontent.fpew1-1.fna&_nc_gid=Alk_bwJrGQajB2b2si9dmuq&oh=00_AYDaQcuAr3Yzzob1fWKz30d4J9_ewd332IqKqpFLCevyyg&oe=66F32668"
+              src="/assets/images/about/director_img.jpg"
               alt="Omara Khan Massoudi"
             />
           </div>

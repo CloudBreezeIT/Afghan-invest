@@ -3,6 +3,7 @@ import Root from "../Pages/Root";
 import aboutusRoutes from "./aboutusRoutes";
 import contactusRoutes from "./contactusRoutes";
 import eventsRoutes from "./eventsRoutes";
+import exhibitionRoutes from "./exhibitionRoutes";
 import galleryRoutes from "./galleryRoutes";
 import homeRoutes from "./homeRoutes";
 
