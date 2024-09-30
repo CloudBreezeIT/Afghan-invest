@@ -17,18 +17,21 @@ export default function EventsHeroCompo({ events }) {
       <div className="min-h-screen w-full">
         {/* Hero Section */}
         <div
-          className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1491156855053-9cdff72c7f85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG11c2V1bSUyMGV2ZW50c3xlbnwwfDB8MHx8fDI%3D')",
-          }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-              {t("eventsPage-main-title")}
-            </h1>
-          </div>
+        className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1491156855053-9cdff72c7f85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG11c2V1bSUyMGV2ZW50c3xlbnwwfDB8MHx8fDI%3D')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+          <h1 className="text-5xl font-bold mb-4">
+          {t("eventsPage-main-title")}
+          </h1>
+          <p className="text-xl mb-6">
+          {t("eventsPage-main-desc")}
+          </p>
         </div>
+      </div>
 
         {/* Section 2: Upcoming Events */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">

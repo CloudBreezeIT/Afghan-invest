@@ -1,56 +1,56 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-const articlesData = [
-  {
-    id: 1,
-    title: "The Evolution of Art Through History",
-    description:
-      "Explore how art has transformed over centuries and what we can learn from ancient masterpieces.",
-    image:
-      "https://cdn.pixabay.com/photo/2015/11/03/08/57/patriot-1019838_1280.jpg",
-  },
-  {
-    id: 2,
-    title: "Sustainability in Modern Museums",
-    description:
-      "How museums around the world are adopting eco-friendly solutions to preserve culture while protecting the planet.",
-    image: "https://cdn.pixabay.com/photo/2012/10/10/15/51/man-60644_640.jpg",
-  },
-  {
-    id: 3,
-    title: "The Role of Technology in Museums",
-    description:
-      "Discover how museums are leveraging technology to offer interactive and immersive experiences.",
-    image:
-      "https://cdn.pixabay.com/photo/2015/11/03/08/57/patriot-1019838_1280.jpg",
-  },
-  {
-    id: 4,
-    title: "Ancient Civilizations on Display",
-    description:
-      "A journey through exhibitions that showcase the remains and stories of ancient civilizations.",
-    image: "https://cdn.pixabay.com/photo/2012/10/10/15/51/man-60644_640.jpg",
-  },
-  {
-    id: 5,
-    title: "Cultural Heritage and Preservation",
-    description:
-      "How museums play a vital role in preserving cultural heritage for future generations.",
-    image:
-      "https://cdn.pixabay.com/photo/2015/11/03/08/57/patriot-1019838_1280.jpg",
-  },
-  {
-    id: 6,
-    title: "Virtual Museum Tours: A New Era",
-    description:
-      "The rise of virtual tours and how they’re making museums accessible to everyone, anywhere.",
-    image: "https://cdn.pixabay.com/photo/2012/10/10/15/51/man-60644_640.jpg",
-  },
-  // Add more articles if needed
-];
+
+
 
 const ArticlesHeroSection = () => {
+  const { t } = useTranslation();
+  const articlesData = [
+    {
+      id: 1,
+      title: t("articlesPage-1st-card-title"),
+      description:
+      t("articlesPage-1st-card-desc"),
+      image:
+        "https://cdn.pixabay.com/photo/2015/11/03/08/57/patriot-1019838_1280.jpg",
+    },
+    {
+      id: 2,
+      title: t("articlesPage-2nd-card-title"),
+      description:t("articlesPage-2nd-card-desc"),
+      image: "https://cdn.pixabay.com/photo/2012/10/10/15/51/man-60644_640.jpg",
+    },
+    {
+      id: 3,
+      title: t("articlesPage-3rd-card-title"),
+      description:t("articlesPage-3rd-card-desc"),
+      image:
+        "https://cdn.pixabay.com/photo/2015/11/03/08/57/patriot-1019838_1280.jpg",
+    },
+    {
+      id: 4,
+      title: t("articlesPage-4th-card-title"),
+      description:t("articlesPage-4th-card-desc"),
+      image: "https://cdn.pixabay.com/photo/2012/10/10/15/51/man-60644_640.jpg",
+    },
+    {
+      id: 5,
+      title: t("articlesPage-5th-card-title"),
+      description:t("articlesPage-5th-card-desc"),
+      image:
+        "https://cdn.pixabay.com/photo/2015/11/03/08/57/patriot-1019838_1280.jpg",
+    },
+    {
+      id: 6,
+      title: t("articlesPage-6th-card-title"),
+      description:t("articlesPage-6th-card-desc"),
+      image: "https://cdn.pixabay.com/photo/2012/10/10/15/51/man-60644_640.jpg",
+    },
+    // Add more articles if needed
+  ];
+  
   // Number of articles to show initially
   const initialCount = 4;
   const [visibleArticles, setVisibleArticles] = useState(initialCount);
@@ -72,11 +72,10 @@ const ArticlesHeroSection = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
           <h1 className="text-5xl font-bold mb-4">
-            Discover the World of Museums
+            {t("articlesPage-main-title")}
           </h1>
           <p className="text-xl mb-6">
-            Dive into the latest stories, trends, and innovations from the
-            museum world.
+           {t("articlesPage-main-desc")}
           </p>
         </div>
       </div>
@@ -85,7 +84,7 @@ const ArticlesHeroSection = () => {
         {/* Featured Articles */}
         <div className="featured-articles mb-12">
           <h2 className="text-4xl font-bold text-center mb-10">
-            Featured Articles
+            {t("articlesPage-title")}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {articlesData.slice(0, visibleArticles).map((article) => (
@@ -113,7 +112,7 @@ const ArticlesHeroSection = () => {
                     </p>
                     <div className="mt-3">
                       <button className="bg-blue-600 text-white px-3 py-1.5 rounded-md text-sm hover:bg-blue-700 transition-colors duration-200">
-                        Read More
+                        {t("articlesPage-card-btn")}
                       </button>
                     </div>
                   </div>
@@ -129,7 +128,7 @@ const ArticlesHeroSection = () => {
                 onClick={loadMoreArticles}
                 className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200"
               >
-                Load More
+                {t("articlesPage-load-more-btn")}
               </button>
             </div>
           )}

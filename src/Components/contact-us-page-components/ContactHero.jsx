@@ -7,19 +7,6 @@ export default function ContactHero() {
     <>
       <div className="min-h-screen w-full">
         {/* Hero Section */}
-        {/* <div
-          className="w-full min-h-96 mt-[64px]"
-          style={{
-            backgroundImage: `url(${"/assets/images/contact/contact-us-page-hero.png"})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-            {t("contactPage-main-title")}
-          </h1>
-        </div> */}
-
         <div
           className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
           style={{
@@ -33,8 +20,7 @@ export default function ContactHero() {
               {t("contactPage-main-title")}
             </h1>
             <p className="text-xl mb-6">
-              Dive into the latest stories, trends, and innovations from the
-              museum world.
+            {t("contactPage-main-desc")}
             </p>
           </div>
         </div>

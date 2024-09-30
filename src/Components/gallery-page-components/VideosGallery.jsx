@@ -21,19 +21,6 @@ const VideosGallery = () => {
     <>
       <div className="min-h-screen w-full">
         {/* Start of Background Image (Same as Photos) */}
-        {/* <div
-          className="w-full min-h-96 mt-[64px]"
-          style={{
-            backgroundImage: `url(${"https://images.unsplash.com/photo-1505027014503-e6de34d28116?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-            {t("galleryVideos-main-title")}
-          </h1>
-        </div> */}
-
         <div
           className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
           style={{
@@ -47,8 +34,7 @@ const VideosGallery = () => {
               {t("galleryVideos-main-title")}
             </h1>
             <p className="text-xl mb-6">
-              Dive into the latest stories, trends, and innovations from the
-              museum world.
+            {t("galleryVideos-main-desc")}
             </p>
           </div>
         </div>
