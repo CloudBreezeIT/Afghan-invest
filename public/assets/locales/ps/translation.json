@@ -151,6 +151,7 @@
   "footer.company-name": "CloudBreeze",
 
   "aboutHistory-main-title": "زموږ د موزیم تاریخ",
+  "aboutHistory-main-desc": "ملي موزیم د لرغونو میراث ساتي او مهم تاریخي توکي نندارې ته وړاندې کوي",
 
   "titleWithDesc-title": "د افغانستان ملي موزیم تاریخ",
   "titleWithDesc-desc": "د افغانستان ملي موزیم شتمن تاریخ وپلټئ، بې وخته اثار او خزینې نندارې ته وړاندې کوي چې د دې هیواد د ژوندۍ او زړې تیریدونکې ژمنتیا جوهر څرګندوي. په هره ټوټه کې ښکلا ومومئ!",
@@ -173,6 +174,8 @@
 
   "aboutDirectorate-main-title": "د مدیرانو پیغام",
 
+  "aboutDirectorate-main-desc": "ریاستونه د راتلونکو نسلونو لپاره د کلتوري میراث د ساتنې ژمنه تازه کوي",
+
   "director-msg-title": "د مدیر پیغام",
   "director-name": "عمره خان مسعودي",
   "director-name-sub-title": "مدیر، د افغانستان ملي موزیم",
@@ -180,6 +183,7 @@
   "director-msg-desc-2": "سره له دې چې له ننګونو سره مخ شوی دی، په شمول د غلا او تخریب په شخړو کې، موزیم د مقاومت سمبول پاتې شوی او د ملت تاریخ د ساتنې لپاره وقف شوی دی. نن ورځ، دا د افغانستان د کلتور یو رڼا ده چې پوهانو، تاریخ پوهانو او لیدونکو ته د نړۍ له ګوټ ګوټ څخه راجلبوي.",
 
   "technicalStaff-main-title": "زموږ مسلکي ټیم سره وینئ",
+  "technicalStaff-main-desc": "زموږ د متعهدو متخصصینو ټیم سره آشنا شئ چې د خپل کلتوري میراث د ساتنې او ترویج لپاره ژمن دي",
 
   "technicalStaff-card-main-title": "زموږ تخنیکي کارکوونکي",
 
@@ -216,6 +220,7 @@
   "technicalStaff-team-last-sentence": "راځئ چې یوځای وده وکړو! ستاسو معلومات زموږ سره خوندي دي.",
 
   "regAndPol-main-title": "مقررات او پالیسۍ",
+  "regAndPol-main-desc": "زموږ مقررات او سیاستونه وپلټئ چې د ټولو لیدونکو لپاره یو خوندي او غني تجربه تضمینوي",
 
   "regAndPol-imp-pol-main-title": "مهم پالیسۍ",
 
@@ -243,6 +248,7 @@
   "regAndPol-freq-Ques-4-answer": "موږ د وېبپاڼې د فعالیت لپاره ضروري کوکي کاروو او د کارونکي تجربې د ښه کولو لپاره تحلیلي کوکي کاروو.",
 
   "eventsPage-main-title": "زموږ پیښې وګورئ",
+  "eventsPage-main-desc":"د کلتور او تاریخ لمانځنې لپاره د هیجان انگیزو پیښو مختلف ډولونه ومومئ",
 
   "eventsPage-up-com-events-main-title": "راتلونکې پیښې",
 
@@ -278,7 +284,29 @@
   "eventspage-input-placeholder": "خپل بریښنالیک ولیکئ...",
   "eventspage-update-btn": "ګډون وکړئ",
 
+  "articlesPage-main-title": "د موزیمونو نړۍ وپلټئ",
+  "articlesPage-main-desc": "د موزیمونو نړۍ څخه وروستي کیسې، تمایلات او نوښتونه وپلټئ",
+
+  "articlesPage-title": "ځانګړي مقالې",
+
+  "articlesPage-1st-card-title": "هنر د تاریخ په اوږدو کې تحول",
+  "articlesPage-1st-card-desc": "وګورئ چې څنګه هنر په پیړیو کې بدل شوی او له پخوانیو شاهکارونو څخه څه زده کوو",
+  "articlesPage-2nd-card-title": "په عصري موزیمونو کې پایښت",
+  "articlesPage-2nd-card-desc": "څنګه موزیمونه په ټوله نړۍ کې د کلتور د ساتنې ترڅنګ د سیارې د ساتنې لپاره چاپیریال ته دوستانه حل لارې خپلوي",
+  "articlesPage-3rd-card-title": "په موزیمونو کې د ټکنالوژۍ رول",
+  "articlesPage-3rd-card-desc": "ومومئ چې موزیمونه څنګه ټکنالوژي کاروي ترڅو متقابل او ډوبونکي تجربې وړاندې کړي",
+  "articlesPage-4th-card-title": "د لرغونو تمدنونو نندارې",
+  "articlesPage-4th-card-desc": "سفر د هغو نندارتونونو له لارې چې د لرغونو تمدنونو پاتې شوني او کیسې ښیي",
+  "articlesPage-5th-card-title": "کلتوري میراث او ساتنه",
+  "articlesPage-5th-card-desc": "موزیمونه څنګه راتلونکو نسلونو ته د کلتوري میراث په ساتنه کې حیاتي رول لوبوي",
+  "articlesPage-6th-card-title": "مجازی موزیم سفرونه: نوی عصر",
+  "articlesPage-6th-card-desc": "د مجازی سفرونو زیاتوالی او دا چې موزیمونه د هر چا لپاره، په هر ځای کې څنګه لاسرسی لري",
+
+  "articlesPage-card-btn": "نور ولولئ",
+  "articlesPage-load-more-btn": "نور پورته کړئ",
+
   "galleryPhotos-main-title": "زموږ په ګالري کې عکسونه",
+  "galleryPhotos-main-desc":"زموږ په ګالري کې د زړه پورې انځورونو له لارې د خپل بډایه میراث د تجربې لپاره لاړ شئ",
 
   "galleryPhotos-title": "زموږ خلاقه ګالري",
   "galleryPhotos-desc": "زموږ د خیره کوونکو لیدونو ټولګه وپلټئ، چې د خلاقیت او الهام بخښونکو شیبو جوهر ښیي. ځان پکې ډوب کړئ او په هر عکس کې ښکلا ومومئ!",
@@ -299,6 +327,7 @@
   "galleryPhotos-gallery-coll-3rd-img-desc": "د لرغوني هنر او کلتوري میراث نندارې ته وړاندې کول",
 
   "galleryVideos-main-title": "ویډیوګانې په زموږ ټولګه کې",
+  "galleryVideos-main-desc":"زموږ د ویدیوګانو ټولګه وپلټئ چې زموږ تاریخ او کلتور ژوندی کوي",
 
   "galleryVideos-title": "زموږ الهام بخښونکي ویډیوګانې",
   "galleryVideos-desc": "زموږ ځانګړې ویډیو ټولګه ومومئ، چې کیسې او شیبې ښیي چې تاسو به الهام او بوخت کړي. د خلاقیت او تصور نړۍ ته ځان ورښکته کړئ!",
@@ -319,6 +348,8 @@
   "gallerryVideos-more-video-desc": "د افغانستان بډای میراث ساتنه",
 
   "contactPage-main-title": "مونږ سره اړیکه ونیسئ",
+  "contactPage-main-desc":"موږ ستاسو پوښتنو ته هرکلی کوو او د اړیکې لپاره ستاسو په تمه یو",
+
   "contactPage-info-title": "اړیکې معلومات",
   "contactPage-info-phone": "تلیفون",
   "contactPage-info-phone-no": "+۹۳۲۰۲۵۲۰۳۲۹",

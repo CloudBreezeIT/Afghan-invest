@@ -156,6 +156,7 @@
 
 
     "aboutHistory-main-title":"History of Our Museum",
+    "aboutHistory-main-desc":"The National Museum preserves ancient heritage and showcases key historical artifacts",
 
     "titleWithDesc-title":"History of the National Museum of Afghanistan",
     "titleWithDesc-desc":"Explore the National Museum of Afghanistan’s rich history,showcasing timeless artifacts and treasures that capture the essence of the nation's vibrant past. Discover beauty in every piece!",
@@ -178,6 +179,7 @@
 
 
     "aboutDirectorate-main-title":"Message from Directorates",
+    "aboutDirectorate-main-desc":"The Directorates reaffirm their commitment to preserving cultural heritage for future generations",
 
     "director-msg-title":"Director's Message",
     "director-name":"Omara Khan Massoudi",
@@ -187,6 +189,7 @@
 
 
     "technicalStaff-main-title":"Meet Our Professional Team",
+    "technicalStaff-main-desc":"Meet our dedicated team of professionals committed to preserving and promoting our cultural heritage",
     
     "technicalStaff-card-main-title":"Our Technical Staff",
 
@@ -221,6 +224,7 @@
 
 
     "regAndPol-main-title":"Regulations and Policies",
+    "regAndPol-main-desc":"Explore our regulations and policies that ensure a safe and enriching experience for all visitors",
     
     "regAndPol-imp-pol-main-title":"Important Policies",
     
@@ -249,6 +253,7 @@
 
 
     "eventsPage-main-title":"Explore Our Events",
+    "eventsPage-main-desc":"Discover a variety of exciting events that celebrate culture and history",
     
     "eventsPage-up-com-events-main-title":"Upcoming Events",
     
@@ -284,7 +289,29 @@
     "eventspage-input-placeholder":"Enter your Email...",
     "eventspage-update-btn":"Subscribe",
 
+    "articlesPage-main-title":"Discover the World of Museums",
+    "articlesPage-main-desc":"Dive into the latest stories, trends, and innovations from the museum world",
+
+    "articlesPage-title":"Featured Articles",
+
+    "articlesPage-1st-card-title":"The Evolution of Art Through History",
+    "articlesPage-1st-card-desc":"Explore how art has transformed over centuries and what we can learn from ancient masterpieces",
+    "articlesPage-2nd-card-title":"Sustainability in Modern Museums",
+    "articlesPage-2nd-card-desc":"How museums around the world are adopting eco-friendly solutions to preserve culture while protecting the planet",
+    "articlesPage-3rd-card-title":"The Role of Technology in Museums",
+    "articlesPage-3rd-card-desc":"Discover how museums are leveraging technology to offer interactive and immersive experiences",
+    "articlesPage-4th-card-title":"Ancient Civilizations on Display",
+    "articlesPage-4th-card-desc":"A journey through exhibitions that showcase the remains and stories of ancient civilizations",
+    "articlesPage-5th-card-title":"Cultural Heritage and Preservation",
+    "articlesPage-5th-card-desc":"How museums play a vital role in preserving cultural heritage for future generations",
+    "articlesPage-6th-card-title":"Virtual Museum Tours: A New Era",
+    "articlesPage-6th-card-desc":"The rise of virtual tours and how they’re making museums accessible to everyone, anywhere",
+
+    "articlesPage-card-btn":"Read More",
+    "articlesPage-load-more-btn":"Load More",
+
     "galleryPhotos-main-title":"Photos In Our Gallery",
+    "galleryPhotos-main-desc":"Browse through our gallery to experience captivating images that showcase our rich heritage",
 
     "galleryPhotos-title":"Our Creative Gallery",
     "galleryPhotos-desc":"Explore our collection of stunning visuals, capturing the essence of creativity and moments that inspire. Dive in and discover beauty in every frame!",
@@ -306,6 +333,7 @@
 
 
     "galleryVideos-main-title":"Videos in Our Collection",
+    "galleryVideos-main-desc":"Explore our collection of videos that bring our history and culture to life",
 
     "galleryVideos-title":"Our Inspiring Videos",
     "galleryVideos-desc":"Discover our exclusive video collection, capturing stories and moments that will inspire and engage you. Dive into a world of creativity and imagination!",
@@ -327,6 +355,7 @@
 
 
     "contactPage-main-title":"Get in Touch With Us",
+    "contactPage-main-desc":"We welcome your inquiries and look forward to connecting with you",
 
     "contactPage-info-title":"Contact Information",
     "contactPage-info-phone":"Phone",

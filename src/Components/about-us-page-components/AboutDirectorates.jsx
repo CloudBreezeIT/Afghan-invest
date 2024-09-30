@@ -7,16 +7,21 @@ const AboutDirectorates = () => {
     <div className="min-h-screen w-full">
       {/* start of Background Image */}
       <div
-        className=" w-full min-h-96 mt-[64px]"
+        className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
         style={{
           backgroundImage: `url(${"https://images.pexels.com/photos/1484776/pexels-photo-1484776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-         {t("aboutDirectorate-main-title")}
-        </h1>
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+          <h1 className="text-5xl font-bold mb-4">
+          {t("aboutDirectorate-main-title")}
+          </h1>
+          <p className="text-xl mb-6">
+          {t("aboutDirectorate-main-desc")}
+          </p>
+        </div>
       </div>
       {/* ends of Background Image */}
       {/* heading start here */}

@@ -49,7 +49,7 @@ export default function RegulationsAndPolicies() {
     <div className="min-h-screen w-full bg-gray-100 pb-8">
       {/* Hero Section */}
       <div
-        className="w-full min-h-96 mt-[64px] flex items-center justify-center"
+        className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
         style={{
           backgroundImage:
             'url("https://cdn.pixabay.com/photo/2012/10/26/03/11/children-63175_1280.jpg")',
@@ -57,9 +57,14 @@ export default function RegulationsAndPolicies() {
           backgroundPosition: "center",
         }}
       >
-        <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-        {t("regAndPol-main-title")}
-        </h1>
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+          <h1 className="text-5xl font-bold mb-4">
+          {t("regAndPol-main-title")}
+          </h1>
+          <p className="text-xl mb-6">
+          {t("regAndPol-main-desc")}
+          </p>
+        </div>
       </div>
 
       {/* Content Section */}
