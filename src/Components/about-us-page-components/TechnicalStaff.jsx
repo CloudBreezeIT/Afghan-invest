@@ -71,16 +71,21 @@ export default function TechnicalStaff() {
     <div className="min-h-screen w-full">
       {/* Hero Section */}
       <div
-        className="w-full min-h-96 mt-[64px] flex items-center justify-center"
+        className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
         style={{
           backgroundImage: `url(${"https://cdn.pixabay.com/photo/2015/11/07/01/45/map-1030358_1280.jpg"})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+          <h1 className="text-5xl font-bold mb-4">
           {t("technicalStaff-main-title")}
-        </h1>
+          </h1>
+          <p className="text-xl mb-6">
+          {t("technicalStaff-main-desc")}
+          </p>
+        </div>
       </div>
 
       {/* Section 1: Staff Members */}

@@ -8,17 +8,23 @@ const PhotosGallery = () => {
       <div className="min-h-screen w-full">
         {/* start of Background Image */}
         <div
-          className=" w-full min-h-96 mt-[64px]"
+          className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
           style={{
             backgroundImage: `url(${"https://images.unsplash.com/photo-1505027014503-e6de34d28116?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-            {t("galleryPhotos-main-title")}
-          </h1>
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+            <h1 className="text-5xl font-bold mb-4">
+              {t("galleryPhotos-main-title")}
+            </h1>
+            <p className="text-xl mb-6">
+            {t("galleryPhotos-main-desc")}
+            </p>
+          </div>
         </div>
+
         {/* ends of Background Image */}
         {/* heading with description start here */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
@@ -26,15 +32,13 @@ const PhotosGallery = () => {
             {t("galleryPhotos-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
-          <p className="text-xl my-8">
-            {t("galleryPhotos-desc")}
-          </p>
+          <p className="text-xl my-8">{t("galleryPhotos-desc")}</p>
         </div>
         {/* heading with description ends here */}
         {/* gallery view starts here */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-           {t("galleryPhotos-gallery-view-title")}
+            {t("galleryPhotos-gallery-view-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <div className="flex flex-col md:flex-row justify-center gap-12 my-16">
@@ -55,7 +59,7 @@ const PhotosGallery = () => {
                 alt=""
               />
               <h1 className="p-2 text-xl group-hover:bg-white group-hover:text-mstheme transition duration-500 font-semibold tracking-wide">
-              {t("galleryPhotos-gallery-view-2nd-img-title")}
+                {t("galleryPhotos-gallery-view-2nd-img-title")}
               </h1>
             </div>
           </div>
@@ -81,7 +85,7 @@ const PhotosGallery = () => {
                   {t("galleryPhotos-gallery-coll-1st-img-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                 {t("galleryPhotos-gallery-coll-1st-img-desc")}
+                  {t("galleryPhotos-gallery-coll-1st-img-desc")}
                 </p>
               </div>
             </div>
@@ -95,10 +99,10 @@ const PhotosGallery = () => {
               />
               <div className="p-4">
                 <h1 className="text-lg font-semibold mb-2">
-                {t("galleryPhotos-gallery-coll-2nd-img-title")}
+                  {t("galleryPhotos-gallery-coll-2nd-img-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                {t("galleryPhotos-gallery-coll-2nd-img-desc")}
+                  {t("galleryPhotos-gallery-coll-2nd-img-desc")}
                 </p>
               </div>
             </div>
@@ -112,10 +116,10 @@ const PhotosGallery = () => {
               />
               <div className="p-4">
                 <h1 className="text-lg font-semibold mb-2">
-                {t("galleryPhotos-gallery-coll-3rd-img-title")}
+                  {t("galleryPhotos-gallery-coll-3rd-img-title")}
                 </h1>
                 <p className="text-sm text-gray-600">
-                {t("galleryPhotos-gallery-coll-3rd-img-desc")}
+                  {t("galleryPhotos-gallery-coll-3rd-img-desc")}
                 </p>
               </div>
             </div>

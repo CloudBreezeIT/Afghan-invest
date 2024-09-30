@@ -8,16 +8,21 @@ export default function ContactHero() {
       <div className="min-h-screen w-full">
         {/* Hero Section */}
         <div
-          className="w-full min-h-96 mt-[64px]"
+          className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
           style={{
             backgroundImage: `url(${"/assets/images/contact/contact-us-page-hero.png"})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
-            {t("contactPage-main-title")}
-          </h1>
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+            <h1 className="text-5xl font-bold mb-4">
+              {t("contactPage-main-title")}
+            </h1>
+            <p className="text-xl mb-6">
+            {t("contactPage-main-desc")}
+            </p>
+          </div>
         </div>
 
         {/* Section 2: Contact Information */}
@@ -30,19 +35,27 @@ export default function ContactHero() {
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <div className="bg-white shadow-md p-8 rounded-lg">
               <i className="fas fa-phone-alt text-4xl text-mstheme mb-4"></i>
-              <h3 className="text-lg font-semibold">{t("contactPage-info-phone")}</h3>
+              <h3 className="text-lg font-semibold">
+                {t("contactPage-info-phone")}
+              </h3>
               <p className="text-gray-600">{t("contactPage-info-phone-no")}</p>
             </div>
             <div className="bg-white shadow-md p-8 rounded-lg">
               <i className="fas fa-envelope text-4xl text-mstheme mb-4"></i>
-              <h3 className="text-lg font-semibold">{t("contactPage-info-email")}</h3>
-              <p className="text-gray-600">{t("contactPage-info-email-value")}</p>
+              <h3 className="text-lg font-semibold">
+                {t("contactPage-info-email")}
+              </h3>
+              <p className="text-gray-600">
+                {t("contactPage-info-email-value")}
+              </p>
             </div>
             <div className="bg-white shadow-md p-8 rounded-lg">
               <i className="fas fa-map-marker-alt text-4xl text-mstheme mb-4"></i>
-              <h3 className="text-lg font-semibold">{t("contactPage-info-location")}</h3>
+              <h3 className="text-lg font-semibold">
+                {t("contactPage-info-location")}
+              </h3>
               <p className="text-gray-600">
-              {t("contactPage-info-location-value")}
+                {t("contactPage-info-location-value")}
               </p>
             </div>
           </div>
@@ -85,7 +98,7 @@ export default function ContactHero() {
         {/* Section 4: Location Map */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
-           {t("contactPage-map-main-title")}
+            {t("contactPage-map-main-title")}
           </h2>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent mb-12"></div>
           <div className="relative overflow-hidden pb-[56.25%] h-0">

@@ -8,17 +8,22 @@ const AboutHistory = () => {
       <div className="min-h-screen w-full">
         {/* start of Background Image */}
         <div
-          className=" w-full min-h-96 mt-[64px]"
-          style={{
-            backgroundImage: `url(${"https://cdn.pixabay.com/photo/2016/03/05/09/12/afghanistan-1237421_960_720.jpg"})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h1 className="text-white text-center py-36 text-4xl md:text-6xl font-bold">
+        className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
+        style={{
+          backgroundImage: `url(${"https://cdn.pixabay.com/photo/2016/03/05/09/12/afghanistan-1237421_960_720.jpg"})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+          <h1 className="text-5xl font-bold mb-4">
           {t("aboutHistory-main-title")}
           </h1>
+          <p className="text-xl mb-6">
+          {t("aboutHistory-main-desc")}
+          </p>
         </div>
+      </div>
         {/* ends of Background Image */}
         {/* heading with description start here */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
