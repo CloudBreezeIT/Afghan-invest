@@ -1,9 +1,10 @@
 import React from 'react'
+import ThousandCitiesExhibitin from '../../Components/exhibition-page-components/ThousandCitiesExhibitin'
 
 const ExhibitionThousandCities = () => {
   return (
     <div>
-      ExhibitionThousandCities
+      <ThousandCitiesExhibitin/>
     </div>
   )
 }

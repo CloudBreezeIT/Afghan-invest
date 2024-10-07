@@ -1,9 +1,10 @@
 import React from 'react'
+import AiKhanumExhibition from '../../Components/exhibition-page-components/AiKhanumExhibition'
 
 const ExhibitionAiKhanum = () => {
   return (
     <div>
-      ExhibitionAiKhanum
+      <AiKhanumExhibition/>
     </div>
   )
 }
