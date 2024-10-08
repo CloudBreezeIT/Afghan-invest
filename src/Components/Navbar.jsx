@@ -1,14 +1,24 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaChevronDown, FaGlobe } from "react-icons/fa"; // Importing only the dropdown icon
+import { FaBars, FaChevronDown, FaGlobe } from "react-icons/fa"; // Importing only the dropdown icon
 // import logo from "../../src/images/logo/afghanInvest.png";
 import mlogo from "../images/logo/mlogo.png";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookies from "js-cookie";
 import classNames from "classnames";
+import { FaX } from "react-icons/fa6";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState(false);
+
+  const handleChange = () => {
+    setMenu(!menu)
+  }
+
+  const closeMenu = () => {
+    setMenu(false)
+  }
   const languages = [
     {
       code: "en",
@@ -73,7 +83,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Menu Section */}
+          {/* Menu Section for large screen */}
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal space-x-4">
               <li>
@@ -251,6 +261,153 @@ const Navbar = () => {
                 </ul>
               )}
             </div>
+          </div>
+          {/* mobile menu btn */}
+          <div className='lg:hidden flex items-center'>
+            {
+              menu ? ( <FaX size={25} onClick={handleChange}/> ) : ( <FaBars size={25} onClick={handleChange}/> )
+            }
+          </div>
+          <div className={` ${
+            menu ? "translate-x-0" : "-translate-x-full"
+          } lg:hidden flex flex-col absolute bg-black text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
+            <ul className="menu menu-vertical space-y-4">
+              <li>
+                <Link
+                  onClick={closeMenu}
+                  to="/"
+                  className="text-md font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                >
+                  {t("header.first-menu")}
+                </Link>
+              </li>
+              <li className="dropdown dropdown-hover">
+                <label
+                  tabIndex={0}
+                  className="text-md font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                >
+                  {t("header.second-menu")} <FaChevronDown className="ml-1" />
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content p-2 shadow bg-mstheme rounded-box w-40 mt-1 z-20"
+                >
+                  <li>
+                    <Link to='/about/history' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.second-sub-menu-1")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/about/directorates' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.second-sub-menu-2")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/about/technical-staff' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.second-sub-menu-3")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/about/regulations&policies' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.second-sub-menu-4")}
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="dropdown dropdown-hover">
+                <label
+                  tabIndex={0}
+                  className="text-md font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                >
+                  {t("header.third-menu")} <FaChevronDown className="ml-1" />
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content p-2 shadow bg-mstheme rounded-box w-52 mt-1 z-20"
+                >
+                  <li>
+                    <Link to='/exhibition/islamic-era-exhibition' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.third-sub-menu-1")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/exhibition/bronze-age-exhibition' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.third-sub-menu-2")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/exhibition/aynak-copper-exhibition' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.third-sub-menu-3")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/exhibition/ai-khanum' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.third-sub-menu-4")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/exhibition/thousand-cities-exhibition' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.third-sub-menu-5")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/exhibition/car-exhibition' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.third-sub-menu-6")}
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link
+                  onClick={closeMenu}
+                  to="/events"
+                  className="text-md font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                >
+                  {t("header.fourth-menu")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={closeMenu}
+                  to="/articles"
+                  className="text-md font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                >
+                  {t("header.fifth-menu")}
+                </Link>
+              </li>
+              <li className="dropdown dropdown-hover">
+                <label
+                  tabIndex={0}
+                  className="text-md font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                >
+                  {t("header.sixth-menu")} <FaChevronDown className="ml-1" />
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content p-2 shadow bg-mstheme rounded-box w-40 mt-1 z-20"
+                >
+                  <li>
+                    <Link to='/gallery/photos' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.sixth-sub-menu-1")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='gallery/videos' onClick={closeMenu} className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                      {t("header.sixth-sub-menu-2")}
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link
+                  onClick={closeMenu}
+                  to="/contact-us"
+                  className="text-md font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                >
+                  {t("header.seventh-menu")}
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const VisitorInfo = () => {
   return (
     <div className='w-full md:w-[1150px] m-auto px-4 md:px-0'>
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-      <div className="">
+      <div className="hidden md:block">
         <img className='h-[1000px]' src="https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
       </div>
       <div className="">

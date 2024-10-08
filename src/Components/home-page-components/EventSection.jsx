@@ -101,7 +101,7 @@ export default function EventSection() {
 
   return (
     <div className="relative w-full md:w-[1150px] m-auto py-20">
-      <h1 className="pb-5 text-3xl md:text-4xl font-semibold">
+      <h1 className="pb-5 text-3xl md:text-4xl font-semibold px-5 md:px-0">
         {t("eventSection-main-title")}
       </h1>
 

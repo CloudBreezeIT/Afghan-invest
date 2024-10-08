@@ -9,7 +9,7 @@ const AboutMuseum = () => {
       <div className='w-full md:w-[1150px] m-auto pl-8 md:pl-0 '>
         <div className="flex flex-col md:flex-row justify-between gap-10 py-20">
             <div className="">
-            <iframe className='rounded-md' width="560" height="315" src="https://www.youtube.com/embed/iyb2nCc2fHg?si=nL7ptMtDSfQcTWAT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='rounded-md w-280px md:w-[560px]'  height="315" src="https://www.youtube.com/embed/iyb2nCc2fHg?si=nL7ptMtDSfQcTWAT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div className="flex flex-col items-start justify-center">
                 <p className='pb-6 text-mstheme font-semibold uppercase text-lg'>{t("aboutMuseum-title")}</p>
