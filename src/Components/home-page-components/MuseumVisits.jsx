@@ -34,7 +34,7 @@ const MuseumVisits = () => {
     <>
       <div className="w-full md:w-[1150px] m-auto ">
         <div className="py-20">
-          <h1 className="pb-5 md:pl-0 pl-8 text-3xl md:text-4xl font-semibold">
+          <h1 className="pb-5 md:pl-0 pl-16 text-3xl md:text-4xl font-semibold">
             {t("museumVisits-main-title")}
           </h1>
 
