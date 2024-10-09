@@ -88,7 +88,7 @@ const AboutHistory = () => {
             {t("historicalTime-title")}
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
-          <div className="flex flex-col md:flex-row justify-center gap-12 my-16">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-12 my-16">
             {/* Card 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-[320px]">
               <img
