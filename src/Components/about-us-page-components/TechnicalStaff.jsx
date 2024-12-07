@@ -5,10 +5,10 @@ import { useTranslation } from "react-i18next";
 
 export default function TechnicalStaff() {
   const { t } = useTranslation();
-  
+
 
   const staffData = [
-  
+
     {
       id: 1,
       name: t("technicalStaff-1st-card-name"),
@@ -23,16 +23,16 @@ export default function TechnicalStaff() {
       name: t("technicalStaff-2nd-card-name"),
       position: t("technicalStaff-2nd-card-position"),
       description:
-      t("technicalStaff-2nd-card-desc"),
+        t("technicalStaff-2nd-card-desc"),
       image:
-        "https://scontent.fpew3-1.fna.fbcdn.net/v/t39.30808-6/342510633_620905219517753_2503987777587080160_n.jpg?stp=dst-jpg_s206x206&_nc_cat=105&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeFeZHTwGP2uqIcKBw-zt-oPn1iTqfiKyeWfWJOp-IrJ5Qz3U4rj5G6yQydTSOAxEAnpZ_geMDtTNm7VcBovcP7U&_nc_ohc=NgP7f0ek4fQQ7kNvgG8eou2&_nc_ht=scontent.fpew3-1.fna&_nc_gid=AQK7Pv8TLLRmv4d3m4kqgLw&oh=00_AYB25FbeVyKDRWtT8K9dta2LwpMkvLeTcK33zQorDFUAUg&oe=66FA2192",
+        "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
     },
     {
       id: 3,
       name: t("technicalStaff-3rd-card-name"),
       position: t("technicalStaff-3rd-card-position"),
       description:
-      t("technicalStaff-3rd-card-desc"),
+        t("technicalStaff-3rd-card-desc"),
       image:
         "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
     },
@@ -41,7 +41,7 @@ export default function TechnicalStaff() {
       name: t("technicalStaff-4th-card-name"),
       position: t("technicalStaff-4th-card-position"),
       description:
-      t("technicalStaff-4th-card-desc"),
+        t("technicalStaff-4th-card-desc"),
       image:
         "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
     },
@@ -50,16 +50,16 @@ export default function TechnicalStaff() {
       name: t("technicalStaff-5th-card-name"),
       position: t("technicalStaff-5th-card-position"),
       description:
-      t("technicalStaff-5th-card-desc"),
+        t("technicalStaff-5th-card-desc"),
       image:
         "https://cdn.pixabay.com/photo/2013/02/10/14/15/afghanistan-80091_640.jpg",
     },
     {
       id: 6,
       name: t("technicalStaff-6th-card-name"),
-      position:t("technicalStaff-6th-card-position"),
+      position: t("technicalStaff-6th-card-position"),
       description:
-      t("technicalStaff-6th-card-desc"),
+        t("technicalStaff-6th-card-desc"),
       image:
         "https://media.istockphoto.com/id/1283748374/photo/coronavirus-country-concept.jpg?s=1024x1024&w=is&k=20&c=eeeV0QUKeP04xLOZNr1qmrlJ1kyTbjoZPiFVpOd-188=",
     },
@@ -80,10 +80,10 @@ export default function TechnicalStaff() {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
           <h1 className="text-5xl font-bold mb-4">
-          {t("technicalStaff-main-title")}
+            {t("technicalStaff-main-title")}
           </h1>
           <p className="text-xl mb-6">
-          {t("technicalStaff-main-desc")}
+            {t("technicalStaff-main-desc")}
           </p>
         </div>
       </div>
@@ -95,16 +95,16 @@ export default function TechnicalStaff() {
         </h2>
         <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent mb-12"></div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 gap-8">
           {staffData?.length > 0 ? (
             staffData?.map((member) => (
               <div
                 key={member.id}
-                className="relative flex flex-col items-center bg-white shadow-lg rounded-xl overflow-hidden p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl max-w-sm mx-auto group"
-                style={{ minHeight: "350px", width: "300px" }}
+                className="relative flex flex-col sm:flex-row bg-white shadow-lg rounded-xl overflow-hidden p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl max-w-sm sm:max-w-full mx-auto group"
+                style={{ minHeight: "350px", width: "900px" }}
               >
                 {/* Image Section */}
-                <div className="relative w-28 h-28 rounded-full overflow-hidden shadow-lg border-4 border-white">
+                <div className="relative w-28 sm:w-96 h-28 sm:h-96  overflow-hidden shadow-lg border-4 border-white">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -113,24 +113,26 @@ export default function TechnicalStaff() {
                 </div>
 
                 {/* Text Content */}
-                <div className="mt-4 text-center space-y-2">
-                  <h5 className="text-xl font-bold text-gray-900">
-                    {member.name}
-                  </h5>
-                  <p className="text-sm text-gray-600">{member.position}</p>
-                  <p className="text-xs text-gray-500 leading-relaxed">
-                    {member.description}
-                  </p>
-                </div>
+                <div className="flex flex-col items-center">
+                  <div className="mt-4 text-center space-y-2">
+                    <h5 className="text-xl font-bold text-gray-900">
+                      {member.name}
+                    </h5>
+                    <p className="text-sm text-gray-600">{member.position}</p>
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      {member.description}
+                    </p>
+                  </div>
 
-                {/* Contact Button */}
-                <div className="flex justify-center mt-6">
-                  <button
-                    className="px-6 py-2 font-semibold text-sm bg-mstheme text-white rounded-full hover:bg-mstheme_hover shadow transition-all"
-                    type="button"
-                  >
-                    {t("technicalStaff-card-btn")}
-                  </button>
+                  {/* Contact Button */}
+                  <div className="mt-6">
+                    <button
+                      className="px-6 py-2 font-semibold text-sm bg-mstheme text-white rounded-full hover:bg-mstheme_hover shadow transition-all"
+                      type="button"
+                    >
+                      {t("technicalStaff-card-btn")}
+                    </button>
+                  </div>
                 </div>
               </div>
             ))

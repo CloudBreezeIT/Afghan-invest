@@ -13,6 +13,7 @@ import MuseumVisits from "../../Components/home-page-components/MuseumVisits";
 import AboutMuseum from "../../Components/home-page-components/AboutMuseum";
 import DirectorateSection from "../../Components/home-page-components/DirectorateSection";
 import VisitorInfo from "../../Components/home-page-components/VisitorInfo";
+import NotificationCard from "../../Components/notification-components/NotificationCard";
 
 const Home = () => {
   return (
@@ -22,9 +23,10 @@ const Home = () => {
       <EventSection />
       <NewsAndMedia />
       <Gallery />
-      <MuseumInfoBar />
-      <MuseumVisits />
+      {/* <MuseumInfoBar /> */}
+      {/* <MuseumVisits /> */}
       <AboutMuseum />
+      <NotificationCard />
       {/* <DirectorateSection /> */}
       <VisitorInfo />
       {/* <About /> */}
