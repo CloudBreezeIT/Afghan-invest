@@ -19,17 +19,17 @@ const Home = () => {
     <>
       {/* <Banner /> */}
       <Hero />
-      <MuseumInfoBar/>
-      <MuseumVisits/>
-      <AboutMuseum/>
       <EventSection />
-      <DirectorateSection/>
-      <VisitorInfo/>
+      <NewsAndMedia />
+      <Gallery />
+      <MuseumInfoBar />
+      <MuseumVisits />
+      <AboutMuseum />
+      {/* <DirectorateSection /> */}
+      <VisitorInfo />
       {/* <About /> */}
       {/* <Service /> */}
-      {/* <NewsAndMedia /> */}
       {/* <Founders /> */}
-      {/* <Gallery /> */}
       {/* <Address /> */}
     </>
   );

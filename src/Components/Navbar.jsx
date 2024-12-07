@@ -70,6 +70,7 @@ const Navbar = () => {
                 alt="National Museum Afghanistan Logo"
                 className="h-10 w-auto mr-2"
               />
+              <p className="text-sm font-medium">{t("header.main-heading")}</p>
             </Link>
           </div>
 

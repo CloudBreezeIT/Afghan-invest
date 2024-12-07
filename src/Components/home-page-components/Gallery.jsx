@@ -1,88 +1,158 @@
-import { useState } from 'react';
-import { FiShare2 } from "react-icons/fi";
-import e1 from '../../../src/images/gallery/e1.jpg'
-import e2 from '../../../src/images/gallery/e2.jpeg'
-import e3 from '../../../src/images/gallery/e3.jpeg'
-import c1 from '../../../src/images/gallery/c1.jpeg'
-import c2 from '../../../src/images/gallery/c2.jpeg'
-import c3 from '../../../src/images/gallery/c3.jpeg'
-import m1 from '../../../src/images/gallery/m1.jpeg'
-import m2 from '../../../src/images/gallery/m2.jpeg'
-import m3 from '../../../src/images/gallery/m3.jpg'
-const Gallery = () => {
-    const energy = [
-        { "path": e1, "desc": "Energy is Power" },
-        { "path": e2, "desc": "Renewable sources" },
-        { "path": e3, "desc": "Clean and green" },
-    ];
+import React from "react";
+import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Import icons for navigation
 
-    const construction = [
-        { "path": c1, "desc": "Building the future" },
-        { "path": c2, "desc": "Strong foundations" },
-        { "path": c3, "desc": "Innovative designs" },
-    ];
+export default function Gallery() {
+  const { t } = useTranslation();
+  const sliderRef = React.useRef(null);
 
-    const mining = [
-        { "path": m1, "desc": "Resource extraction" },
-        { "path": m2, "desc": "Efficient methods" },
-        { "path": m3, "desc": "Sustainable mining" },
-    ];
+  const events = [
+    {
+      id: 2,
+      title: t("eventSection.1st-image-title"),
+      description:t("eventSection.1st-image-desc"),
+      image:
+        "assets/images/Home/c2.jpg",
+    },
+    {
+      id: 3,
+      title: t("eventSection.2nd-image-title"),
+      description:t("eventSection.2nd-image-desc"),
+      image:
+      "assets/images/Home/c1.jpg",
+    },
+    {
+      id: 4,
+      title: t("eventSection.3rd-image-title"),
+      description:t("eventSection.3rd-image-desc"),
+      image:
+      "assets/images/Home/c2.jpg",
+    },
+    {
+      id: 5,
+      title:t("eventSection.4th-image-title"),
+      description:t("eventSection.4th-image-desc"),
+      image:
+      "assets/images/Home/c3.jpg",
+    },
+    {
+      id: 6,
+      title:t("eventSection.5th-image-title"),
+      description:t("eventSection.5th-image-desc"),
+      image:
+      "assets/images/Home/e1.JPG",
+    },
+    {
+      id: 7,
+      title: t("eventSection.6th-image-title"),
+      description:t("eventSection.6th-image-desc"),
+      image:
+      "assets/images/Home/e2.JPG",
+    },
+    {
+      id: 8,
+      title: t("eventSection.7th-image-title"),
+      description:t("eventSection.7th-image-desc"),
+      image:
+      "assets/images/Home/e3.JPG",
+    },
+    {
+      id: 9,
+      title: t("eventSection.8th-image-title"),
+      description:t("eventSection.8th-image-desc"),
+      image:
+        "assets/images/Home/m1.jpg",
+    },
+    {
+      id: 10,
+      title: t("eventSection.9th-image-title"),
+      description:t("eventSection.9th-image-desc"),
+      image:
+        "assets/images/Home/m2.jpg",
+    },
+  ];
 
-    const [images, setImages] = useState(energy);
-    const [selectedSector, setSelectedSector] = useState('energy');
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024, // for tablets and small desktops
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768, // for mobile devices
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+    arrows: false, // Disable default arrows to use custom ones
+  };
 
-    const handleChange = (Images, sector) => {
-        setImages(Images);
-        setSelectedSector(sector);
-    }
+  return (
+    <div className="relative w-full md:w-[1350px] m-auto py-20">
+      <h1 className="pb-5 text-3xl md:text-4xl font-semibold text-center">
+        {t("eventSection-main-title")}
+      </h1>
 
-    return (
-        <>
-            <div className='flex flex-col justify-center items-center text-center mt-5'>
-                <h2 className="text-4xl font-bold text-black mb-4">Our Gallery</h2>
-                <p className="text-xl text-black mb-12 lg:w-[60%]">
-                    Explore our Gallery to see the impact of Afghan Invest's work across various sectors. Browse through photos and videos showcasing our major projects, community engagements, and events.
+      <Slider ref={sliderRef} {...sliderSettings}>
+        {events.map((event) => (
+          <div key={event.id} className="px-4 my-4">
+            <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl border-b-2 border-mstheme">
+              <div className="relative h-56 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl">
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* <div className="p-6">
+                <h5 className="mb-2 text-xl font-semibold leading-snug text-blue-gray-900">
+                  {stringConcat(event.title, 22)}
+                </h5>
+                <p className="text-base font-light leading-relaxed text-inherit">
+                  {stringConcat(event.description, 60)}
+
                 </p>
+              </div> */}
+              {/* <div className="p-6 pt-0">
+                <button
+                  className="align-middle font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-mstheme text-white hover:bg-mstheme_hover"
+                  type="button"
+                >
+                  {t("eventSection-btn")}
+                </button>
+              </div> */}
             </div>
+          </div>
+        ))}
+      </Slider>
 
-            <div className='flex flex-wrap mx-10 gap-5'>
-                <h1
-                    className={`text-xl font-semibold cursor-pointer ${selectedSector === 'energy' ? 'text-yellow-500 border-b-2 border-yellow-600 pb-2' : 'text-black'}`}
-                    onClick={() => handleChange(energy, 'energy')}
-                >
-                    Energy Sector
-                </h1>
-                <h1
-                    className={`text-xl font-semibold cursor-pointer ${selectedSector === 'construction' ? 'text-yellow-500 border-b-2 border-yellow-600 pb-2' : 'text-black'}`}
-                    onClick={() => handleChange(construction, 'construction')}
-                >
-                    Construction Sector
-                </h1>
-                <h1
-                    className={`text-xl font-semibold cursor-pointer ${selectedSector === 'mining' ? 'text-yellow-500 border-b-2 border-yellow-600 pb-2' : 'text-black'}`}
-                    onClick={() => handleChange(mining, 'mining')}
-                >
-                    Mining Sector
-                </h1>
-            </div>
+      {/* Custom Previous Button */}
+      <button
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-mstheme text-white p-3 rounded-full shadow-lg hover:bg-mstheme_hover"
+        onClick={() => sliderRef.current.slickPrev()}
+      >
+        <FaArrowLeft size={20} />
+      </button>
 
-            <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 items-center mx-10 mt-5'>
-                {
-                    images && images.map((e, index) => (
-                        <div key={index} className="w-full h-80 rounded-2xl relative hover:shadow-2xl">
-                            <img src={e.path} alt="" className="w-full h-full rounded-2xl object-cover" />
-                            <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2 rounded-b-2xl flex items-center justify-between">
-                                <span className="flex items-center">
-                                    <FiShare2 className="mr-2 cursor-pointer" />
-                                    {e.desc}
-                                </span>
-                            </div>
-                        </div>
-                    ))
-                }
-            </div>
-        </>
-    );
+      {/* Custom Next Button */}
+      <button
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-mstheme text-white p-3 rounded-full shadow-lg hover:bg-mstheme_hover"
+        onClick={() => sliderRef.current.slickNext()}
+      >
+        <FaArrowRight size={20} />
+      </button>
+      <div className="w-full mt-14 h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
+    </div>
+  );
 }
-
-export default Gallery;
