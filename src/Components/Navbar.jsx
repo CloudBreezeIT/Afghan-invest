@@ -88,13 +88,13 @@ const Navbar = () => {
           {/* Right Section: Social Icons */}
           <div className="flex  sm:space-x-4 text-gray-700">
             <a href="https://www.facebook.com/nationalmuseum.af?mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noopener noreferrer" className="px-5 hover:text-blue-600">
-              <FaFacebook  size={24}/>
+              <FaFacebook size={24} />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="px-3 hover:text-red-600">
-              <FaYoutube  size={24}/>
+              <FaYoutube size={24} />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="px-3 hover:text-blue-400">
-              <FaTwitter  size={24}/>
+              <FaTwitter size={24} />
             </a>
           </div>
         </div>
@@ -126,7 +126,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
                   {t("header.first-menu")}
                 </Link>
@@ -134,7 +134,7 @@ const Navbar = () => {
               <li className="dropdown dropdown-hover">
                 <label
                   tabIndex={0}
-                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
                   {t("header.second-menu")} <FaChevronDown className="ml-1" />
                 </label>
@@ -143,22 +143,22 @@ const Navbar = () => {
                   className="dropdown-content p-2 shadow bg-mstheme rounded-box w-40 mt-1 z-20"
                 >
                   <li>
-                    <Link to='/about/history' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/about/history' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.second-sub-menu-1")}
                     </Link>
                   </li>
                   <li>
-                    <Link to='/about/directorates' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/about/directorates' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.second-sub-menu-2")}
                     </Link>
                   </li>
                   <li>
-                    <Link to='/about/technical-staff' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/about/technical-staff' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.second-sub-menu-3")}
                     </Link>
                   </li>
                   <li>
-                    <Link to='/about/regulations&policies' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/about/regulations&policies' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.second-sub-menu-4")}
                     </Link>
                   </li>
@@ -167,50 +167,16 @@ const Navbar = () => {
               <li className="dropdown dropdown-hover">
                 <Link
                   to='exhibitions'
-                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
                   {t("header.third-menu")}
                 </Link>
-                {/* <ul
-                  tabIndex={0}
-                  className="dropdown-content p-2 shadow bg-mstheme rounded-box w-52 mt-1 z-20"
-                >
-                  <li>
-                    <Link to='/exhibition/islamic-era-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
-                      {t("header.third-sub-menu-1")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to='/exhibition/bronze-age-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
-                      {t("header.third-sub-menu-2")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to='/exhibition/aynak-copper-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
-                      {t("header.third-sub-menu-3")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to='/exhibition/ai-khanum' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
-                      {t("header.third-sub-menu-4")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to='/exhibition/thousand-cities-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
-                      {t("header.third-sub-menu-5")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to='/exhibition/car-exhibition' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
-                      {t("header.third-sub-menu-6")}
-                    </Link>
-                  </li>
-                </ul> */}
+
               </li>
               <li>
                 <Link
                   to="/events"
-                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
                   {t("header.fourth-menu")}
                 </Link>
@@ -218,7 +184,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/articles"
-                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
                   {t("header.fifth-menu")}
                 </Link>
@@ -226,7 +192,7 @@ const Navbar = () => {
               <li className="dropdown dropdown-hover">
                 <label
                   tabIndex={0}
-                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
                   {t("header.sixth-menu")} <FaChevronDown className="ml-1" />
                 </label>
@@ -235,12 +201,12 @@ const Navbar = () => {
                   className="dropdown-content p-2 shadow bg-mstheme rounded-box w-40 mt-1 z-20"
                 >
                   <li>
-                    <Link to='/gallery/photos' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='/gallery/photos' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.sixth-sub-menu-1")}
                     </Link>
                   </li>
                   <li>
-                    <Link to='gallery/videos' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded">
+                    <Link to='gallery/videos' className="hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.sixth-sub-menu-2")}
                     </Link>
                   </li>
@@ -249,7 +215,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/contact-us"
-                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
                   {t("header.seventh-menu")}
                 </Link>
@@ -262,7 +228,7 @@ const Navbar = () => {
             <div className="dropdown">
               <label
                 tabIndex={0}
-                className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 onClick={toggleDropdown} // Toggle dropdown on click
               >
                 <FaGlobe className="mr-1" />
@@ -301,6 +267,13 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+
+      <a href="https://wa.me/1234567890" target="_blank" className="fixed right-2 bottom-28 z-50 rounded-full">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Whatsapp icon" className="w-24" />
+      </a>
+
+      
     </>
   );
 };
