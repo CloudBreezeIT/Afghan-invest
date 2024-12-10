@@ -111,7 +111,7 @@ const ArticlesHeroSection = () => {
                       {article.description}
                     </p>
                     <div className="mt-3">
-                      <button className="bg-blue-600 text-white px-3 py-1.5 rounded-md text-sm hover:bg-blue-700 transition-colors duration-200">
+                      <button className="bg-mstheme text-white px-3 py-1.5 rounded-md text-sm hover:bg-mstheme transition-colors duration-200">
                         {t("articlesPage-card-btn")}
                       </button>
                     </div>
@@ -126,7 +126,7 @@ const ArticlesHeroSection = () => {
             <div className="flex justify-center mt-10">
               <button
                 onClick={loadMoreArticles}
-                className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200"
+                className="bg-mstheme text-white px-6 py-2 rounded-md hover:bg-mstheme transition-colors duration-200"
               >
                 {t("articlesPage-load-more-btn")}
               </button>

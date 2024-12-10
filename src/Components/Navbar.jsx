@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronDown, FaGlobe } from "react-icons/fa"; // Importing only the dropdown icon
-// import logo from "../../src/images/logo/afghanInvest.png";
+import { FaPhoneAlt, FaEnvelope, FaFacebook, FaYoutube, FaTwitter } from "react-icons/fa";
 import mlogo from "../images/logo/mlogo.png";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
@@ -30,6 +30,8 @@ const Navbar = () => {
   ];
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [topOffset, setTopOffset] = useState(34);
+
 
   const currentLanguageCode = cookies.get("i18next") || "en";
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
@@ -38,10 +40,10 @@ const Navbar = () => {
   useEffect(() => {
     console.log("Setting page stuff");
     document.body.dir = currentLanguage.dir || "ltr";
-    if(cookies.get("i18next") === "ps" || cookies.get("i18next") === "per"){
+    if (cookies.get("i18next") === "ps" || cookies.get("i18next") === "per") {
       document.body.className = "persian-font";
     }
-    else{
+    else {
       document.body.className = "english-font";
     }
   }, [currentLanguage, t]);
@@ -55,32 +57,77 @@ const Navbar = () => {
     setDropdownOpen(false); // Close dropdown after selection
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 700) {
+      setTopOffset(0)
+    }
+    else {
+      setTopOffset(34)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-40">
+      <div className="fixed top-0 left-0 right-0 z-40 h-[60px] bg-gray-100 py-1 sm:py-2">
+        <div className="mx-2 sm:mx-20 flex justify-around sm:justify-between items-center ">
+          {/* Left Section: Phone and Email */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center  space-x-0 sm:space-x-4  text-[10px] sm:text-sm text-gray-700">
+            <div className="flex items-center space-x-1 sm:space-x-2">
+              <FaPhoneAlt />
+              <span>{t("visitorInfo-phone")}</span>
+            </div>
+            <div className="flex items-center space-x-1 sm:space-x-2">
+              <FaEnvelope />
+              <span>{t("visitorInfo-email")}</span>
+            </div>
+          </div>
+
+          {/* Right Section: Social Icons */}
+          <div className="flex space-x-3 sm:space-x-4 text-gray-700">
+            <a href="https://www.facebook.com/nationalmuseum.af?mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+              <FaFacebook />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-600">
+              <FaYoutube />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+              <FaTwitter />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{ top: `${topOffset}px` }}
+        className="fixed left-0 right-0 z-40 transition-all duration-1000"
+      >
+
         <div className="navbar bg-mstheme text-white flex items-center justify-between px-4 py-1">
           {/* Logo Section */}
-          <div className="navbar-start flex items-center">
+          <div className="navbar-start flex items-center w-full">
             <Link
               to="/"
-              className="flex items-center text-xl font-bold hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+              className="flex items-center text-lg font-bold hover:bg-mstheme_hover hover:text-white py-1 rounded"
             >
               <img
                 src={mlogo}
                 alt="National Museum Afghanistan Logo"
-                className="h-10 w-auto mr-2"
+                className="h-16 w-auto mr-2"
               />
-              <p className="text-sm font-medium">{t("header.main-heading")}</p>
+              <p className="text-[18.1px] text-center font-medium">{t("header.main-heading")}</p>
             </Link>
           </div>
 
           {/* Menu Section */}
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal space-x-4">
+            <ul className="menu menu-horizontal space-x-5 ml-24">
               <li>
                 <Link
                   to="/"
-                  className="text-md font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.first-menu")}
                 </Link>
@@ -88,7 +135,7 @@ const Navbar = () => {
               <li className="dropdown dropdown-hover">
                 <label
                   tabIndex={0}
-                  className="text-md font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.second-menu")} <FaChevronDown className="ml-1" />
                 </label>
@@ -119,13 +166,13 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="dropdown dropdown-hover">
-                <label
-                  tabIndex={0}
-                  className="text-md font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                <Link
+                  to='exhibitions'
+                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
-                  {t("header.third-menu")} <FaChevronDown className="ml-1" />
-                </label>
-                <ul
+                  {t("header.third-menu")}
+                </Link>
+                {/* <ul
                   tabIndex={0}
                   className="dropdown-content p-2 shadow bg-mstheme rounded-box w-52 mt-1 z-20"
                 >
@@ -159,12 +206,12 @@ const Navbar = () => {
                       {t("header.third-sub-menu-6")}
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li>
                 <Link
                   to="/events"
-                  className="text-md font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.fourth-menu")}
                 </Link>
@@ -172,7 +219,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/articles"
-                  className="text-md font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.fifth-menu")}
                 </Link>
@@ -180,7 +227,7 @@ const Navbar = () => {
               <li className="dropdown dropdown-hover">
                 <label
                   tabIndex={0}
-                  className="text-md font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.sixth-menu")} <FaChevronDown className="ml-1" />
                 </label>
@@ -203,7 +250,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/contact-us"
-                  className="text-md font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.seventh-menu")}
                 </Link>
@@ -216,19 +263,19 @@ const Navbar = () => {
             <div className="dropdown">
               <label
                 tabIndex={0}
-                className="text-md font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 onClick={toggleDropdown} // Toggle dropdown on click
               >
-                <FaGlobe className="mr-1" /> Language{" "}
+                <FaGlobe className="mr-1" />
                 <FaChevronDown className="ml-1" />
               </label>
               {isDropdownOpen && (
                 <ul
-                  className="dropdown-content p-2 shadow-lg bg-mstheme rounded-box w-32 mt-1 z-20 max-h-60 overflow-auto"
+                  className="dropdown-content p-2 shadow-lg bg-mstheme rounded-box w-32 -ml-16 mt-1 z-20 max-h-60 overflow-auto"
                   onMouseLeave={() => setDropdownOpen(false)} // Close dropdown on mouse leave
                 >
                   {languages.map(({ code, name, country_code }) => (
-                    <li key={country_code}>
+                    <li key={country_code} className="">
                       <a
                         href="#"
                         className={classNames(

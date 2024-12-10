@@ -28,13 +28,14 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex justify-center mt-6">
-                <a href="https://www.facebook.com/nationalmuseum.af" target="_blank" rel="noopener noreferrer" className="text-xl mx-3 hover:bg-mstheme_hover  px-2 py-1 rounded"><FiFacebook className='hover:scale-110 transition-transform duration-300' /></a>
+                <a href="https://www.facebook.com/nationalmuseum.af?mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noopener noreferrer" className="text-xl mx-3 hover:bg-mstheme_hover  px-2 py-1 rounded"><FiFacebook className='hover:scale-110 transition-transform duration-300' /></a>
                 <a href="https://twitter.com/nationalmuseum.afg" target="_blank" rel="noopener noreferrer" className="text-xl mx-3 hover:bg-mstheme_hover  px-2 py-1 rounded"><FiTwitter className='hover:scale-110 transition-transform duration-300'/></a>
                 <a href="https://www.instagram.com/nationalmuseum.afg/" target="_blank" rel="noopener noreferrer" className="text-xl mx-3 hover:bg-mstheme_hover  px-2 py-1 rounded"><FiInstagram className='hover:scale-110 transition-transform duration-300'/></a>
                 <a href="https://linkedin.com/nationalmuseum.afg" target="_blank" rel="noopener noreferrer" className="text-xl mx-3 hover:bg-mstheme_hover  px-2 py-1 rounded"><FiLinkedin className='hover:scale-110 transition-transform duration-300'/></a>
             </div>
-            <div className="text-center mt-6">
+            <div className="text-center mt-6  flex justify-center space-x-28">
                 <p className="text-md">&copy; {t("footer.desc")}</p>
+                <Link to='https://ariadelta.af/' className="text-md"> <span className='text-yellow-400 font-medium'>{t("footer.company-developer")}</span> : {t("footer.company-name")}</Link>
             </div>
         </footer>
     );

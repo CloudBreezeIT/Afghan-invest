@@ -7,29 +7,29 @@ import ExhibitionCar from "../Pages/exhibition-page/ExhibitionCar"
 
 const exhibitionRoutes = [
     {
-        path: "/exhibition/islamic-era-exhibition",
+        path: "/exhibitions",
         element: <ExhibitionPage/>
     },
-    {
-        path: "/exhibition/bronze-age-exhibition",
-        element: <ExhibitionBronzeAge/>
-    },
-    {
-        path: "/exhibition/aynak-copper-exhibition",
-        element: <ExhibitionAynakCopper/>
-    },
-    {
-        path: "/exhibition/ai-khanum",
-        element: <ExhibitionAiKhanum/>
-    },
-    {
-        path: "/exhibition/thousand-cities-exhibition",
-        element: <ExhibitionThousandCities/>
-    },
-    {
-        path: "/exhibition/car-exhibition",
-        element: <ExhibitionCar/>
-    },
+    // {
+    //     path: "/exhibition/bronze-age-exhibition",
+    //     element: <ExhibitionBronzeAge/>
+    // },
+    // {
+    //     path: "/exhibition/aynak-copper-exhibition",
+    //     element: <ExhibitionAynakCopper/>
+    // },
+    // {
+    //     path: "/exhibition/ai-khanum",
+    //     element: <ExhibitionAiKhanum/>
+    // },
+    // {
+    //     path: "/exhibition/thousand-cities-exhibition",
+    //     element: <ExhibitionThousandCities/>
+    // },
+    // {
+    //     path: "/exhibition/car-exhibition",
+    //     element: <ExhibitionCar/>
+    // },
 ]
 
 export default exhibitionRoutes;

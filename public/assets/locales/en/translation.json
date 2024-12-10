@@ -85,6 +85,12 @@
     "aboutMuseum-desc":"The largest museum across Afghanistan and boasts exquisite collections of armor, antiques, ornaments, skeleton, fossils, mummies, beautiful Mughal paintings",
     "aboutMuseum-btn":"More Videos",
 
+
+    "exhibition-title": "Explore Our Exhibitions",
+    "exhibition-description": "Discover captivating exhibitions that showcase art, culture, and history.",
+    "upcoming-exhibitions": "Upcoming Exhibitions",
+    "past-exhibitions": "Past Exhibitions",
+
     "eventSection-main-title":"Museum Events",
     
     "eventSection.1st-image-title":"Art and History Expo",
@@ -154,8 +160,9 @@
 
     "footer.main-title":"National Museum Afghanistan",
 
-    "footer.desc":"2024 National Museum Afghanistan. All rights reserved. Developed by",
-    "footer.company-name":"CloudBreeze",
+    "footer.desc": "2024 National Museum Afghanistan. All rights reserved.",
+    "footer.company-developer": "Powered by",
+    "footer.company-name": "Aria Delta Consulting Group",
 
 
 

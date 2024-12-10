@@ -77,7 +77,7 @@ export default function NewsAndMedia() {
                       {article.description}
                     </p>
                     <div className="mt-3">
-                      <button className="bg-blue-600 text-white px-3 py-1.5 rounded-md text-sm hover:bg-blue-700 transition-colors duration-200">
+                      <button className="bg-usetheme text-white px-3 py-1.5 rounded-md text-sm hover:bg-usetheme transition-colors duration-200">
                         {t("articlesPage-card-btn")}
                       </button>
                     </div>

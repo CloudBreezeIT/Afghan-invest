@@ -83,6 +83,12 @@
   "aboutMuseum-desc": "دا د افغانستان تر ټولو لوی موزیم دی او د زره، آثار، زیورات، هډوکي، فسیلونه، مومیایې، ښکلي مغل انځورونه د زړو کلکسیونونو سره متکامل دی.",
   "aboutMuseum-btn": "زیات ویډیوګانې",
 
+  "exhibition-title": "زموږ نندارتونونه وګورئ",
+  "exhibition-description": "د زړه راښکونکو نندارتونونو څخه خوند واخلئ چې هنر، کلتور او تاریخ ښکاره کوي.",
+  "upcoming-exhibitions": "راتلونکي نندارتونونه",
+  "past-exhibitions": "تېر نندارتونونه",
+
+
   "eventSection-main-title": "د موزیم پیښې",
 
   "eventSection.1st-image-title": "د هنر او تاریخ نندارتون",
@@ -150,8 +156,9 @@
 
   "footer.main-title": "د ملي موزیم افغانستان",
 
-  "footer.desc": "۲۰۲۴ د ملي موزیم افغانستان. ټول حقونه محفوظ دي. د",
-  "footer.company-name": "CloudBreeze",
+  "footer.desc": "۲۰۲۴ د افغانستان ملي موزیم. ټول حقونه خوندي دي.",
+  "footer.company-developer": "ملاتړ شوی لخوا",
+  "footer.company-name": "د آریا ډیلټا مشورتي ګروپ",
 
   "aboutHistory-main-title": "زموږ د موزیم تاریخ",
   "aboutHistory-main-desc": "ملي موزیم د لرغونو میراث ساتي او مهم تاریخي توکي نندارې ته وړاندې کوي",
