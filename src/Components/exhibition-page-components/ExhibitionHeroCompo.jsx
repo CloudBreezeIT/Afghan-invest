@@ -33,27 +33,30 @@ export default function ExhibitionHeroCompo({ events }) {
         </div>
 
         {/* Section: Upcoming and Related Exhibitions */}
-        <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto mt-24">
-          <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
+        {/* <h2 className="text-center text-4xl font-bold my-8 text-mstheme mt-10">
             {t("upcoming-exhibitions")}
-          </h2>
+          </h2> */}
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent mb-12"></div>
+
+
+        <div className="w-full px-4 md:px-0 md:w-full  mt-24 flex ">
 
           {/* Upcoming Event (Large Card) */}
           {upcomingEvents?.length > 0 ? (
-            <div className="mb-12">
-              <div className="relative flex flex-col text-gray-700 bg-white shadow-md rounded-xl overflow-hidden transition-transform transform">
-                <div className="relative h-96 overflow-hidden">
+            <div className="mb-12 w-1/3 mx-20">
+              <div className="relative flex flex-col text-gray-700 bg-white shadow-md rounded-xl overflow-hidden transition-transform transform p-4">
+              <h5 className="mb-4 text-2xl font-bold text-blue-gray-900">
+                    {stringConcat(upcomingEvents[0]?.title)}
+                  </h5>
+                <div className="relative h-48 w-72 rounded-md overflow-hidden ">
                   <img
                     src={upcomingEvents[0]?.image}
                     alt={upcomingEvents[0]?.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-8">
-                  <h5 className="mb-4 text-3xl font-bold text-blue-gray-900">
-                    {stringConcat(upcomingEvents[0]?.title)}
-                  </h5>
+                <div className="p-2">
+                  
                   <p className="text-lg font-light text-gray-600 mb-6">
                     {stringConcat(upcomingEvents[0]?.description)}
                   </p>
@@ -71,12 +74,12 @@ export default function ExhibitionHeroCompo({ events }) {
           )}
 
           {/* Past Events (Small Cards) */}
-          <div className="grid md:grid-cols-4 gap-1">
+          <div className="flex flex-wrap w-3/4 items-end">
             {pastEvents?.length > 0 ? (
               pastEvents.map((event) => (
-                <div key={event.id} className="px-4 ">
+                <div key={event.id} className="px-4">
                   <div className="relative flex flex-col text-gray-700 bg-white shadow-md rounded-xl overflow-hidden transition-transform transform hover:scale-105">
-                    <div className="relative h-48 overflow-hidden">
+                    <div className="relative h-44 w-44 overflow-hidden">
                       <img
                         src={event.image}
                         alt={event.title}
@@ -87,9 +90,9 @@ export default function ExhibitionHeroCompo({ events }) {
                       <h5 className="mb-2 text-xl font-semibold text-blue-gray-900">
                         {stringConcat(event.title, 15)}
                       </h5>
-                      {/* <p className="text-sm font-light text-gray-600">
-                        {stringConcat(event.description, 10)}
-                      </p> */}
+                        <p className="text-sm font-light text-gray-600">
+                          {stringConcat(event.description, 10)}
+                        </p>
                     </div>
                   </div>
                 </div>
@@ -103,7 +106,7 @@ export default function ExhibitionHeroCompo({ events }) {
         </div>
       </div>
 
-     <div className="my-4">
+     <div className="my-20">
      <Pagination
         totalItems={3} // Total number of items
         itemsPerPage={3} // Number of items per page

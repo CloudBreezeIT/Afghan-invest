@@ -30,7 +30,7 @@ const Navbar = () => {
   ];
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [topOffset, setTopOffset] = useState(50);
+  const [topOffset, setTopOffset] = useState(40);
 
 
   const currentLanguageCode = cookies.get("i18next") || "en";
@@ -61,7 +61,7 @@ const Navbar = () => {
       setTopOffset(0)
     }
     else {
-      setTopOffset(50)
+      setTopOffset(40)
     }
   }
 
@@ -74,7 +74,7 @@ const Navbar = () => {
       <div className="fixed top-0 left-0 right-0 z-40 h-[80px] bg-gray-100 py-1 sm:py-2">
         <div className="mx-2 sm:mx-20 flex justify-around sm:justify-between items-center ">
           {/* Left Section: Phone and Email */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center  space-x-0 sm:space-x-4  text-[14px] sm:text-lg mt-1 text-gray-700">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center  space-x-0 sm:space-x-4  text-[14px] sm:text-md mt-1 text-gray-700">
             <div className="flex items-center space-x-1 sm:space-x-2">
               <FaPhoneAlt />
               <span>{t("visitorInfo-phone")}</span>
@@ -88,13 +88,13 @@ const Navbar = () => {
           {/* Right Section: Social Icons */}
           <div className="flex  sm:space-x-4 text-gray-700">
             <a href="https://www.facebook.com/nationalmuseum.af?mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noopener noreferrer" className="px-5 hover:text-blue-600">
-              <FaFacebook  size={30}/>
+              <FaFacebook  size={24}/>
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="px-3 hover:text-red-600">
-              <FaYoutube  size={30}/>
+              <FaYoutube  size={24}/>
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="px-3 hover:text-blue-400">
-              <FaTwitter  size={30}/>
+              <FaTwitter  size={24}/>
             </a>
           </div>
         </div>
@@ -116,7 +116,7 @@ const Navbar = () => {
                 alt="National Museum Afghanistan Logo"
                 className="h-16 md:h-20 w-auto mr-2"
               />
-              <p className="text-[25.1px] text-center font-bold">{t("header.main-heading")}</p>
+              <p className="text-[20.1px] text-center font-bold">{t("header.main-heading")}</p>
             </Link>
           </div>
 
@@ -126,7 +126,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-[22px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.first-menu")}
                 </Link>
@@ -134,7 +134,7 @@ const Navbar = () => {
               <li className="dropdown dropdown-hover">
                 <label
                   tabIndex={0}
-                  className="text-[22px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.second-menu")} <FaChevronDown className="ml-1" />
                 </label>
@@ -167,7 +167,7 @@ const Navbar = () => {
               <li className="dropdown dropdown-hover">
                 <Link
                   to='exhibitions'
-                  className="text-[22px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.third-menu")}
                 </Link>
@@ -210,7 +210,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/events"
-                  className="text-[22px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.fourth-menu")}
                 </Link>
@@ -218,7 +218,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/articles"
-                  className="text-[22px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.fifth-menu")}
                 </Link>
@@ -226,7 +226,7 @@ const Navbar = () => {
               <li className="dropdown dropdown-hover">
                 <label
                   tabIndex={0}
-                  className="text-[22px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.sixth-menu")} <FaChevronDown className="ml-1" />
                 </label>
@@ -249,7 +249,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/contact-us"
-                  className="text-[22px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                  className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 >
                   {t("header.seventh-menu")}
                 </Link>
@@ -262,11 +262,11 @@ const Navbar = () => {
             <div className="dropdown">
               <label
                 tabIndex={0}
-                className="text-[22px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
+                className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded"
                 onClick={toggleDropdown} // Toggle dropdown on click
               >
                 <FaGlobe className="mr-1" />
-                <FaChevronDown className="ml-1" />
+                {/* <FaChevronDown className="ml-1" /> */}
               </label>
               {isDropdownOpen && (
                 <ul

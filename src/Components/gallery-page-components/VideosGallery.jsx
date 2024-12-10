@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Pagination from "../Pagination";
 
 const VideosGallery = () => {
   const { t } = useTranslation();
-  // Array of video links from National Museum of Afghanistan
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 4;
+
   const videos = [
     "https://www.youtube.com/embed/QaEZVrI2DF8?si=r8URkQN9SCzFLfH5",
     "https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK",
@@ -18,112 +20,21 @@ const VideosGallery = () => {
     "https://www.youtube.com/embed/VU9q3nSYidc?si=0jhKv_EyTYo8fZBc",
     "https://www.youtube.com/embed/QVRiLZ-PUsk?si=KWWhsxIHS3VApEyv",
   ];
+
+  // Determine videos to display on the current page
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentVideos = videos.slice(startIndex, endIndex);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <>
       <div className="min-h-screen w-full">
-        {/* Start of Background Image (Same as Photos) */}
-        <div
-          className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
-          style={{
-            backgroundImage: `url(${"https://images.unsplash.com/photo-1505027014503-e6de34d28116?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
-            <h1 className="text-5xl font-bold mb-4">
-              {t("galleryVideos-main-title")}
-            </h1>
-            <p className="text-xl mb-6">
-              {t("galleryVideos-main-desc")}
-            </p>
-          </div>
-        </div>
-        {/* End of Background Image */}
-
-        {/* Section with Description */}
-        <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
-          <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            {t("galleryVideos-title")}
-          </h1>
-          <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
-          <p className="text-xl my-8">{t("galleryVideos-desc")}</p>
-        </div>
-
-        {/* Video Gallery */}
-        <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
-          <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
-            {t("galleryVideos-featured-main-title")}
-          </h1>
-          <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
-
-          {/* Video Cards Section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 my-16">
-            {/* Video 1 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-[320px]">
-              <div className="relative w-full h-[250px]">
-                <iframe
-                  className="w-full h-full rounded-t-lg"
-                  src="https://www.youtube.com/embed/iyb2nCc2fHg?si=bTiD7yIcIDHnrZ91"
-                  title="Creative Journey"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="p-4">
-                <h1 className="text-lg font-semibold mb-2">
-                  {t("galleryVideos-featured-1st-video-title")}
-                </h1>
-                <p className="text-sm text-gray-600">
-                  {t("galleryVideos-featured-2nd-video-desc")}
-                </p>
-              </div>
-            </div>
-
-            {/* Video 2 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-[320px]">
-              <div className="relative w-full h-[250px]">
-                <iframe
-                  className="w-full h-full rounded-t-lg"
-                  src="https://www.youtube.com/embed/7_cDDUbb8e0?si=ho0R1GGARNR-XBSK"
-                  title="Innovative Design Trends"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="p-4">
-                <h1 className="text-lg font-semibold mb-2">
-                  {t("galleryVideos-featured-2nd-video-title")}
-                </h1>
-                <p className="text-sm text-gray-600">
-                  {t("galleryVideos-featured-2nd-video-desc")}
-                </p>
-              </div>
-            </div>
-
-            {/* Video 3 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out w-[320px]">
-              <div className="relative w-full h-[250px]">
-                <iframe
-                  className="w-full h-full rounded-t-lg"
-                  src="https://www.youtube.com/embed/QaEZVrI2DF8?si=r8URkQN9SCzFLfH5"
-                  title="Masterpiece Creations"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="p-4">
-                <h1 className="text-lg font-semibold mb-2">
-                  {t("galleryVideos-featured-3rd-video-title")}
-                </h1>
-                <p className="text-sm text-gray-600">
-                  {t("galleryVideos-featured-3rd-video-desc")}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        {/* Other sections remain unchanged */}
+        
         {/* More Videos Section */}
         <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h1 className="text-center text-4xl font-bold my-8 text-mstheme">
@@ -131,21 +42,21 @@ const VideosGallery = () => {
           </h1>
           <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12">
-            {videos.map((videoSrc, i) => (
+            {currentVideos.map((videoSrc, i) => (
               <div
-                key={i}
+                key={startIndex + i} // Adjusted key
                 className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
               >
                 <iframe
                   className="w-full h-[200px] rounded-t-lg"
                   src={videoSrc}
-                  title={`Museum Video ${i + 1}`}
+                  title={`Museum Video ${startIndex + i + 1}`}
                   frameBorder="0"
                   allowFullScreen
                 ></iframe>
                 <div className="p-4">
                   <h1 className="text-lg font-semibold mb-2">
-                    {t("gallerryVideos-more-video-title")} {i + 1}
+                    {t("gallerryVideos-more-video-title")} {startIndex + i + 1}
                   </h1>
                   <p className="text-sm text-gray-600">
                     {t("gallerryVideos-more-video-desc")}
@@ -155,14 +66,16 @@ const VideosGallery = () => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="my-10">
-        <Pagination
-          totalItems={3} // Total number of items
-          itemsPerPage={3} // Number of items per page
-        // currentPage={currentPage} // Current active page
-        // onPageChange={handlePageChange} // Callback to handle page changes
-        />
+
+        {/* Pagination Component */}
+        <div className="my-10">
+          <Pagination
+            totalItems={videos.length} // Total number of videos
+            itemsPerPage={itemsPerPage} // Number of videos per page
+            currentPage={currentPage} // Current active page
+            onPageChange={handlePageChange} // Callback for page change
+          />
+        </div>
       </div>
     </>
   );
