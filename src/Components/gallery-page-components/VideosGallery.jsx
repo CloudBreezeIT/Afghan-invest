@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Pagination from "../Pagination";
 
 const VideosGallery = () => {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ const VideosGallery = () => {
               {t("galleryVideos-main-title")}
             </h1>
             <p className="text-xl mb-6">
-            {t("galleryVideos-main-desc")}
+              {t("galleryVideos-main-desc")}
             </p>
           </div>
         </div>
@@ -154,6 +155,14 @@ const VideosGallery = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="my-10">
+        <Pagination
+          totalItems={3} // Total number of items
+          itemsPerPage={3} // Number of items per page
+        // currentPage={currentPage} // Current active page
+        // onPageChange={handlePageChange} // Callback to handle page changes
+        />
       </div>
     </>
   );

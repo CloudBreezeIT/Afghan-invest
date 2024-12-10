@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Pagination from "../Pagination";
 
 const PhotosGallery = () => {
   const { t } = useTranslation();
@@ -95,6 +96,14 @@ const PhotosGallery = () => {
           </div>
         </div>
       </div>
+    <div className="my-10">
+    <Pagination
+        totalItems={3} // Total number of items
+        itemsPerPage={3} // Number of items per page
+        // currentPage={currentPage} // Current active page
+        // onPageChange={handlePageChange} // Callback to handle page changes
+      />
+    </div>
     </>
   );
 };

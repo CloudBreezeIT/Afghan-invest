@@ -1,6 +1,7 @@
 import React from "react";
 import { stringConcat } from "../../helper-functions/formatText";
 import { useTranslation } from "react-i18next";
+import Pagination from "../Pagination";
 
 export default function EventsHeroCompo({ events }) {
   const { t } = useTranslation();
@@ -80,7 +81,7 @@ export default function EventsHeroCompo({ events }) {
         </div>
 
         {/* Section 3: Past Events */}
-        <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
+        {/* <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
           <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
             {t("eventsPage-past-events-main-title")}
           </h2>
@@ -123,7 +124,13 @@ export default function EventsHeroCompo({ events }) {
               </p>
             )}
           </div>
-        </div>
+        </div> */}
+         <Pagination
+        totalItems={3} // Total number of items
+        itemsPerPage={3} // Number of items per page
+        // currentPage={currentPage} // Current active page
+        // onPageChange={handlePageChange} // Callback to handle page changes
+      />
 
         {/* Section 4: Newsletter Signup */}
         <div className="w-full bg-mstheme px-4 md:px-0 md:w-[1100px] mx-auto py-16 rounded-lg text-white my-6">
