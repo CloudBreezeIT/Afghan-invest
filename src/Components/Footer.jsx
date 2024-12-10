@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <div className="text-center mt-6  flex justify-center space-x-28">
                 <p className="text-md">&copy; {t("footer.desc")}</p>
-                <Link to='https://ariadelta.af/' className="text-md"> <span className='text-yellow-400 font-medium'>{t("footer.company-developer")}</span> : {t("footer.company-name")}</Link>
+                <a to='https://ariadelta.af/' target="_blank" className="text-md"> <span className='text-yellow-400 font-medium'>{t("footer.company-developer")}</span> : {t("footer.company-name")}</a>
             </div>
         </footer>
     );
