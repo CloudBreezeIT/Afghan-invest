@@ -19,12 +19,12 @@ const NotificationCard = () => {
                             src="assets/images/Home/c1.jpg"
                         />
 
-                        <div className='flex justify-center mt-2  gap-2'>
-                            <div className='bg-blue-900 px-14 sm:px-28 rounded-r-md' >
-                                <FaFacebook size={40} className='text-white' />
+                        <div className='flex justify-start mt-2  gap-2'>
+                            <div className='bg-blue-900 px-5 rounded-md' >
+                                <FaFacebook size={35} className='text-white' />
                             </div>
-                            <div className='bg-red-700 px-14 sm:px-28 rounded-l-md'>
-                                <FaYoutube size={40} className='text-white' />
+                            <div className='bg-red-700 px-5 rounded-md'>
+                                <FaYoutube size={35} className='text-white' />
                             </div>
                         </div>
                     </div>
