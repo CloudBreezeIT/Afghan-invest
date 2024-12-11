@@ -86,6 +86,8 @@ export default function NewsAndMedia() {
               </div>
             ))}
           </div>
+          <div className="w-full mt-14 h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent"></div>
+
     </>
   );
 }

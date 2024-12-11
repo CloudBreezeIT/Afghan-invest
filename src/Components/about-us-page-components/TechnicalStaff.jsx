@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Pagination from "../Pagination";
 
 
 
@@ -65,9 +66,20 @@ export default function TechnicalStaff() {
     },
   ];
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 2;
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const data = staffData.slice(startIndex, endIndex);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
 
 
   return (
+  <>
     <div className="min-h-screen w-full">
       {/* Hero Section */}
       <div
@@ -95,9 +107,9 @@ export default function TechnicalStaff() {
         </h2>
         <div className="w-full h-1 bg-gradient-to-r from-transparent via-mstheme to-transparent mb-12"></div>
 
-        <div className="grid md:grid-cols-1 gap-8">
-          {staffData?.length > 0 ? (
-            staffData?.map((member) => (
+        <div className="grid md:grid-cols-2 gap-8">
+          {data?.length > 0 ? (
+            data?.map((member) => (
               <div
                 key={member.id}
                 className="relative flex flex-col sm:flex-row bg-white shadow-lg rounded-xl overflow-hidden p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl max-w-sm sm:max-w-full mx-auto group"
@@ -145,7 +157,7 @@ export default function TechnicalStaff() {
       </div>
 
       {/* Section 2: Join Our Team */}
-      <div className="relative w-full px-4 md:px-0 md:w-[1100px] mx-auto py-16">
+      <div className="relative w-full px-4 md:px-0 md:w-[1100px] mx-auto ">
         {/* Background Section */}
         <div
           className="absolute inset-0 z-0 w-full h-full bg-gradient-to-br from-mstheme-light to-mstheme rounded-lg transform -rotate-2 opacity-70"
@@ -155,7 +167,7 @@ export default function TechnicalStaff() {
         ></div>
 
         {/* Content Section */}
-        <div className="relative z-10 w-full bg-white shadow-2xl rounded-xl p-10 text-gray-900 flex flex-col items-center space-y-8 hover:shadow-3xl transition duration-500">
+        {/* <div className="relative z-10 w-full bg-white shadow-2xl rounded-xl p-10 text-gray-900 flex flex-col items-center space-y-8 hover:shadow-3xl transition duration-500">
           <h2 className="text-center text-4xl font-extrabold text-mstheme">
             {t("technicalStaff-team-main-title")}
           </h2>
@@ -180,8 +192,17 @@ export default function TechnicalStaff() {
           <p className="text-sm text-gray-500 mt-4">
             {t("technicalStaff-team-last-sentence")}
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
+    <div className="mb-10">
+     <Pagination
+        totalItems={staffData.length} // Total number of items
+        itemsPerPage={itemsPerPage} // Number of items per page
+        currentPage={currentPage} // Current active page
+        onPageChange={handlePageChange} // Callback to handle page changes
+      />
+     </div>
+  </>
   );
 }

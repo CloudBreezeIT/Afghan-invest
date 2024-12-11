@@ -125,15 +125,17 @@ export default function EventsHeroCompo({ events }) {
             )}
           </div>
         </div> */}
-         <Pagination
+     <div className="mb-10">
+     <Pagination
         totalItems={3} // Total number of items
         itemsPerPage={3} // Number of items per page
         // currentPage={currentPage} // Current active page
         // onPageChange={handlePageChange} // Callback to handle page changes
       />
+     </div>
 
         {/* Section 4: Newsletter Signup */}
-        <div className="w-full bg-mstheme px-4 md:px-0 md:w-[1100px] mx-auto py-16 rounded-lg text-white my-6">
+        {/* <div className="w-full bg-mstheme px-4 md:px-0 md:w-[1100px] mx-auto py-16 rounded-lg text-white my-6">
           <h2 className="text-center text-4xl font-bold my-8">{t("eventsPage-update-main-title")}</h2>
           <p className="text-center text-lg mb-8">
             {t("eventsPage-update-desc")}
@@ -152,7 +154,7 @@ export default function EventsHeroCompo({ events }) {
               {t("eventspage-update-btn")}
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </>
   );

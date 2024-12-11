@@ -17,7 +17,7 @@ const Navbar = () => {
     },
     {
       code: "per",
-      name: "فارسی",
+      name: "دری "    ,
       dir: "rtl",
       country_code: "ir",
     },
@@ -224,12 +224,12 @@ const Navbar = () => {
           </div>
 
           {/* Language Dropdown Section */}
-          <div className="navbar-end flex items-center gap-2 relative">
+          <div className="navbar-end flex items-center gap-2 relative" >
             <div className="dropdown">
               <label
                 tabIndex={0}
-                className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
-                onClick={toggleDropdown} // Toggle dropdown on click
+                className="text-[16px] cursor-pointer font-medium  flex items-center hover:bg-mstheme_hover hover:text-white px-2 py-1 rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
+                onMouseEnter={(()=> setDropdownOpen(true))} // Toggle dropdown on click
               >
                 <FaGlobe className="mr-1" />
                 {/* <FaChevronDown className="ml-1" /> */}
@@ -269,8 +269,8 @@ const Navbar = () => {
       </div>
 
 
-      <a href="https://wa.me/1234567890" target="_blank" className="fixed right-2 bottom-28 z-50 rounded-full">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Whatsapp icon" className="w-24" />
+      <a href="https://wa.me/1234567890" target="_blank" className="fixed right-5 bottom-28 z-50 rounded-full">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Whatsapp icon" className="w-16" />
       </a>
 
       

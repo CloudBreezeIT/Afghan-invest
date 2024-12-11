@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Import icons for navigation
+import { stringConcat } from "../../helper-functions/formatText";
 
 export default function Gallery() {
   const { t } = useTranslation();
@@ -101,7 +102,7 @@ export default function Gallery() {
   return (
     <div className="relative w-full md:w-[1350px] m-auto py-20">
       <h1 className="pb-5 text-3xl md:text-4xl font-semibold text-center">
-        {t("eventSection-main-title")}
+        {t("gallery-home-heading")}
       </h1>
 
       <Slider ref={sliderRef} {...sliderSettings}>
@@ -115,23 +116,23 @@ export default function Gallery() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* <div className="p-6">
-                <h5 className="mb-2 text-xl font-semibold leading-snug text-blue-gray-900">
+              <div className="p-6">
+                <h5 className="mb-2 text-md font-semibold leading-snug text-blue-gray-900">
                   {stringConcat(event.title, 22)}
                 </h5>
                 <p className="text-base font-light leading-relaxed text-inherit">
-                  {stringConcat(event.description, 60)}
+                  {stringConcat(event.description, 50)}
 
                 </p>
-              </div> */}
-              {/* <div className="p-6 pt-0">
+              </div>
+              <div className="p-6 pt-0">
                 <button
                   className="align-middle font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-mstheme text-white hover:bg-mstheme_hover"
                   type="button"
                 >
                   {t("eventSection-btn")}
                 </button>
-              </div> */}
+              </div>
             </div>
           </div>
         ))}

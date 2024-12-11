@@ -1,68 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Address = () => {
+  const { t } = useTranslation();
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setError(""); // Clear error when user starts typing
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!validateEmail(email)) {
+      setError(t("eventspage-email-error")); // Use translation for error message
+    } else {
+      setError("");
+      // Handle valid form submission logic here
+      console.log("Valid Email Submitted:", email);
+    }
+  };
+
   return (
-    <>
-      <div className="text-center mt-10">
-        <h2 className="text-4xl font-bold text-black mb-4">Our Location</h2>
-        <p className="text-xl text-black mb-12">Get in Touch with Us</p>
-      </div>
+    <div className="w-full bg-mstheme px-4 md:px-0 md:w-[1100px] mx-auto py-16 rounded-lg text-white my-6">
+      <h2 className="text-center text-4xl font-bold my-8">
+        {t("eventsPage-update-main-title")}
+      </h2>
+      <p className="text-center text-lg mb-8">
+        {t("eventsPage-update-desc")}
+      </p>
 
-      <div className="mt-10 mx-10">
-        <iframe
-          title="Afghanistan Map"
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3287.7431376489935!2d69.13965917573613!3d34.50939567298829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDMwJzMzLjgiTiA2OcKwMDgnMzIuMCJF!5e0!3m2!1sen!2s!4v1721556121207!5m2!1sen!2s"
-          width="100%"
-          height="500"
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
-
-      <div className="grid lg:grid-cols-4 grid-cols-1 gap-3 mx-10 mt-10 mb-20">
-        <div className="border-2 border-yellow-600 hover:shadow-2xl">
-          <h1 className="bg-yellow-600 text-2xl font-semibold text-white p-2 hover:bg-black duration-1000">
-            Kabul Office
-          </h1>
-          <p className="text-md mt-2 p-2">
-            Location: Aside Shar-Shah Soori Masque,Bazar Kart-e-Char,Kabul,
-            Afghanistan.
-          </p>
-          <p className="text-md mt-2 p-2">Phone: +93781767637</p>
-          <p className="text-md mt-2 p-2">Email: Info@afghaninvest.co</p>
+      <form
+        className="flex flex-col md:flex-row justify-center  gap-4"
+        onSubmit={handleSubmit}
+      >
+        <div className="w-full md:w-2/3">
+          <input
+            type="email"
+            value={email}
+            onChange={handleEmailChange}
+            placeholder={t("eventspage-input-placeholder")}
+            className={`w-full p-4 rounded-lg text-gray-900 focus:outline-none ${
+              error ? "border-2 border-red-500" : ""
+            }`}
+          />
+          {error && (
+            <p className="text-red-500 text-sm mt-2">{error}</p>
+          )}
         </div>
-        <div className="border-2 border-yellow-600 hover:shadow-2xl">
-          <h1 className="bg-yellow-600 text-2xl font-semibold text-white p-2 hover:bg-black duration-1000">
-            Mazar Office
-          </h1>
-          <p className="text-md mt-2 p-2">
-            Location: Gozar Street,Third District,Mazar, Afghanistan.
-          </p>
-          <p className="text-md mt-2 p-2">Phone: +93798582175</p>
-          <p className="text-md mt-2 p-2">Email: Info@afghaninvest.co</p>
-        </div>
-        <div className="border-2 border-yellow-600 hover:shadow-2xl">
-          <h1 className="bg-yellow-600 text-2xl font-semibold text-white p-2 hover:bg-black duration-1000">
-            Herat Office
-          </h1>
-          <p className="text-md mt-2 p-2">
-            Location: House #18, Mokhaberat Street, Herat, Afghanistan.
-          </p>
-          <p className="text-md mt-2 p-2">Phone: +93799474745</p>
-          <p className="text-md mt-2 p-2">Email: Info@afghaninvest.co</p>
-        </div>
-        <div className="border-2 border-yellow-600 hover:shadow-2xl">
-          <h1 className="bg-yellow-600 text-2xl font-semibold text-white p-2 hover:bg-black duration-1000">
-            Ghor Office
-          </h1>
-          <p className="text-md mt-2 p-2">
-            Location: Tolak District, Ghor, Afghanistan.
-          </p>
-          <p className="text-md mt-2 p-2">Phone: +93780342233</p>
-          <p className="text-md mt-2 p-2">Email: Info@afghaninvest.co</p>
-        </div>
-      </div>
-    </>
+        <button
+          type="submit"
+          className="w-full md:w-auto p-4 bg-white text-mstheme rounded-lg font-semibold hover:bg-opacity-90 transition duration-300"
+        >
+          {t("eventspage-update-btn")}
+        </button>
+      </form>
+    </div>
   );
 };
 
