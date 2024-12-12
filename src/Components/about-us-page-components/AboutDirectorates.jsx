@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 const AboutDirectorates = () => {
   const { t } = useTranslation();
   return (
-    <div className="min-h-screen w-full">
+  <div className="flex">
+      <div className="min-h-screen w-full">
       {/* start of Background Image */}
       <div
         className="w-full min-h-96 mt-[64px] bg-cover bg-center relative"
@@ -64,6 +65,8 @@ const AboutDirectorates = () => {
       </div>
       {/* director container ends here */}
     </div>
+    
+  </div>
   );
 };
 

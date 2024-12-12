@@ -149,7 +149,7 @@
   "visitorInfo-location": "دارالامان، کابل، افغانستان",
 
   "visitorInfo-phone-title": "تلیفون",
-  "visitorInfo-phone": "+93 20 252 0329",
+  "visitorInfo-phone": "۹۲۳۰ ۲۵۲ ۰۲ ۳۹+",
 
   "visitorInfo-email-title": "برېښنالیک",
   "visitorInfo-email": "nationalmuseum.afg@gmail.com",
@@ -161,6 +161,8 @@
   "footer.desc": "۲۰۲۴ د افغانستان ملي موزیم. ټول حقونه خوندي دي.",
   "footer.company-developer": "ملاتړ شوی لخوا",
   "footer.company-name": "د آریا ډیلټا مشورتي ګروپ",
+  "footer.links":"چټک لینکونه",
+  "footer.about":"د افغانستان ملي موزیم د هېواد د تاریخ او کلتور یو ارزښتناک خزانه ده چې د لرغونو تمدنونو څخه تر عصري دورې پورې لرغونې توکي نندارې ته وړاندې کوي. دا موزیم د افغانستان د متنوع میراث د پېژندلو دروازه ده.",
 
   "aboutHistory-main-title": "زموږ د موزیم تاریخ",
   "aboutHistory-main-desc": "ملي موزیم د لرغونو میراث ساتي او مهم تاریخي توکي نندارې ته وړاندې کوي",
@@ -377,6 +379,7 @@
   "contactPage-input-msg-placeholder": "ستاسو لپاره پیغام",
   "contactPage-msg-btn": "وګورئ",
   "contactPage-map-main-title": "مونږ ته ورکړئ",
+  "contactPage-map-title":"موږ پیدا کړئ",
 
   "home-banner.slider-ist.heading": "مناسب پرمختګ",
   "home-banner.slider-ist.description": "د افغان انویسټ د حرکت ځواک کشف کړئ: زموږ لید، زموږ ټیم، زموږ ژمنه",

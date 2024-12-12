@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactHero() {
   const { t } = useTranslation();
-  
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -46,8 +48,10 @@ export default function ContactHero() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      alert("Form submitted successfully!");
+      toast.success("Form submitted successfully!");
       // Proceed with form submission logic (e.g., send data to API)
+    } else {
+      toast.error("Please fill in all fields correctly.");
     }
   };
 
@@ -67,6 +71,8 @@ export default function ContactHero() {
           <p className="text-xl mb-6">{t("contactPage-main-desc")}</p>
         </div>
       </div>
+
+  
 
       {/* Contact Form */}
       <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
@@ -101,11 +107,13 @@ export default function ContactHero() {
           <textarea
             rows="5"
             name="message"
+            maxLength={200}
             value={formData.message}
             onChange={handleInputChange}
             placeholder={t("contactPage-input-msg-placeholder")}
             className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-mstheme"
           ></textarea>
+          <span className="flex justify-end">{formData.message.length}/200</span>
           <button
             type="submit"
             className="w-full p-4 bg-mstheme text-white rounded-lg font-semibold hover:bg-opacity-90 transition duration-300"
@@ -113,6 +121,25 @@ export default function ContactHero() {
             {t("contactPage-msg-btn")}
           </button>
         </form>
+      </div>
+
+      <ToastContainer />
+
+          {/* Map Section */}
+          <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-12">
+        <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
+          {t("contactPage-map-title")}
+        </h2>
+        <div className="w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            title="Darul-Aman, Kabul, Afghanistan"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao&libraries=places&callback=initMap?pb=!1m18!1m12!1m3!1d2934.812324009622!2d69.12888999999999!3d34.489444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d16eb10e6c0001%3A0x54a8e0e60bcfd6e!2sDarul-Aman%2C%20Kabul%2C%20Afghanistan!5e0!3m2!1sen!2s!4v1721567216406!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
     </div>
   );

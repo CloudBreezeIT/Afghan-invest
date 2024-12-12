@@ -158,6 +158,8 @@
   "footer.desc": "۲۰۲۴ موزه ملی افغانستان. تمامی حقوق محفوظ است.",
   "footer.company-developer": "توسعه یافته توسط",
   "footer.company-name": "گروه مشاوره آریا دلتا",
+  "footer.links":"پیوندهای سریع",
+  "footer.about":"موزه ملی افغانستان گنجینه‌ای از تاریخ و فرهنگ غنی کشور است که آثار باستانی از تمدن‌های کهن تا دوران معاصر را به نمایش می‌گذارد. این موزه دروازه‌ای به سوی شناخت میراث متنوع افغانستان است.",
 
   "aboutHistory-main-title": "تاریخچه موزه ما",
   "aboutHistory-main-desc": "موزه ملی میراث باستانی را حفظ کرده و آثار تاریخی مهم را به نمایش می‌گذارد",
@@ -372,6 +374,7 @@
   "contactPage-input-msg-placeholder": "پیام شما برای ما",
   "contactPage-msg-btn": "ارسال",
   "contactPage-map-main-title": "ما را ببینید",
+   "contactPage-map-title":"ما را پیدا کنید",
 
   "home-banner.slider-ist.heading": "توسعه مناسب",
   "home-banner.slider-ist.description": "نیروی محرکه پشت سر سرمایه گذاری افغانستان را کشف کنید: چشم انداز ما، تیم ما، تعهد ما",

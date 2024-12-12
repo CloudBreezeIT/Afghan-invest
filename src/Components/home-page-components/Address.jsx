@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Address = () => {
   const { t } = useTranslation();
   const [email, setEmail] = useState("");
@@ -19,11 +20,10 @@ const Address = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateEmail(email)) {
-      setError(t("eventspage-email-error")); // Use translation for error message
+      toast.error("Please Enter a valid email")
     } else {
-      setError("");
       // Handle valid form submission logic here
-      console.log("Valid Email Submitted:", email);
+      toast.success("Subscribed Successfully")
     }
   };
 
@@ -50,9 +50,7 @@ const Address = () => {
               error ? "border-2 border-red-500" : ""
             }`}
           />
-          {error && (
-            <p className="text-red-500 text-sm mt-2">{error}</p>
-          )}
+
         </div>
         <button
           type="submit"
@@ -61,6 +59,7 @@ const Address = () => {
           {t("eventspage-update-btn")}
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };

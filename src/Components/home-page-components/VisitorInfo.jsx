@@ -12,11 +12,11 @@ const VisitorInfo = () => {
     <div className='w-full md:w-[1150px] m-auto px-4 md:px-0'>
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
       <div className="">
-        <img className='h-[1000px]' src="https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+        <img className='h-[400px] md:h-[720px]' src="https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
       </div>
       <div className="">
         <div className="flex flex-col justify-center items-start">
-            <button className='bg-mstheme text-white uppercase font-semibold px-4 py-2 rounded hover:bg-mstheme_hover transition-all duration-300 my-4'><Link>{t("visitorInfo-btn")}</Link></button>
+            {/* <button className='bg-mstheme text-white uppercase font-semibold px-4 py-2 rounded hover:bg-mstheme_hover transition-all duration-300 my-4'><Link>{t("visitorInfo-btn")}</Link></button> */}
             <h1 className='text-black font-bold text-2xl md:text-4xl my-4'>{t("visitorInfo-main-title")}</h1>
             <p className='my-3'>{t("visitorInfo-closed")}</p>
             <p className='text-xl text-black font-semibold my-1'>{t("visitorInfo-open-hour")}</p>
