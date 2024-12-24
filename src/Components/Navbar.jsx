@@ -79,10 +79,10 @@ const Navbar = () => {
       <div className="fixed top-0 left-0 right-0 z-40 h-[80px] bg-gray-100  sm:py-2">
         <div className="mx-2 sm:mx-20 flex justify-around sm:justify-between items-center ">
           {/* Left Section: Phone and Email */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center  space-x-0 sm:space-x-4  text-[12px] sm:text-md mt-1 text-gray-700">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center  space-x-0 sm:space-x-4 gap-3  text-[12px] sm:text-md mt-1 text-gray-700">
           <div className="flex items-center rtl:flex-row-reverse gap-1 sm:gap-2">
               <FaPhoneAlt className="flex-shrink-0 " />
-              <span className="unicode-bidi[override] rtl:text-left">{t("visitorInfo-phone")}</span>
+              <span className="unicode-bidi[override] rtl:text-left ">{t("visitorInfo-phone")}</span>
             </div>
             <div className="flex items-center rtl:flex-row-reverse gap-1 mx-2 sm:gap-2 mt-1 sm:mt-0">
               <FaEnvelope className="flex-shrink-0 " />

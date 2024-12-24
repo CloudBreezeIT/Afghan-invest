@@ -11,7 +11,7 @@ export default function NewsAndMedia() {
       description:
       t("articlesPage-1st-card-desc"),
       image:
-        "https://cdn.pixabay.com/photo/2015/11/03/08/57/patriot-1019838_1280.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBqbF6sCWakwCCttrtqyC_6fzxiqGzGjxLXA&s",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ export default function NewsAndMedia() {
       title: t("articlesPage-3rd-card-title"),
       description:t("articlesPage-3rd-card-desc"),
       image:
-        "https://cdn.pixabay.com/photo/2015/11/03/08/57/patriot-1019838_1280.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBqbF6sCWakwCCttrtqyC_6fzxiqGzGjxLXA&s",
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ export default function NewsAndMedia() {
     //   title: t("articlesPage-5th-card-title"),
     //   description:t("articlesPage-5th-card-desc"),
     //   image:
-    //     "https://cdn.pixabay.com/photo/2015/11/03/08/57/patriot-1019838_1280.jpg",
+    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBqbF6sCWakwCCttrtqyC_6fzxiqGzGjxLXA&s",
     // },
     // {
     //   id: 6,
