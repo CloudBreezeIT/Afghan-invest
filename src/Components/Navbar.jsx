@@ -9,6 +9,8 @@ import cookies from "js-cookie";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
+import { TbBrandYoutube } from "react-icons/tb";
+
 const Navbar = () => {
   const [navbarShow, setNavbarShow] = useState(false)
   const languages = [
@@ -78,18 +80,29 @@ const Navbar = () => {
         <div className="mx-2 sm:mx-20 flex justify-around sm:justify-between items-center ">
           {/* Left Section: Phone and Email */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center  space-x-0 sm:space-x-4  text-[12px] sm:text-md mt-1 text-gray-700">
-            <div className="flex items-center space-x-1 sm:space-x-2">
-              <FaPhoneAlt />
-              <span>{t("visitorInfo-phone")}</span>
+          <div className="flex items-center rtl:flex-row-reverse gap-1 sm:gap-2">
+              <FaPhoneAlt className="flex-shrink-0 " />
+              <span className="unicode-bidi[override] rtl:text-left">{t("visitorInfo-phone")}</span>
             </div>
-            <div className="flex items-center space-x-1 sm:space-x-2">
-              <FaEnvelope />
+            <div className="flex items-center rtl:flex-row-reverse gap-1 mx-2 sm:gap-2 mt-1 sm:mt-0">
+              <FaEnvelope className="flex-shrink-0 " />
               <span>{t("visitorInfo-email")}</span>
             </div>
           </div>
 
           {/* Right Section: Social Icons */}
-          <div className="flex  sm:space-x-4 text-gray-700">
+          <div className="flex text-gray-700">
+            <div className="text-sm font-semibold px-4"
+              dangerouslySetInnerHTML={{ __html: t("top-header.follow") }}
+            />
+            <a
+              href="https://www.facebook.com/nationalmuseum.af"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl mx-3   rounded"
+            >
+              <TbBrandYoutube className="hover:scale-110  transition-transform duration-300" />
+            </a>
             <a
               href="https://www.facebook.com/nationalmuseum.af"
               target="_blank"
@@ -140,9 +153,9 @@ const Navbar = () => {
               <img
                 src={mlogo}
                 alt="National Museum Afghanistan Logo"
-                className="h-10 md:h-20 w-auto mr-2"
+                className="h-10 md:h-16 w-auto mr-2"
               />
-              <p className="text-sm lg:text-[20.1px] text-center font-medium lg:font-bold">{t("header.main-heading")}</p>
+              <p className="text-sm lg:text-[20.1px]  text-center font-medium lg:font-semibold">{t("header.main-heading")}</p>
             </Link>
           </div>
 
@@ -169,22 +182,22 @@ const Navbar = () => {
                   className="dropdown-content p-2 shadow bg-mstheme rounded-box w-40 mt-1 z-20"
                 >
                   <li>
-                    <Link to='/about/history' className="hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
+                    <Link to='/about/history' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.second-sub-menu-1")}
                     </Link>
                   </li>
                   <li>
-                    <Link to='/about/directorates' className="hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
+                    <Link to='/about/directorates' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.second-sub-menu-2")}
                     </Link>
                   </li>
                   <li>
-                    <Link to='/about/technical-staff' className="hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
+                    <Link to='/about/technical-staff' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.second-sub-menu-3")}
                     </Link>
                   </li>
                   <li>
-                    <Link to='/about/regulations&policies' className="hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
+                    <Link to='/about/regulations&policies' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.second-sub-menu-4")}
                     </Link>
                   </li>
@@ -227,12 +240,12 @@ const Navbar = () => {
                   className="dropdown-content p-2 shadow bg-mstheme rounded-box w-40 mt-1 z-20"
                 >
                   <li>
-                    <Link to='/gallery/photos' className="hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
+                    <Link to='/gallery/photos' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.sixth-sub-menu-1")}
                     </Link>
                   </li>
                   <li>
-                    <Link to='gallery/videos' className="hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
+                    <Link to='gallery/videos' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
                       {t("header.sixth-sub-menu-2")}
                     </Link>
                   </li>
@@ -360,6 +373,7 @@ const Navbar = () => {
           <div className="navbar-end flex items-center gap-2 relative" >
             <div
               className="navbar-end flex items-center gap-2 relative"
+              title="Click to change language"
               onMouseEnter={(() => setDropdownOpen(true))} // Show dropdown on hover
             >
               <div className="dropdown">
@@ -399,7 +413,7 @@ const Navbar = () => {
       </div>
 
 
-      <a href="https://wa.me/+93202520329" target="_blank" className="fixed right-5 bottom-20 md:bottom-28 z-50 rounded-full">
+      <a href="https://wa.me/+93202520329" title="Click to chat" target="_blank" className="fixed right-5 bottom-20 md:bottom-28 z-50 rounded-full">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Whatsapp icon" className=" w-11 md:w-16" />
       </a>
 

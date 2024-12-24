@@ -51,7 +51,7 @@ export default function ContactHero() {
       toast.success("Form submitted successfully!");
       // Proceed with form submission logic (e.g., send data to API)
     } else {
-      toast.error("Please fill in all fields correctly.");
+      toast.error(t("message.error"))
     }
   };
 

@@ -20,10 +20,10 @@ const Address = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateEmail(email)) {
-      toast.error("Please Enter a valid email")
+      toast.error(t("message.error"))
     } else {
       // Handle valid form submission logic here
-      toast.success("Subscribed Successfully")
+      toast.success(t("message.success"))
     }
   };
 

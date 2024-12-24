@@ -101,9 +101,11 @@ export default function Gallery() {
 
   return (
     <div className="relative w-full md:w-[1350px] m-auto py-20">
-      <h1 className="pb-5 text-3xl md:text-4xl font-semibold text-center">
+      <h1 className="text-3xl md:text-4xl font-semibold text-center">
         {t("gallery-home-heading")}
       </h1>
+      <div className="h-1 w-[10%] bg-mstheme mt-1 mb-10 mx-auto "></div>
+
 
       <Slider ref={sliderRef} {...sliderSettings}>
         {events.map((event) => (

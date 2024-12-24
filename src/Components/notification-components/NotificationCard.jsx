@@ -45,9 +45,11 @@ const NotificationCard = () => {
 
     return (
         <>
-            <h1 className="mt-10 text-3xl md:text-4xl font-semibold text-start mx-44">
+            <h1 className="mt-10 text-3xl md:text-4xl font-semibold text-center mx-44">
                 {t("notification-header")}
             </h1>
+            <div className="h-1 w-[10%] bg-mstheme mt-1 mb-10 mx-auto "></div>
+
             <div className="w-full md:w-[1250px] mx-auto py-10 pb-20">
                 {/* React Slick Slider */}
                 <Slider {...sliderSettings}>

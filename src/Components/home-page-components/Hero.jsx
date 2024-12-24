@@ -9,7 +9,7 @@ const Hero = () => {
   // Data for the hero section
   const heroData = [
     {
-      image: "https://cdn.pixabay.com/photo/2018/04/11/23/14/flag-3312060_1280.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBqbF6sCWakwCCttrtqyC_6fzxiqGzGjxLXA&s",
       title: t('hero.1st-image-title'),
       description: t('hero.1st-image-desc'),
       buttonText: t('hero.1st-image-btn'),

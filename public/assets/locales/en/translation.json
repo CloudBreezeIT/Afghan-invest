@@ -1,5 +1,5 @@
 {
-    "header.main-heading": "Afghanistan National Musem",
+    "header.main-heading": "National Museum of Afghanistan",
     
     "header.first-menu": "Home",
     "header.second-menu": "About Our Museum",
@@ -25,7 +25,15 @@
     "header.sixth-sub-menu-1": "Photos",
     "header.sixth-sub-menu-2": "Videos",
 
+    "license.services": "License Services",
+    "faq": "FAQ",
+    "privacy.policy": "Privacy Policy",
+    "terms.of.services": "Terms of Services",
+     "afghanistan.culture": "Afghanistan Culture",
+
     "input.search-field":"Search Here",
+    "top-header.follow":"Follow us on Social Media ",
+
 
     "hero.1st-image-title":"Discover Ancient Artifacts",
     "hero.1st-image-desc":"Explore the rich history and culture preserved in our museum. Each exhibit tells a unique story of the past.",
@@ -304,6 +312,9 @@
     "eventsPage-update-desc":"Subscribe to our newsletter to receive updates about upcoming events",
     "eventspage-input-placeholder":"Enter your Email...",
     "eventspage-update-btn":"Subscribe",
+
+         "message.error":"Please Enter a valid email",
+        "message.success":"Subscribed to News Successfully",
 
     "articlesPage-main-title":"Discover the World of Museums",
     "articlesPage-main-desc":"Dive into the latest stories, trends, and innovations from the museum world",

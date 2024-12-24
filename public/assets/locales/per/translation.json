@@ -24,7 +24,18 @@
   "header.sixth-sub-menu-1": "عکس ها",
   "header.sixth-sub-menu-2": "ویدیو ها",
 
-  "input.search-field": "اینجا جستجو کنید",
+
+  "license.services": "خدمات مجوز",
+   "faq": "سوالات متداول",
+   "privacy.policy": "سیاست حفظ حریم خصوصی",
+   "terms.of.services": "شرایط خدمات",
+   "afghanistan.culture": "فرهنگ افغانستان",
+   "input.search-field": "اینجا جستجو کنید",
+   "top-header.follow": "ما را در شبکه‌های اجتماعی دنبال کنید",
+  
+  "message.error": "لطفاً یک ایمیل معتبر وارد کنید",
+  "message.success": "با موفقیت در خبرنامه عضو شدید",
+
 
   "hero.1st-image-title": "کشف آثار باستانی",
   "hero.1st-image-desc": "تاریخ و فرهنگ غنی حفظ‌شده در موزه ما را کاوش کنید. هر نمایشگاه داستان منحصربه‌فردی از گذشته را روایت می‌کند",

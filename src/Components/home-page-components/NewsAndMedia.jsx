@@ -49,9 +49,11 @@ export default function NewsAndMedia() {
   ];
   return (
     <>
-     <h2 className="text-4xl font-bold text-center mb-10">
+     <h2 className="text-4xl font-bold text-center ">
             {t("articlesPage-title")}
           </h2>
+          <div className="h-1 w-[10%] bg-mstheme mt-1 mb-10 mx-auto "></div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-1 sm:mx-36 ">
             {articlesData.map((article) => (
               <div

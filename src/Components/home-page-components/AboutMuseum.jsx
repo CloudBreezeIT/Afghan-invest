@@ -9,6 +9,8 @@ const AboutMuseum = () => {
           <h1 className="mt-10 text-3xl md:text-4xl font-semibold text-center">
           {t("aboutMuseum-title")}
       </h1>
+      <div className="h-1 w-[10%] bg-mstheme mt-1 mb-10 mx-auto "></div>
+
       <div className='w-full md:w-[1350px] mx-auto flex justify-center'>
 
         <div className="flex flex-col md:flex-row md:flex-wrap gap-5 py-10 pb-20">

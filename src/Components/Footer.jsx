@@ -33,7 +33,7 @@ const Footer = () => {
 
     return (
         <>
-            <div className="px-10 pt-7 flex flex-col sm:flex-row justify-between gap-5 mt-7 bg-gray-100">
+            <div className="px-10 py-7 flex flex-col sm:flex-row justify-between gap-5 mt-7 bg-[rgb(6,57,97)] text-white">
                 <div className="space-y-7 w-full md:w-2/4">
                     <h1 className="border-b-2 border-gray-700 text-xl font-medium">About Museum</h1>
                     <div className="navbar-start flex items-center w-full">
@@ -49,7 +49,7 @@ const Footer = () => {
                             <p className="text-[20.1px] text-center font-bold ">{t("header.main-heading")}</p>
                         </Link>
                     </div>
-                    <p className="text-mstheme">{t("footer.about")}</p>
+                    <p className="">{t("footer.about")}</p>
                 </div>
                 <div className="w-full md:w-1/5">
                     <h1 className="border-b-2 border-gray-700 text-xl font-medium">{t("footer.links")}</h1>
@@ -59,7 +59,7 @@ const Footer = () => {
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/"
                             >
-                                {t("header.first-menu")}
+                                {t("license.services")}
                             </Link>
                         </li>
                         <li>
@@ -67,7 +67,7 @@ const Footer = () => {
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/about"
                             >
-                                {t("header.fourth-menu")}
+                                {t("faq")}
                             </Link>
                         </li>
                         <li>
@@ -75,7 +75,7 @@ const Footer = () => {
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/products"
                             >
-                                {t("header.fifth-menu")}
+                                {t("privacy.policy")}
                             </Link>
                         </li>
                         <li>
@@ -83,7 +83,7 @@ const Footer = () => {
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/gallery"
                             >
-                                {t("header.sixth-menu")}
+                                {t("terms.of.services")}
                             </Link>
                         </li>
                         <li>
@@ -91,14 +91,14 @@ const Footer = () => {
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/contact"
                             >
-                                {t("header.seventh-menu")}
+                                {t("afghanistan.culture")}
                             </Link>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h1 className="border-b-2 border-gray-700 text-xl font-medium">    {t("header.seventh-menu")}</h1>
-                    <div className="flex flex-col items-center gap-1 lg:items-end mt-6 lg:mt-0">
+                    <div className="flex flex-col items-center gap-1 lg:items-start mt-6 lg:mt-0">
                         <p className="flex items-center justify-center gap-2 mt-5">
                             <FaMapMarkerAlt className="text-white" />
                             <span>{t("visitorInfo-location")}</span>
@@ -165,7 +165,7 @@ const Footer = () => {
                 </div> */}
 
                 {/* Footer Bottom Section */}
-                <div className="text-center mt-6 flex flex-col md:flex-row justify-center lg:space-x-28">
+                <div className="text-center mt-6 flex flex-col md:flex-row justify-center lg:space-x-28" >
                     <p className="text-sm md:text-md">&copy; {t("footer.desc")}</p>
                     <a href="https://ariadelta.af/" target="_blank" rel="noopener noreferrer" className="text-md">
                         <span className="text-yellow-400 font-medium">{t("footer.company-developer")}</span>: {t("footer.company-name")} </a>
@@ -175,6 +175,7 @@ const Footer = () => {
                 {isVisible && (
                     <button
                         onClick={scrollToTop}
+                        
                         className="fixed bottom-8 right-6 bg-mstheme hover:bg-blue-800 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-50"
                         title={t("Back to Top")}
                     >

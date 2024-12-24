@@ -21,7 +21,7 @@ export default function EventSection() {
       title: t("eventSection.2nd-image-title"),
       description:t("eventSection.2nd-image-desc"),
       image:
-      "https://cdn.pixabay.com/photo/2017/08/28/18/44/international-2690812_1280.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPBgPE_I7I-xbkorm2haVVWlQfbYFgCg_Mg&s",
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ export default function EventSection() {
       title:t("eventSection.4th-image-title"),
       description:t("eventSection.4th-image-desc"),
       image:
-      "https://cdn.pixabay.com/photo/2017/08/28/18/44/international-2690812_1280.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPBgPE_I7I-xbkorm2haVVWlQfbYFgCg_Mg&s",
     },
     {
       id: 6,
@@ -49,7 +49,7 @@ export default function EventSection() {
       title: t("eventSection.6th-image-title"),
       description:t("eventSection.6th-image-desc"),
       image:
-      "https://cdn.pixabay.com/photo/2017/08/28/18/44/international-2690812_1280.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPBgPE_I7I-xbkorm2haVVWlQfbYFgCg_Mg&s",
     },
     {
       id: 8,
@@ -70,7 +70,7 @@ export default function EventSection() {
       title: t("eventSection.9th-image-title"),
       description:t("eventSection.9th-image-desc"),
       image:
-        "https://cdn.pixabay.com/photo/2017/08/28/18/44/international-2690812_1280.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPBgPE_I7I-xbkorm2haVVWlQfbYFgCg_Mg&s",
     },
   ];
 
@@ -101,9 +101,10 @@ export default function EventSection() {
 
   return (
     <div className="relative w-full md:w-[1150px] m-auto py-20">
-      <h1 className="pb-5 text-3xl md:text-4xl font-semibold">
+      <h1 className="text-3xl md:text-4xl font-semibold text-center">
         {t("eventSection-main-title")}
       </h1>
+      <div className="h-1 w-[10%] bg-mstheme mt-1 mb-5 mx-auto "></div>
 
       <Slider ref={sliderRef} {...sliderSettings}>
         {events.map((event) => (
