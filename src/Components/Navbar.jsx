@@ -10,7 +10,15 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 import { TbBrandYoutube } from "react-icons/tb";
-
+import { WiDirectionRight } from "react-icons/wi";
+import { IoMdHome } from "react-icons/io";
+import { BsTwitterX } from "react-icons/bs";
+import { GrServices } from "react-icons/gr";
+import { GrProjects } from "react-icons/gr";
+import { GoFileMedia } from "react-icons/go";
+import { MdOutlineArticle } from "react-icons/md";
+import { RiContactsBook2Fill, RiContactsBookLine } from "react-icons/ri";
+import { TbArrowRoundaboutRight } from "react-icons/tb";
 const Navbar = () => {
   const [navbarShow, setNavbarShow] = useState(false)
   const languages = [
@@ -117,7 +125,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="text-xl mx-3   rounded"
             >
-              <FiTwitter className="hover:scale-110  transition-transform duration-300" />
+              <BsTwitterX className="hover:scale-110  transition-transform duration-300" />
             </a>
             <a
               href="https://www.instagram.com/nationalmuseum.afg/"
@@ -167,7 +175,7 @@ const Navbar = () => {
                   to="/"
                   className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
-                  {t("header.first-menu")}
+                   <IoMdHome />  {t("header.first-menu")}
                 </Link>
               </li>
               <li className="dropdown dropdown-hover">
@@ -175,7 +183,7 @@ const Navbar = () => {
                   tabIndex={0}
                   className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
-                  {t("header.second-menu")} <FaChevronDown className="ml-1" />
+                <TbArrowRoundaboutRight />  {t("header.second-menu")} <FaChevronDown className="ml-1" />
                 </label>
                 <ul
                   tabIndex={0}
@@ -183,22 +191,22 @@ const Navbar = () => {
                 >
                   <li>
                     <Link to='/about/history' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
-                      {t("header.second-sub-menu-1")}
+                    <WiDirectionRight />  {t("header.second-sub-menu-1")}
                     </Link>
                   </li>
                   <li>
                     <Link to='/about/directorates' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
-                      {t("header.second-sub-menu-2")}
+                    <WiDirectionRight />   {t("header.second-sub-menu-2")}
                     </Link>
                   </li>
                   <li>
                     <Link to='/about/technical-staff' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
-                      {t("header.second-sub-menu-3")}
+                    <WiDirectionRight />  {t("header.second-sub-menu-3")}
                     </Link>
                   </li>
                   <li>
                     <Link to='/about/regulations&policies' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
-                      {t("header.second-sub-menu-4")}
+                    <WiDirectionRight />   {t("header.second-sub-menu-4")}
                     </Link>
                   </li>
                 </ul>
@@ -208,7 +216,7 @@ const Navbar = () => {
                   to='exhibitions'
                   className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
-                  {t("header.third-menu")}
+                <GrServices />  {t("header.third-menu")}
                 </Link>
 
               </li>
@@ -217,7 +225,7 @@ const Navbar = () => {
                   to="/events"
                   className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
-                  {t("header.fourth-menu")}
+              <GrProjects />    {t("header.fourth-menu")}
                 </Link>
               </li>
               <li>
@@ -225,7 +233,7 @@ const Navbar = () => {
                   to="/articles"
                   className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
-                  {t("header.fifth-menu")}
+                 <MdOutlineArticle /> {t("header.fifth-menu")}
                 </Link>
               </li>
               <li className="dropdown dropdown-hover">
@@ -233,7 +241,7 @@ const Navbar = () => {
                   tabIndex={0}
                   className="text-[16px] font-medium cursor-pointer flex items-center hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
-                  {t("header.sixth-menu")} <FaChevronDown className="ml-1" />
+                <GoFileMedia />  {t("header.sixth-menu")} <FaChevronDown className="ml-1" />
                 </label>
                 <ul
                   tabIndex={0}
@@ -241,12 +249,12 @@ const Navbar = () => {
                 >
                   <li>
                     <Link to='/gallery/photos' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
-                      {t("header.sixth-sub-menu-1")}
+                 <WiDirectionRight />     {t("header.sixth-sub-menu-1")}
                     </Link>
                   </li>
                   <li>
                     <Link to='gallery/videos' className="hover:bg-black hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none">
-                      {t("header.sixth-sub-menu-2")}
+                 <WiDirectionRight />     {t("header.sixth-sub-menu-2")}
                     </Link>
                   </li>
                 </ul>
@@ -256,7 +264,7 @@ const Navbar = () => {
                   to="/contact-us"
                   className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
-                  {t("header.seventh-menu")}
+                <RiContactsBook2Fill />  {t("header.seventh-menu")}
                 </Link>
               </li>
             </ul>

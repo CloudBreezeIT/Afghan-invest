@@ -114,7 +114,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <footer className="bg-mstheme text-white pb-7 mt-7">
+            <footer className="bg-mstheme text-white pb-7 mt-1">
                 <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
                     {/* Main Links Section */}
                     <div className="flex flex-col items-center lg:items-start">
