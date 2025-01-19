@@ -42,7 +42,7 @@
      "menus2":"Regulation & Policies",
      "menus3":"Exhibitions",
      "menus4":"Events",
-     "Menus5":"Articles",
+     "menus5":"Articles",
      "menus6":"Gallary",
 
      "quick1":"License Services",
@@ -189,8 +189,8 @@
     "footer.about":"The Afghanistan National Museum is a treasure trove of the nation's rich history and culture, showcasing artifacts from ancient civilizations to the modern era. It serves as a gateway to understanding Afghanistan's diverse heritage",
 
 
-    "footer.desc": "1919- 2025 National Museum of Afghanistan. All rights reserved. Powered By: Aria Delta Consulting Group",
-    "footer.company-developer": "Powered by",
+    "footer.desc": "1919- 2025 National Museum of Afghanistan. All rights reserved.",
+    "footer.company-developer": " Powered By:",
     "footer.company-name": "Aria Delta Consulting Group",
 
 

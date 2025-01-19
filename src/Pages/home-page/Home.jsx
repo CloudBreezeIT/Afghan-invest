@@ -21,8 +21,8 @@ const Home = () => {
     <>
       {/* <Banner /> */}
       <Hero />
-      <EventSection />
       <Introduction />
+      <EventSection />
       <NewsAndMedia />
       <Gallery />
       {/* <MuseumInfoBar /> */}
