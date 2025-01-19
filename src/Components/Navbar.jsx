@@ -19,6 +19,7 @@ import { GoFileMedia } from "react-icons/go";
 import { MdOutlineArticle } from "react-icons/md";
 import { RiContactsBook2Fill, RiContactsBookLine } from "react-icons/ri";
 import { TbArrowRoundaboutRight } from "react-icons/tb";
+import { FaSearch } from "react-icons/fa";
 const Navbar = () => {
   const [navbarShow, setNavbarShow] = useState(false)
   const languages = [
@@ -42,7 +43,7 @@ const Navbar = () => {
   ];
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [topOffset, setTopOffset] = useState(40);
+  const [topOffset, setTopOffset] = useState(47);
 
 
   const currentLanguageCode = cookies.get("i18next") || "en";
@@ -74,7 +75,7 @@ const Navbar = () => {
       setTopOffset(0)
     }
     else {
-      setTopOffset(40)
+      setTopOffset(47)
     }
   }
 
@@ -84,8 +85,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-40 h-[80px] bg-gray-100  sm:py-2">
-        <div className="mx-2 sm:mx-20 flex justify-around sm:justify-between items-center ">
+      <div className="fixed top-0 left-0 right-0 z-40 h-[95px] bg-gray-100  sm:py-2">
+        <div className="mx-2 sm:mx-20 flex justify-around  sm:justify-between items-center ">
           {/* Left Section: Phone and Email */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center  space-x-0 sm:space-x-4 gap-3  text-[12px] sm:text-md mt-1 text-gray-700">
           <div className="flex items-center rtl:flex-row-reverse gap-1 sm:gap-2">
@@ -97,7 +98,14 @@ const Navbar = () => {
               <span>{t("visitorInfo-email")}</span>
             </div>
           </div>
-
+           <div className="flex">
+            <input
+             type="text"
+              className="px-3 py-1 outline-none rounded-l w-80 border-mstheme border-2 hover:border-black placeholder:text-mstheme"
+              placeholder="Search Here ..." 
+            />
+            <FaSearch className="relative text-2xl right-9 top-2 text-mstheme "/>
+           </div>
           {/* Right Section: Social Icons */}
           <div className="flex text-gray-700">
             <div className="text-sm font-semibold px-4"
@@ -144,6 +152,7 @@ const Navbar = () => {
               <FiLinkedin className="hover:scale-110  transition-transform duration-300" />
             </a>
           </div>
+
         </div>
       </div>
       <div
@@ -170,14 +179,14 @@ const Navbar = () => {
           {/* Menu Section */}
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal space-x-5 ml-24">
-              <li>
+              {/* <li>
                 <Link
                   to="/"
                   className="text-[16px] font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded focus:bg-mstheme_hover focus:text-white focus:outline-none"
                 >
                    <IoMdHome />  {t("header.first-menu")}
                 </Link>
-              </li>
+              </li> */}
               <li className="dropdown dropdown-hover">
                 <label
                   tabIndex={0}
@@ -378,7 +387,7 @@ const Navbar = () => {
 
 
           {/* Language Dropdown Section */}
-          <div className="navbar-end flex items-center gap-2 relative" >
+          <div className="navbar-end flex items-center gap-2 relative sm:me-14" >
             <div
               className="navbar-end flex items-center gap-2 relative"
               title="Click to change language"

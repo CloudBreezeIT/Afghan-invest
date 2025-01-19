@@ -2,6 +2,17 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+
+// Custom marker icon (to fix missing default marker issue in Leaflet)
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
+  iconUrl: require("leaflet/dist/images/marker-icon.png"),
+  shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
+});
 
 export default function ContactHero() {
   const { t } = useTranslation();
@@ -49,11 +60,13 @@ export default function ContactHero() {
     e.preventDefault();
     if (validateForm()) {
       toast.success("Form submitted successfully!");
-      // Proceed with form submission logic (e.g., send data to API)
     } else {
-      toast.error(t("message.error"))
+      toast.error(t("message.error"));
     }
   };
+
+  // Coordinates for Kabul, Afghanistan
+  const mapCenter = [34.489444, 69.128889];
 
   return (
     <div className="min-h-screen w-full">
@@ -71,8 +84,6 @@ export default function ContactHero() {
           <p className="text-xl mb-6">{t("contactPage-main-desc")}</p>
         </div>
       </div>
-
-  
 
       {/* Contact Form */}
       <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-24">
@@ -125,20 +136,27 @@ export default function ContactHero() {
 
       <ToastContainer />
 
-          {/* Map Section */}
-          <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-12">
+      {/* Map Section */}
+      <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-12">
         <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
           {t("contactPage-map-title")}
         </h2>
         <div className="w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
-          <iframe
-            title="Darul-Aman, Kabul, Afghanistan"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao&libraries=places&callback=initMap?pb=!1m18!1m12!1m3!1d2934.812324009622!2d69.12888999999999!3d34.489444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d16eb10e6c0001%3A0x54a8e0e60bcfd6e!2sDarul-Aman%2C%20Kabul%2C%20Afghanistan!5e0!3m2!1sen!2s!4v1721567216406!5m2!1sen!2s"
-            width="100%"
-            height="100%"
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+          <MapContainer
+            center={mapCenter}
+            zoom={13}
+            style={{ height: "100%", width: "100%" }}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution="&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
+            />
+            <Marker position={mapCenter}>
+              <Popup>
+                Kabul, Afghanistan <br /> Darul-Aman Palace
+              </Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
     </div>

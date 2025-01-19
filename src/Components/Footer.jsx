@@ -33,9 +33,8 @@ const Footer = () => {
 
     return (
         <>
-            <div className="px-10 py-7 flex flex-col sm:flex-row justify-between gap-5 mt-7 bg-[rgb(6,57,97)] text-white">
+            <div className="px-10 py-7 flex flex-col sm:flex-row justify-between gap-5 mt-7 bg-mstheme text-white">
                 <div className="space-y-7 w-full md:w-2/4">
-                    <h1 className="border-b-2 border-gray-700 text-xl font-medium">About Museum</h1>
                     <div className="navbar-start flex items-center w-full">
                         <Link
                             to="/"
@@ -52,14 +51,14 @@ const Footer = () => {
                     <p className="">{t("footer.about")}</p>
                 </div>
                 <div className="w-full md:w-1/5">
-                    <h1 className="border-b-2 border-gray-700 text-xl font-medium">{t("footer.links")}</h1>
-                    <ul className="flex flex-col gap-2 text-center lg:text-left">
+                    <h1 className="border-b-2 border-gray-700 text-xl font-bold bg-white rounded text-mstheme px-2  w-36">{t("menus")}</h1>
+                    <ul className="flex flex-col gap-2 text-center lg:text-start">
                         <li className="mt-5">
                             <Link
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/"
                             >
-                                {t("license.services")}
+                                {t("menus1")}
                             </Link>
                         </li>
                         <li>
@@ -67,15 +66,15 @@ const Footer = () => {
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/about"
                             >
-                                {t("faq")}
+                                {t("menus2")}
                             </Link>
                         </li>
                         <li>
-                            <Link
+                            <Link   
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/products"
                             >
-                                {t("privacy.policy")}
+                                {t("menus3")}
                             </Link>
                         </li>
                         <li>
@@ -83,7 +82,7 @@ const Footer = () => {
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/gallery"
                             >
-                                {t("terms.of.services")}
+                                {t("menus4")}
                             </Link>
                         </li>
                         <li>
@@ -91,16 +90,69 @@ const Footer = () => {
                                 className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
                                 to="/contact"
                             >
-                                {t("afghanistan.culture")}
+                                {t("menus5")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
+                                to="/contact"
+                            >
+                                {t("menus6")}
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="w-full md:w-1/5">
+                    <h1 className="border-b-2 border-gray-700 text-xl font-bold bg-white text-mstheme rounded px-2 w-36">{t("footer.links")}</h1>
+                    <ul className="flex flex-col gap-2 text-center lg:text-start">
+                        <li className="mt-5">
+                            <Link
+                                className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
+                                to="/"
+                            >
+                                {t("quick1")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
+                                to="/about"
+                            >
+                                {t("quick2")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
+                                to="/products"
+                            >
+                                {t("quick3")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
+                                to="/gallery"
+                            >
+                                {t("quick4")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="text-lg font-medium hover:bg-mstheme_hover hover:text-white px-2  rounded"
+                                to="/contact"
+                            >
+                                {t("quick5")}
                             </Link>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h1 className="border-b-2 border-gray-700 text-xl font-medium">    {t("header.seventh-menu")}</h1>
+                    <h1 className="border-b-2 border-gray-700 text-xl font-bold bg-white text-mstheme px-2 rounded w-36">    {t("header.seventh-menu")}</h1>
                     <div className="flex flex-col items-center gap-1 lg:items-start mt-6 lg:mt-0">
-                        <p className="flex items-center justify-center gap-2 mt-5">
-                            <FaMapMarkerAlt className="text-white" />
+                        <p className="flex items-start justify-center gap-2 mt-5">
+                            <FaMapMarkerAlt className="text-white mt-2" />
                             <span>{t("visitorInfo-location")}</span>
                         </p>
                         <p className="flex items-center justify-center gap-2">
@@ -111,10 +163,14 @@ const Footer = () => {
                             <MdEmail className="text-white" />
                             <span>{t("visitorInfo-email")}</span>
                         </p>
+                        <p className="flex items-center justify-center gap-2">
+                            <MdEmail className="text-white" />
+                            <span>info@nationalmuseum.af</span>
+                        </p>
                     </div>
                 </div>
             </div>
-            <footer className="bg-mstheme text-white pb-7 mt-1">
+            <footer className="bg-mstheme text-white pb-7">
                 <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
                     {/* Main Links Section */}
                     <div className="flex flex-col items-center lg:items-start">
@@ -166,9 +222,9 @@ const Footer = () => {
 
                 {/* Footer Bottom Section */}
                 <div className="text-center mt-6 flex flex-col md:flex-row justify-center lg:space-x-28" >
-                    <p className="text-sm md:text-md">&copy; {t("footer.desc")}</p>
-                    <a href="https://ariadelta.af/" target="_blank" rel="noopener noreferrer" className="text-md">
-                        <span className="text-yellow-400 font-medium">{t("footer.company-developer")}</span>: {t("footer.company-name")} </a>
+                    <p className="text-sm md:text-md tracking-wider">&copy; {t("footer.desc")}</p>
+                    {/* <a href="https://ariadelta.af/" target="_blank" rel="noopener noreferrer" className="text-md">
+                        <span className="text-yellow-400 font-medium">{t("footer.company-developer")}</span>: {t("footer.company-name")} </a> */}
                 </div>
 
                 {/* Scroll to Top Button */}

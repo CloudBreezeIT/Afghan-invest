@@ -14,6 +14,7 @@ import AboutMuseum from "../../Components/home-page-components/AboutMuseum";
 import DirectorateSection from "../../Components/home-page-components/DirectorateSection";
 import VisitorInfo from "../../Components/home-page-components/VisitorInfo";
 import NotificationCard from "../../Components/notification-components/NotificationCard";
+import Introduction from "../../Components/home-page-components/Introduction";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       {/* <Banner /> */}
       <Hero />
       <EventSection />
+      <Introduction />
       <NewsAndMedia />
       <Gallery />
       {/* <MuseumInfoBar /> */}

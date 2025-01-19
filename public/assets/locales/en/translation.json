@@ -32,8 +32,24 @@
      "afghanistan.culture": "Afghanistan Culture",
 
     "input.search-field":"Search Here",
-    "top-header.follow":"Follow us on Social Media ",
+    "top-header.follow":"Follow us ",
+    "intro-desc":"The National Museum of Afghanistan (Dari: موزیم ملی افغانستان, Mūzīyam-e mellī-ye Afghānestān; Pashto: د افغانستان ملی موزیم, Də Afghānistān Millī Mūzīyəm) is located across the street from the Darul Aman Palace in the Darulaman area of Kabul, Afghanistan. It was once considered to be one of the world's finest museums. There have been reports about expanding the museum or building a new larger one. Mohammad Zubair Abedi serves as the current director of the museum. The museum's collection had earlier been one of the most important in Central Asia, with over 100,000 items dating back several millennia, including items from Persian, Buddhist, and Islamic dynasties.    With the start of the civil war in 1992, the museum was looted numerous times and destroyed by rockets, resulting in a loss of 70% of the 100,000 objects on display. Since 2007, a number of international organizations have helped to recover over 8,000 artifacts, the most recent being a limestone sculpture from Germany.  Approximately 843 artifacts were returned by the United Kingdom in 2012, including the famous 1st Century Begram ivories.",
+     "intro-title":"About National Museum of Afghanistan",
 
+
+     "menus":"Menus",
+     "menus1":"Museum History",
+     "menus2":"Regulation & Policies",
+     "menus3":"Exhibitions",
+     "menus4":"Events",
+     "Menus5":"Articles",
+     "menus6":"Gallary",
+
+     "quick1":"License Services",
+     "quick2":"Afghanistan  Tradition ",
+     "quick3":"Site Map",
+     "quick4":"Privacy Policy",
+     "quick5":"FAQ's",
 
     "hero.1st-image-title":"Discover Ancient Artifacts",
     "hero.1st-image-desc":"Explore the rich history and culture preserved in our museum. Each exhibit tells a unique story of the past.",
@@ -157,7 +173,7 @@
     "visitorInfo-camera-photography":"Photography with DSLR Camera: AFN 60/-",
     
     "visitorInfo-location-title":"Location",
-    "visitorInfo-location":"Darul-Aman, Kabul, Afghanistan",
+    "visitorInfo-location":"Qasr-e- Darulaman -Main Road, District 6, Kabul, Afghanistan",
     
     "visitorInfo-phone-title":"Phone",
     "visitorInfo-phone":"+93 20 252 0329",
@@ -173,7 +189,7 @@
     "footer.about":"The Afghanistan National Museum is a treasure trove of the nation's rich history and culture, showcasing artifacts from ancient civilizations to the modern era. It serves as a gateway to understanding Afghanistan's diverse heritage",
 
 
-    "footer.desc": "2024 National Museum Afghanistan. All rights reserved.",
+    "footer.desc": "1919- 2025 National Museum of Afghanistan. All rights reserved. Powered By: Aria Delta Consulting Group",
     "footer.company-developer": "Powered by",
     "footer.company-name": "Aria Delta Consulting Group",
 
